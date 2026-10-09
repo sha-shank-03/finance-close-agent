@@ -1,0 +1,21 @@
+{
+  "schema_version": 2,
+  "case_id": "H04",
+  "feature": "within_window",
+  "bank_closing_cents": 893800,
+  "ledger_closing_cents": 893800,
+  "bank_records": 2,
+  "ledger_lines": 6,
+  "matches": {
+    "A-H04": "ANCHOR-H04-CASH",
+    "B-H04": "P-H04-CASH"
+  },
+  "exceptions": [],
+  "proposals": [],
+  "ap_balances": {
+    "V-H04:I-H04": 0
+  },
+  "invoice_hold_ids": [],
+  "unmatched_bank_ids": [],
+  "unmatched_ledger_ids": []
+}

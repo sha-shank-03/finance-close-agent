@@ -1,0 +1,30 @@
+{
+  "schema_version": 2,
+  "case_id": "D10",
+  "feature": "incomplete_history",
+  "bank_closing_cents": 939300,
+  "ledger_closing_cents": 939300,
+  "bank_records": 2,
+  "ledger_lines": 6,
+  "matches": {
+    "A-D10": "ANCHOR-D10-CASH",
+    "B-D10": "P-D10-CASH"
+  },
+  "exceptions": [
+    {
+      "bank_id": "B-D10",
+      "ledger_line_id": null,
+      "reason": "INCOMPLETE_HISTORY",
+      "exposure_cents": 60000
+    }
+  ],
+  "proposals": [],
+  "ap_balances": {
+    "V-D10:I-D10": 42200
+  },
+  "invoice_hold_ids": [
+    "B-D10"
+  ],
+  "unmatched_bank_ids": [],
+  "unmatched_ledger_ids": []
+}

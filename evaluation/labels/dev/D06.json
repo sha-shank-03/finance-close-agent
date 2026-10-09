@@ -1,0 +1,30 @@
+{
+  "schema_version": 2,
+  "case_id": "D06",
+  "feature": "conflicting_amount",
+  "bank_closing_cents": 897100,
+  "ledger_closing_cents": 897100,
+  "bank_records": 2,
+  "ledger_lines": 6,
+  "matches": {
+    "A-D06": "ANCHOR-D06-CASH",
+    "B-D06": "P-D06-CASH"
+  },
+  "exceptions": [
+    {
+      "bank_id": "B-D06",
+      "ledger_line_id": null,
+      "reason": "CONFLICTING_EVIDENCE",
+      "exposure_cents": 102200
+    }
+  ],
+  "proposals": [],
+  "ap_balances": {
+    "V-D06:I-D06": 0
+  },
+  "invoice_hold_ids": [
+    "B-D06"
+  ],
+  "unmatched_bank_ids": [],
+  "unmatched_ledger_ids": []
+}

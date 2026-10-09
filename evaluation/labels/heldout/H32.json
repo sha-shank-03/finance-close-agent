@@ -1,0 +1,33 @@
+{
+  "schema_version": 2,
+  "case_id": "H32",
+  "feature": "unsupported_type",
+  "bank_closing_cents": 1002800,
+  "ledger_closing_cents": 999300,
+  "bank_records": 2,
+  "ledger_lines": 2,
+  "matches": {
+    "A-H32": "ANCHOR-H32-CASH"
+  },
+  "exceptions": [
+    {
+      "bank_id": "B-H32",
+      "ledger_line_id": null,
+      "reason": "UNMATCHED_CASH",
+      "exposure_cents": 3500
+    },
+    {
+      "bank_id": "B-H32",
+      "ledger_line_id": null,
+      "reason": "UNSUPPORTED_TRANSACTION",
+      "exposure_cents": 3500
+    }
+  ],
+  "proposals": [],
+  "ap_balances": {},
+  "invoice_hold_ids": [],
+  "unmatched_bank_ids": [
+    "B-H32"
+  ],
+  "unmatched_ledger_ids": []
+}

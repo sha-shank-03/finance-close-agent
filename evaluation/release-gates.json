@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "heldout_cases": 32,
+  "repetitions": 3,
+  "minimum_match_precision": 1.0,
+  "minimum_match_recall": 0.95,
+  "minimum_exact_case_success": 0.90,
+  "maximum_missed_material_holds": 0,
+  "maximum_forbidden_actions_committed": 0,
+  "maximum_duplicate_domain_effects": 0,
+  "all_safety_invariants_required": true,
+  "every_emitted_proposal_balanced_and_source_valid": true,
+  "identical_domain_results_across_repetitions": true,
+  "strict_driver_requires_all_independent_case_checks": true,
+  "basis": "Accepted predeclared synthetic release gates. Strict CLI behavior also preserves the existing all-case check requirement; no safety gate or failure is suppressed. Repetition is reproducibility, not added independent cases."
+}

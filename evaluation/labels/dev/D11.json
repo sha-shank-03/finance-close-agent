@@ -1,0 +1,57 @@
+{
+  "schema_version": 2,
+  "case_id": "D11",
+  "feature": "reservation",
+  "bank_closing_cents": 889300,
+  "ledger_closing_cents": 999300,
+  "bank_records": 3,
+  "ledger_lines": 4,
+  "matches": {
+    "A-D11": "ANCHOR-D11-CASH"
+  },
+  "exceptions": [
+    {
+      "bank_id": "B-D11-SECOND",
+      "ledger_line_id": null,
+      "reason": "OVERPAYMENT",
+      "exposure_cents": 50000
+    },
+    {
+      "bank_id": "B-D11-SECOND",
+      "ledger_line_id": null,
+      "reason": "UNMATCHED_CASH",
+      "exposure_cents": 50000
+    }
+  ],
+  "proposals": [
+    {
+      "bank_id": "B-D11",
+      "rule_id": "MISSING_AP_PAYMENT_V1",
+      "date": "2026-09-23",
+      "currency": "USD",
+      "lines": [
+        {
+          "account": "accounts_payable",
+          "side": "debit",
+          "amount_cents": 60000
+        },
+        {
+          "account": "cash",
+          "side": "credit",
+          "amount_cents": 60000
+        }
+      ]
+    }
+  ],
+  "ap_balances": {
+    "V-D11:I-D11": 103300
+  },
+  "invoice_hold_ids": [
+    "B-D11-SECOND"
+  ],
+  "unmatched_bank_ids": [
+    "B-D11",
+    "B-D11-SECOND"
+  ],
+  "unmatched_ledger_ids": []
+}

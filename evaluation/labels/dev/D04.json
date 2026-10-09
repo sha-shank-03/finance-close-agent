@@ -1,0 +1,41 @@
+{
+  "schema_version": 2,
+  "case_id": "D04",
+  "feature": "missing_ap",
+  "bank_closing_cents": 899300,
+  "ledger_closing_cents": 999300,
+  "bank_records": 2,
+  "ledger_lines": 4,
+  "matches": {
+    "A-D04": "ANCHOR-D04-CASH"
+  },
+  "exceptions": [],
+  "proposals": [
+    {
+      "bank_id": "B-D04",
+      "rule_id": "MISSING_AP_PAYMENT_V1",
+      "date": "2026-09-20",
+      "currency": "USD",
+      "lines": [
+        {
+          "account": "accounts_payable",
+          "side": "debit",
+          "amount_cents": 100000
+        },
+        {
+          "account": "cash",
+          "side": "credit",
+          "amount_cents": 100000
+        }
+      ]
+    }
+  ],
+  "ap_balances": {
+    "V-D04:I-D04": 100000
+  },
+  "invoice_hold_ids": [],
+  "unmatched_bank_ids": [
+    "B-D04"
+  ],
+  "unmatched_ledger_ids": []
+}

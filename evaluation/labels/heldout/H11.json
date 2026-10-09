@@ -1,0 +1,30 @@
+{
+  "schema_version": 2,
+  "case_id": "H11",
+  "feature": "overpaid",
+  "bank_closing_cents": 919300,
+  "ledger_closing_cents": 919300,
+  "bank_records": 2,
+  "ledger_lines": 8,
+  "matches": {
+    "A-H11": "ANCHOR-H11-CASH",
+    "B-H11": "P-H11-CASH"
+  },
+  "exceptions": [
+    {
+      "bank_id": "B-H11",
+      "ledger_line_id": null,
+      "reason": "OVERPAYMENT",
+      "exposure_cents": 80000
+    }
+  ],
+  "proposals": [],
+  "ap_balances": {
+    "V-H11:I-H11": -15600
+  },
+  "invoice_hold_ids": [
+    "B-H11"
+  ],
+  "unmatched_bank_ids": [],
+  "unmatched_ledger_ids": []
+}

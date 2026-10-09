@@ -1,0 +1,43 @@
+{
+  "schema_version": 2,
+  "case_id": "D07",
+  "feature": "amount_conflict",
+  "bank_closing_cents": 894500,
+  "ledger_closing_cents": 896000,
+  "bank_records": 2,
+  "ledger_lines": 6,
+  "matches": {
+    "A-D07": "ANCHOR-D07-CASH"
+  },
+  "exceptions": [
+    {
+      "bank_id": null,
+      "ledger_line_id": "P-D07-CASH",
+      "reason": "UNMATCHED_LEDGER",
+      "exposure_cents": 103300
+    },
+    {
+      "bank_id": "B-D07",
+      "ledger_line_id": null,
+      "reason": "AMOUNT_CONFLICT",
+      "exposure_cents": 1500
+    },
+    {
+      "bank_id": "B-D07",
+      "ledger_line_id": null,
+      "reason": "UNMATCHED_CASH",
+      "exposure_cents": 104800
+    }
+  ],
+  "proposals": [],
+  "ap_balances": {
+    "V-D07:I-D07": 0
+  },
+  "invoice_hold_ids": [],
+  "unmatched_bank_ids": [
+    "B-D07"
+  ],
+  "unmatched_ledger_ids": [
+    "P-D07-CASH"
+  ]
+}

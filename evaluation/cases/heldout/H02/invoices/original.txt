@@ -1,0 +1,7 @@
+Invoice ID: I-H02
+Vendor ID: V-H02
+Issued: 2026-08-02
+Amount: 1033.00
+Currency: USD
+Payment Reference: PAY-H02
+Notes: Authored fictional evidence. 

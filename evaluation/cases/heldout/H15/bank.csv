@@ -1,0 +1,3 @@
+transaction_id,date,amount,currency,vendor_id,reference,transaction_type,memo
+A-H15,2026-09-05,-7.00,USD,,ANCHOR-H15,bank_fee,Authored fictional conflicting_amount
+B-H15,2026-09-20,-1044.00,USD,V-H15,PAY-H15,vendor_payment,Authored fictional conflicting_amount

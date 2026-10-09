@@ -1,0 +1,41 @@
+{
+  "schema_version": 2,
+  "case_id": "H25",
+  "feature": "missing_ap",
+  "bank_closing_cents": 897100,
+  "ledger_closing_cents": 999300,
+  "bank_records": 2,
+  "ledger_lines": 4,
+  "matches": {
+    "A-H25": "ANCHOR-H25-CASH"
+  },
+  "exceptions": [],
+  "proposals": [
+    {
+      "bank_id": "B-H25",
+      "rule_id": "MISSING_AP_PAYMENT_V1",
+      "date": "2026-09-22",
+      "currency": "USD",
+      "lines": [
+        {
+          "account": "accounts_payable",
+          "side": "debit",
+          "amount_cents": 102200
+        },
+        {
+          "account": "cash",
+          "side": "credit",
+          "amount_cents": 102200
+        }
+      ]
+    }
+  ],
+  "ap_balances": {
+    "V-H25:I-H25": 102200
+  },
+  "invoice_hold_ids": [],
+  "unmatched_bank_ids": [
+    "B-H25"
+  ],
+  "unmatched_ledger_ids": []
+}

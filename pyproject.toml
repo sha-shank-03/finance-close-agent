@@ -1,0 +1,11 @@
+[project]
+name = "finance-close-agent"
+version = "0.1.1"
+description = "Scripted, evidence-linked fictional bank reconciliation"
+requires-python = ">=3.11"
+dependencies = []
+readme = "README.md"
+license = {file = "LICENSE"}
+
+# Run directly from the checkout with python -m finance_close.
+# Packaging and publishing are outside this demonstration's scope.

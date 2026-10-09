@@ -1,0 +1,21 @@
+{
+  "schema_version": 2,
+  "case_id": "H13",
+  "feature": "duplicate_bytes",
+  "bank_closing_cents": 897100,
+  "ledger_closing_cents": 897100,
+  "bank_records": 2,
+  "ledger_lines": 6,
+  "matches": {
+    "A-H13": "ANCHOR-H13-CASH",
+    "B-H13": "P-H13-CASH"
+  },
+  "exceptions": [],
+  "proposals": [],
+  "ap_balances": {
+    "V-H13:I-H13": 0
+  },
+  "invoice_hold_ids": [],
+  "unmatched_bank_ids": [],
+  "unmatched_ledger_ids": []
+}

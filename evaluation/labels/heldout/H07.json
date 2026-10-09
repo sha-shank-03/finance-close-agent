@@ -1,0 +1,30 @@
+{
+  "schema_version": 2,
+  "case_id": "H07",
+  "feature": "other_vendor",
+  "bank_closing_cents": 894900,
+  "ledger_closing_cents": 894900,
+  "bank_records": 2,
+  "ledger_lines": 6,
+  "matches": {
+    "A-H07": "ANCHOR-H07-CASH",
+    "B-H07": "P-H07-CASH"
+  },
+  "exceptions": [
+    {
+      "bank_id": "B-H07",
+      "ledger_line_id": null,
+      "reason": "MISSING_INVOICE",
+      "exposure_cents": 104400
+    }
+  ],
+  "proposals": [],
+  "ap_balances": {
+    "V-H07:I-H07": 0
+  },
+  "invoice_hold_ids": [
+    "B-H07"
+  ],
+  "unmatched_bank_ids": [],
+  "unmatched_ledger_ids": []
+}

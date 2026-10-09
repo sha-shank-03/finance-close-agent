@@ -1,0 +1,39 @@
+{
+  "schema_version": 2,
+  "case_id": "H21",
+  "feature": "fee",
+  "bank_closing_cents": 996100,
+  "ledger_closing_cents": 999300,
+  "bank_records": 2,
+  "ledger_lines": 2,
+  "matches": {
+    "A-H21": "ANCHOR-H21-CASH"
+  },
+  "exceptions": [],
+  "proposals": [
+    {
+      "bank_id": "B-H21",
+      "rule_id": "BANK_FEE_V1",
+      "date": "2026-09-22",
+      "currency": "USD",
+      "lines": [
+        {
+          "account": "bank_fee_expense",
+          "side": "debit",
+          "amount_cents": 3200
+        },
+        {
+          "account": "cash",
+          "side": "credit",
+          "amount_cents": 3200
+        }
+      ]
+    }
+  ],
+  "ap_balances": {},
+  "invoice_hold_ids": [],
+  "unmatched_bank_ids": [
+    "B-H21"
+  ],
+  "unmatched_ledger_ids": []
+}

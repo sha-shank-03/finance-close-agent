@@ -1,0 +1,7 @@
+entry_id,line_id,date,account,side,amount,currency,vendor_id,invoice_id,reference
+P-H30,P-H30-CASH,2026-09-19,cash,credit,1033.00,USD,V-H30,I-H30,PAY-H30
+P-H30,P-H30-ACCOUNTS_PAYABLE,2026-09-19,accounts_payable,debit,1033.00,USD,V-H30,I-H30,PAY-H30
+R-H30,R-H30-ACCOUNTS_PAYABLE,2026-08-02,accounts_payable,credit,1033.00,USD,V-H30,I-H30,
+R-H30,R-H30-EXPENSE,2026-08-02,expense,debit,1033.00,USD,V-H30,I-H30,
+ANCHOR-H30,ANCHOR-H30-CASH,2026-09-05,cash,credit,7.00,USD,,,ANCHOR-H30
+ANCHOR-H30,ANCHOR-H30-BANK_FEE_EXPENSE,2026-09-05,bank_fee_expense,debit,7.00,USD,,,ANCHOR-H30

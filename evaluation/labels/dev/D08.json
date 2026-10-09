@@ -1,0 +1,48 @@
+{
+  "schema_version": 2,
+  "case_id": "D08",
+  "feature": "ambiguous_ledger",
+  "bank_closing_cents": 899300,
+  "ledger_closing_cents": 799300,
+  "bank_records": 2,
+  "ledger_lines": 8,
+  "matches": {
+    "A-D08": "ANCHOR-D08-CASH"
+  },
+  "exceptions": [
+    {
+      "bank_id": null,
+      "ledger_line_id": "P-D08-CASH",
+      "reason": "UNMATCHED_LEDGER",
+      "exposure_cents": 100000
+    },
+    {
+      "bank_id": null,
+      "ledger_line_id": "P2-D08-CASH",
+      "reason": "UNMATCHED_LEDGER",
+      "exposure_cents": 100000
+    },
+    {
+      "bank_id": "B-D08",
+      "ledger_line_id": null,
+      "reason": "AMBIGUOUS_MATCH",
+      "exposure_cents": 100000
+    },
+    {
+      "bank_id": "B-D08",
+      "ledger_line_id": null,
+      "reason": "UNMATCHED_CASH",
+      "exposure_cents": 100000
+    }
+  ],
+  "proposals": [],
+  "ap_balances": {},
+  "invoice_hold_ids": [],
+  "unmatched_bank_ids": [
+    "B-D08"
+  ],
+  "unmatched_ledger_ids": [
+    "P-D08-CASH",
+    "P2-D08-CASH"
+  ]
+}

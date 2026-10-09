@@ -1,0 +1,3 @@
+transaction_id,date,amount,currency,vendor_id,reference,transaction_type,memo
+A-H21,2026-09-05,-7.00,USD,,ANCHOR-H21,bank_fee,Authored fictional fee
+B-H21,2026-09-22,-32.00,USD,,PAY-H21,bank_fee,Authored fictional fee

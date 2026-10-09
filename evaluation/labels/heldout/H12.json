@@ -1,0 +1,30 @@
+{
+  "schema_version": 2,
+  "case_id": "H12",
+  "feature": "incomplete_history",
+  "bank_closing_cents": 939300,
+  "ledger_closing_cents": 939300,
+  "bank_records": 2,
+  "ledger_lines": 6,
+  "matches": {
+    "A-H12": "ANCHOR-H12-CASH",
+    "B-H12": "P-H12-CASH"
+  },
+  "exceptions": [
+    {
+      "bank_id": "B-H12",
+      "ledger_line_id": null,
+      "reason": "INCOMPLETE_HISTORY",
+      "exposure_cents": 60000
+    }
+  ],
+  "proposals": [],
+  "ap_balances": {
+    "V-H12:I-H12": 45500
+  },
+  "invoice_hold_ids": [
+    "B-H12"
+  ],
+  "unmatched_bank_ids": [],
+  "unmatched_ledger_ids": []
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": 2,
+  "case_id": "D12",
+  "feature": "unsupported_currency",
+  "bank_closing_cents": 999300,
+  "ledger_closing_cents": 999300,
+  "bank_records": 2,
+  "ledger_lines": 2,
+  "matches": {
+    "A-D12": "ANCHOR-D12-CASH"
+  },
+  "exceptions": [
+    {
+      "bank_id": "B-D12",
+      "ledger_line_id": null,
+      "reason": "UNMATCHED_CASH",
+      "exposure_cents": 3000
+    },
+    {
+      "bank_id": "B-D12",
+      "ledger_line_id": null,
+      "reason": "UNSUPPORTED_CURRENCY",
+      "exposure_cents": 3000
+    }
+  ],
+  "proposals": [],
+  "ap_balances": {},
+  "invoice_hold_ids": [],
+  "unmatched_bank_ids": [
+    "B-D12"
+  ],
+  "unmatched_ledger_ids": []
+}

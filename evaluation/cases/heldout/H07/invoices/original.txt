@@ -1,0 +1,7 @@
+Invoice ID: I-H07
+Vendor ID: UNRELATED-VENDOR
+Issued: 2026-08-02
+Amount: 1044.00
+Currency: USD
+Payment Reference: PAY-H07
+Notes: Authored fictional evidence. 

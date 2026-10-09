@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "rule_id": "BANK_FEE_V1",
+  "currency": "USD",
+  "cash_account": "cash",
+  "fee_account": "bank_fee_expense",
+  "ap_account": "accounts_payable",
+  "rule_ids": ["BANK_FEE_V1", "MISSING_AP_PAYMENT_V1"],
+  "accounts": ["cash", "accounts_payable", "bank_fee_expense", "expense"],
+  "date_window_days": 3,
+  "materiality_cents": 10000,
+  "limits": {"decisions_per_case": 12, "tools_per_case": 10, "decisions_per_run": 250, "cases_per_run": 50, "deadline_seconds": 180}
+}

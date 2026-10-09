@@ -1,0 +1,7 @@
+Invoice ID: INV-1001
+Vendor ID: VENDOR-A
+Issued: 2026-09-01
+Amount: 1000.00
+Currency: USD
+Payment Reference: PAY-1001
+Notes: Authored fictional invoice. No real vendor or financial account.

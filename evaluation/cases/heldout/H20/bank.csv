@@ -1,0 +1,4 @@
+transaction_id,date,amount,currency,vendor_id,reference,transaction_type,memo
+B-H20-SECOND,2026-09-21,-1055.00,USD,V-H20,PAY-H20,vendor_payment,Authored fictional ambiguous_bank
+B-H20,2026-09-21,-1055.00,USD,V-H20,PAY-H20,vendor_payment,Authored fictional ambiguous_bank
+A-H20,2026-09-05,-7.00,USD,,ANCHOR-H20,bank_fee,Authored fictional ambiguous_bank

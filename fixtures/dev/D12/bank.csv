@@ -1,0 +1,3 @@
+transaction_id,date,amount,currency,vendor_id,reference,transaction_type,memo
+A-D12,2026-09-05,-7.00,USD,,ANCHOR-D12,bank_fee,Authored fictional unsupported_currency
+B-D12,2026-09-20,-30.00,EUR,,PAY-D12,bank_fee,Authored fictional unsupported_currency

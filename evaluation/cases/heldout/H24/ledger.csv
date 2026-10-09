@@ -1,0 +1,5 @@
+entry_id,line_id,date,account,side,amount,currency,vendor_id,invoice_id,reference
+P-H24,P-H24-CASH,2026-09-21,cash,credit,35.00,USD,V-H24,I-H24,UNRELATED-H24
+P-H24,P-H24-ACCOUNTS_PAYABLE,2026-09-21,accounts_payable,debit,35.00,USD,V-H24,I-H24,UNRELATED-H24
+ANCHOR-H24,ANCHOR-H24-CASH,2026-09-05,cash,credit,7.00,USD,,,ANCHOR-H24
+ANCHOR-H24,ANCHOR-H24-BANK_FEE_EXPENSE,2026-09-05,bank_fee_expense,debit,7.00,USD,,,ANCHOR-H24

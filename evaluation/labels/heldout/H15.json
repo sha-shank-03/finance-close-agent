@@ -1,0 +1,30 @@
+{
+  "schema_version": 2,
+  "case_id": "H15",
+  "feature": "conflicting_amount",
+  "bank_closing_cents": 894900,
+  "ledger_closing_cents": 894900,
+  "bank_records": 2,
+  "ledger_lines": 6,
+  "matches": {
+    "A-H15": "ANCHOR-H15-CASH",
+    "B-H15": "P-H15-CASH"
+  },
+  "exceptions": [
+    {
+      "bank_id": "B-H15",
+      "ledger_line_id": null,
+      "reason": "CONFLICTING_EVIDENCE",
+      "exposure_cents": 104400
+    }
+  ],
+  "proposals": [],
+  "ap_balances": {
+    "V-H15:I-H15": 0
+  },
+  "invoice_hold_ids": [
+    "B-H15"
+  ],
+  "unmatched_bank_ids": [],
+  "unmatched_ledger_ids": []
+}

@@ -1,0 +1,13 @@
+{
+  "dataset": "authored-fictional-M1-demo",
+  "bank_closing_cents": 872000,
+  "ledger_closing_cents": 875000,
+  "bank_records": 3,
+  "ledger_lines": 4,
+  "matches": {"B001": "L001-CASH", "B003": "L003-CASH"},
+  "exceptions": [{"bank_id": "B003", "ledger_line_id": null, "reason": "MISSING_INVOICE", "exposure_cents": 25000}],
+  "proposal": {"bank_id": "B005", "rule_id": "BANK_FEE_V1", "date": "2026-09-30", "currency": "USD", "lines": [{"account": "bank_fee_expense", "side": "debit", "amount_cents": 3000}, {"account": "cash", "side": "credit", "amount_cents": 3000}]},
+  "unmatched_bank_ids": ["B005"],
+  "unmatched_ledger_ids": [],
+  "invoice_hold_ids": ["B003"]
+}

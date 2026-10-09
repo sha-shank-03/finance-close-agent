@@ -1,0 +1,43 @@
+{
+  "schema_version": 2,
+  "case_id": "H30",
+  "feature": "outside_window",
+  "bank_closing_cents": 896000,
+  "ledger_closing_cents": 896000,
+  "bank_records": 2,
+  "ledger_lines": 6,
+  "matches": {
+    "A-H30": "ANCHOR-H30-CASH"
+  },
+  "exceptions": [
+    {
+      "bank_id": null,
+      "ledger_line_id": "P-H30-CASH",
+      "reason": "UNMATCHED_LEDGER",
+      "exposure_cents": 103300
+    },
+    {
+      "bank_id": "B-H30",
+      "ledger_line_id": null,
+      "reason": "TIMING_DIFFERENCE",
+      "exposure_cents": 103300
+    },
+    {
+      "bank_id": "B-H30",
+      "ledger_line_id": null,
+      "reason": "UNMATCHED_CASH",
+      "exposure_cents": 103300
+    }
+  ],
+  "proposals": [],
+  "ap_balances": {
+    "V-H30:I-H30": 0
+  },
+  "invoice_hold_ids": [],
+  "unmatched_bank_ids": [
+    "B-H30"
+  ],
+  "unmatched_ledger_ids": [
+    "P-H30-CASH"
+  ]
+}

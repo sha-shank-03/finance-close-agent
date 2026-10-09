@@ -1,0 +1,5 @@
+entry_id,line_id,date,account,side,amount,currency,vendor_id,invoice_id,reference
+J001,L001-AP,2026-09-10,accounts_payable,debit,1000.00,USD,VENDOR-A,INV-1001,PAY-1001
+J001,L001-CASH,2026-09-10,cash,credit,1000.00,USD,VENDOR-A,INV-1001,PAY-1001
+J003,L003-AP,2026-09-15,accounts_payable,debit,250.00,USD,VENDOR-B,INV-1003,PAY-1003
+J003,L003-CASH,2026-09-15,cash,credit,250.00,USD,VENDOR-B,INV-1003,PAY-1003

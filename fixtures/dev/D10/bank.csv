@@ -1,0 +1,3 @@
+transaction_id,date,amount,currency,vendor_id,reference,transaction_type,memo
+A-D10,2026-09-05,-7.00,USD,,ANCHOR-D10,bank_fee,Authored fictional incomplete_history
+B-D10,2026-09-22,-600.00,USD,V-D10,PAY-D10,vendor_payment,Authored fictional incomplete_history

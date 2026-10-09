@@ -1,0 +1,8 @@
+Invoice ID: I-H03
+Vendor ID: V-H03
+Issued: 2026-08-02
+Amount: 1044.00
+Currency: USD
+Payment Reference: PAY-H03
+Ledger Reference: LEDGER-H03
+Notes: Authored fictional evidence. 

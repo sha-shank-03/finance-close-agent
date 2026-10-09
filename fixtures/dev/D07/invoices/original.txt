@@ -1,0 +1,7 @@
+Invoice ID: I-D07
+Vendor ID: V-D07
+Issued: 2026-08-02
+Amount: 1033.00
+Currency: USD
+Payment Reference: PAY-D07
+Notes: Authored fictional evidence. 

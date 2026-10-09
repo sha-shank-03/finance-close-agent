@@ -1,0 +1,21 @@
+{
+  "schema_version": 2,
+  "case_id": "D03",
+  "feature": "partial",
+  "bank_closing_cents": 939300,
+  "ledger_closing_cents": 939300,
+  "bank_records": 2,
+  "ledger_lines": 8,
+  "matches": {
+    "A-D03": "ANCHOR-D03-CASH",
+    "B-D03": "P-D03-CASH"
+  },
+  "exceptions": [],
+  "proposals": [],
+  "ap_balances": {
+    "V-D03:I-D03": 23300
+  },
+  "invoice_hold_ids": [],
+  "unmatched_bank_ids": [],
+  "unmatched_ledger_ids": []
+}

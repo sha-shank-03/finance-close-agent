@@ -1,0 +1,4 @@
+transaction_id,date,amount,currency,vendor_id,reference,transaction_type,memo
+B001,2026-09-10,-1000.00,USD,VENDOR-A,PAY-1001,vendor_payment,Fictional recorded supplier payment
+B003,2026-09-15,-250.00,USD,VENDOR-B,PAY-1003,vendor_payment,Fictional payment with invoice evidence missing
+B005,2026-09-30,-30.00,USD,,FEE-SEP,bank_fee,Fictional bank fee

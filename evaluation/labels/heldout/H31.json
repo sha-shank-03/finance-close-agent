@@ -1,0 +1,33 @@
+{
+  "schema_version": 2,
+  "case_id": "H31",
+  "feature": "unsupported_currency",
+  "bank_closing_cents": 999300,
+  "ledger_closing_cents": 999300,
+  "bank_records": 2,
+  "ledger_lines": 2,
+  "matches": {
+    "A-H31": "ANCHOR-H31-CASH"
+  },
+  "exceptions": [
+    {
+      "bank_id": "B-H31",
+      "ledger_line_id": null,
+      "reason": "UNMATCHED_CASH",
+      "exposure_cents": 3400
+    },
+    {
+      "bank_id": "B-H31",
+      "ledger_line_id": null,
+      "reason": "UNSUPPORTED_CURRENCY",
+      "exposure_cents": 3400
+    }
+  ],
+  "proposals": [],
+  "ap_balances": {},
+  "invoice_hold_ids": [],
+  "unmatched_bank_ids": [
+    "B-H31"
+  ],
+  "unmatched_ledger_ids": []
+}

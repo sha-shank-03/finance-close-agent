@@ -1,0 +1,3 @@
+transaction_id,date,amount,currency,vendor_id,reference,transaction_type,memo
+A-H07,2026-09-05,-7.00,USD,,ANCHOR-H07,bank_fee,Authored fictional other_vendor
+B-H07,2026-09-20,-1044.00,USD,V-H07,PAY-H07,vendor_payment,Authored fictional other_vendor

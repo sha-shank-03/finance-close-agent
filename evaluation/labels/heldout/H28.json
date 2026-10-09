@@ -1,0 +1,37 @@
+{
+  "schema_version": 2,
+  "case_id": "H28",
+  "feature": "already_paid",
+  "bank_closing_cents": 969300,
+  "ledger_closing_cents": 999300,
+  "bank_records": 2,
+  "ledger_lines": 6,
+  "matches": {
+    "A-H28": "ANCHOR-H28-CASH"
+  },
+  "exceptions": [
+    {
+      "bank_id": "B-H28",
+      "ledger_line_id": null,
+      "reason": "OVERPAYMENT",
+      "exposure_cents": 30000
+    },
+    {
+      "bank_id": "B-H28",
+      "ledger_line_id": null,
+      "reason": "UNMATCHED_CASH",
+      "exposure_cents": 30000
+    }
+  ],
+  "proposals": [],
+  "ap_balances": {
+    "V-H28:I-H28": 0
+  },
+  "invoice_hold_ids": [
+    "B-H28"
+  ],
+  "unmatched_bank_ids": [
+    "B-H28"
+  ],
+  "unmatched_ledger_ids": []
+}

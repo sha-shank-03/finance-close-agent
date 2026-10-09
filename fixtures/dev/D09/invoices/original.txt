@@ -1,0 +1,7 @@
+Invoice ID: I-D09
+Vendor ID: V-D09
+Issued: 2026-08-02
+Amount: 1011.00
+Currency: USD
+Payment Reference: PAY-D09
+Notes: Authored fictional evidence. 

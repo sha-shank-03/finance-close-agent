@@ -1,0 +1,57 @@
+{
+  "schema_version": 2,
+  "case_id": "H27",
+  "feature": "reservation",
+  "bank_closing_cents": 889300,
+  "ledger_closing_cents": 999300,
+  "bank_records": 3,
+  "ledger_lines": 4,
+  "matches": {
+    "A-H27": "ANCHOR-H27-CASH"
+  },
+  "exceptions": [
+    {
+      "bank_id": "B-H27-SECOND",
+      "ledger_line_id": null,
+      "reason": "OVERPAYMENT",
+      "exposure_cents": 50000
+    },
+    {
+      "bank_id": "B-H27-SECOND",
+      "ledger_line_id": null,
+      "reason": "UNMATCHED_CASH",
+      "exposure_cents": 50000
+    }
+  ],
+  "proposals": [
+    {
+      "bank_id": "B-H27",
+      "rule_id": "MISSING_AP_PAYMENT_V1",
+      "date": "2026-09-20",
+      "currency": "USD",
+      "lines": [
+        {
+          "account": "accounts_payable",
+          "side": "debit",
+          "amount_cents": 60000
+        },
+        {
+          "account": "cash",
+          "side": "credit",
+          "amount_cents": 60000
+        }
+      ]
+    }
+  ],
+  "ap_balances": {
+    "V-H27:I-H27": 104400
+  },
+  "invoice_hold_ids": [
+    "B-H27-SECOND"
+  ],
+  "unmatched_bank_ids": [
+    "B-H27",
+    "B-H27-SECOND"
+  ],
+  "unmatched_ledger_ids": []
+}

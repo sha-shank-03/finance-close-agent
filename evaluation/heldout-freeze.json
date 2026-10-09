@@ -1,0 +1,391 @@
+{
+  "schema_version": 1,
+  "frozen_at": "2026-10-08T09:49:51.685238+00:00",
+  "case_count": 32,
+  "strata": 8,
+  "scripted_policy_sha256_before_expansion": "e8321a39364bf60c7e58302cce5dc458347bb5fb5fd19ae5d27412281a7b5451",
+  "records": [
+    {
+      "case_id": "H01",
+      "stratum": "exact",
+      "feature": "exact",
+      "files": {
+        "evaluation/cases/heldout/H01/bank.csv": "89354a22349d6e524dde8c755637aac2acb5debb322f8f2f2c5f8b1a9d35d41e",
+        "evaluation/cases/heldout/H01/invoices/original.txt": "fdedebc6f03b910ea0370c6f76f8527c74fc4c5cfcb2715d41549595adfc59aa",
+        "evaluation/cases/heldout/H01/ledger.csv": "167c1183769e3a3023a1db59ddc1cc37fb86e230a5c6f7f0312946940c950110",
+        "evaluation/cases/heldout/H01/manifest.json": "b3f54dfe4935824a86819785b1c7a257141956af7202535263109843b16ee0f0",
+        "evaluation/labels/heldout/H01.json": "312ec39481f9c3e54e048efa121081e50f27b1f420194bf0b195cadb67271e6f"
+      }
+    },
+    {
+      "case_id": "H02",
+      "stratum": "exact",
+      "feature": "normalized",
+      "files": {
+        "evaluation/cases/heldout/H02/bank.csv": "24f211fd5ab94819a05cf10f3933e471d19b6251c07e20c8f13e769dbd10c8e4",
+        "evaluation/cases/heldout/H02/invoices/original.txt": "21c9a16415e3ea3d7d3fff07a888ef01bc1f7da0ff8236410428b24a37f2b684",
+        "evaluation/cases/heldout/H02/ledger.csv": "c431c8c3a85460db62ccf374fb9c64ca29c082f2db1eb608e445fd12f9b832de",
+        "evaluation/cases/heldout/H02/manifest.json": "f2743e21011ed172ed81010f7ca27c7b85c4b06dee4b817a60b7c4d6df553fae",
+        "evaluation/labels/heldout/H02.json": "cc7e5729d7dcc924f6fd5b31c0023b7b34d8a400972c0be471b7fb6d05c407b3"
+      }
+    },
+    {
+      "case_id": "H03",
+      "stratum": "exact",
+      "feature": "alias",
+      "files": {
+        "evaluation/cases/heldout/H03/bank.csv": "a7516ede9fa41a5fa11a6cc80487314ed8323ef49a168ad3b418e90e5685259a",
+        "evaluation/cases/heldout/H03/invoices/original.txt": "7f9e87146ac1031dc52f956e276053c61d66bbdbd7a21f54929534a0dee20641",
+        "evaluation/cases/heldout/H03/ledger.csv": "af8dd0b3c7c183ae81b762e8332f5998ef8b8f9b75bde9f02cccb08a067f019a",
+        "evaluation/cases/heldout/H03/manifest.json": "5a56c763a5d315b73b89cb19628e0a95dc6551cc23fadd473e7e1aa5baea1fb7",
+        "evaluation/labels/heldout/H03.json": "3b9abfeb8995e742eafb19114a5ee0bc8962eccc5814244ec262d4bba17d3f27"
+      }
+    },
+    {
+      "case_id": "H04",
+      "stratum": "exact",
+      "feature": "within_window",
+      "files": {
+        "evaluation/cases/heldout/H04/bank.csv": "6bf38e7775c55b79115ce80216ed9e2c503ea03deb9863e558e1b4bce5caa121",
+        "evaluation/cases/heldout/H04/invoices/original.txt": "ba56823c64c42cbe82c8d207a19377d6213aac550d0d4aeba85a379093cce37a",
+        "evaluation/cases/heldout/H04/ledger.csv": "18158430c02e511ecdc21854833240cd93da42dc4852a5b717e247ca1ba9aae8",
+        "evaluation/cases/heldout/H04/manifest.json": "ab708eecb768b0fef784a0733d733cc0287273c8427318ee80e5591e06e5caca",
+        "evaluation/labels/heldout/H04.json": "0fc1bb178e64a6b25658eed4d63add64631628ddc216d113f6f3e94d7ed61935"
+      }
+    },
+    {
+      "case_id": "H05",
+      "stratum": "missing_invoice",
+      "feature": "missing",
+      "files": {
+        "evaluation/cases/heldout/H05/bank.csv": "e278f99c36a49e39977fdc14d04b505a38dc631ee1ff6108bab51fcb49ce60e8",
+        "evaluation/cases/heldout/H05/ledger.csv": "9327ae95a3a8e4de4feeeac49f47249618d56ab9837de3e0b119d19a6bb3969a",
+        "evaluation/cases/heldout/H05/manifest.json": "ce934e724669f64f8096523ce6edf0d16a51bfce19bf709ea7e5d77ea01c9691",
+        "evaluation/labels/heldout/H05.json": "be787b378a95d5c8b44547889c76c9af6341c7a44c9d5b66f23204e21c177653"
+      }
+    },
+    {
+      "case_id": "H06",
+      "stratum": "missing_invoice",
+      "feature": "blank_invoice",
+      "files": {
+        "evaluation/cases/heldout/H06/bank.csv": "043aa53f8f4af9ed693f51dc609c088e5749bde78da390970b73057de0209d6b",
+        "evaluation/cases/heldout/H06/ledger.csv": "4b238803bf9df6e051a5507c4552d3db610c14df87c393735fc06379e56599f2",
+        "evaluation/cases/heldout/H06/manifest.json": "ad50e2fb81ef43c40b014afb1df81b8a97d4d94edf0a513beebef7650ce26e9e",
+        "evaluation/labels/heldout/H06.json": "db559edd1db41334e765a82c11f0a143a67d47e4a3fb698cbb0e4aee00456054"
+      }
+    },
+    {
+      "case_id": "H07",
+      "stratum": "missing_invoice",
+      "feature": "other_vendor",
+      "files": {
+        "evaluation/cases/heldout/H07/bank.csv": "b0a49519a0430deae4ad8428f86d461cc20ad841fb67a56ef55771786c707555",
+        "evaluation/cases/heldout/H07/invoices/original.txt": "e5fbcaff379988889b0c761c221182935af8956165bd33c75efc5648da3177fa",
+        "evaluation/cases/heldout/H07/ledger.csv": "60a67e459169d8724efcd0a624cd1c00bdabfd395fd0dc1cac35f5ae58d11594",
+        "evaluation/cases/heldout/H07/manifest.json": "4679822682e9b8b645be0b5155a2c997ae0169a1595bec8275769382849e2ccc",
+        "evaluation/labels/heldout/H07.json": "7ee99fbfbc4f8c5986adbe88fd9ffa83f4770d12ad72f564023ddcfd918f336b"
+      }
+    },
+    {
+      "case_id": "H08",
+      "stratum": "missing_invoice",
+      "feature": "hostile_missing",
+      "files": {
+        "evaluation/cases/heldout/H08/bank.csv": "cdf665f33411f4314881b6754f3da8e80d4a9bf45a006fe81b56de046e2fd64b",
+        "evaluation/cases/heldout/H08/ledger.csv": "f9a758085918136d422dddb34a336dd09cead0c6d9302234fedc470d830ba726",
+        "evaluation/cases/heldout/H08/manifest.json": "1bf117ef80f986c997e6cf20d122e22b5a935ffbb38b2f244d1df8beb26e346f",
+        "evaluation/labels/heldout/H08.json": "d18aff63214ef8da604f588b75e68f5343c6be08e70cf7dadfcc873994d1eeac"
+      }
+    },
+    {
+      "case_id": "H09",
+      "stratum": "partial",
+      "feature": "partial",
+      "files": {
+        "evaluation/cases/heldout/H09/bank.csv": "6173bb857bf29cc568f9638f2a245b55bf75972358f09724f0c303128ae3ba88",
+        "evaluation/cases/heldout/H09/invoices/original.txt": "92051ecac14f53c6e995883cea1a66332ac5e6951be07a961a5966d66594b319",
+        "evaluation/cases/heldout/H09/ledger.csv": "c8f56487493f9bc6254d9b6f81e7f731d48f2c042c247953f11b76dfb4256ced",
+        "evaluation/cases/heldout/H09/manifest.json": "42c4328199426d0506d6413ad58e5949d82d32210a5b30d1f0f22ab9704ac900",
+        "evaluation/labels/heldout/H09.json": "da3c5c6a01562c9986a7163a23ef3d22402a84ce8dab69a58cee5b787db01b15"
+      }
+    },
+    {
+      "case_id": "H10",
+      "stratum": "partial",
+      "feature": "fully_paid",
+      "files": {
+        "evaluation/cases/heldout/H10/bank.csv": "8b52c0ebbe3c646d0261a0190ecfd93ce78a435d2bc88a0bd7e797be341fde1d",
+        "evaluation/cases/heldout/H10/invoices/original.txt": "ec280fe276add12785cdb78c544d3c74c62c5556a5f289f328d0092714a8c38f",
+        "evaluation/cases/heldout/H10/ledger.csv": "85794dac07b5a7b861a5273c11692049ea85fec5c9a0427049ac9b8b89794a9a",
+        "evaluation/cases/heldout/H10/manifest.json": "dbc370c82dfc5bac78452d33f9f5fb3a5d321da92b03d2e1ce8f7a03f4c01357",
+        "evaluation/labels/heldout/H10.json": "6ef87af2df8001c7ba271666efb4bc05b6ab4eddea5472b87ff06b8c8ee8c5bf"
+      }
+    },
+    {
+      "case_id": "H11",
+      "stratum": "partial",
+      "feature": "overpaid",
+      "files": {
+        "evaluation/cases/heldout/H11/bank.csv": "38e1ac588b4f351910633fcbbb2ff934c6c4f6d8f2fa5fc7b466056dfd9b64da",
+        "evaluation/cases/heldout/H11/invoices/original.txt": "85b153876316a23ed56b332beee8db0f625dc7ea5f4548c26386b480bae7a6b3",
+        "evaluation/cases/heldout/H11/ledger.csv": "126f57719bcd492d03244fc34ad4cbd89acff9c42658dfb80360415ce3a6c5fb",
+        "evaluation/cases/heldout/H11/manifest.json": "069ab785ed85eb5080dcf35d3c8dbaf23cfdcd8e84130a1da37e970335de07a1",
+        "evaluation/labels/heldout/H11.json": "d199307a005574b3216fd218a9b251b32f65f0506ca3032fbb79a9eb619ab691"
+      }
+    },
+    {
+      "case_id": "H12",
+      "stratum": "partial",
+      "feature": "incomplete_history",
+      "files": {
+        "evaluation/cases/heldout/H12/bank.csv": "ba608b5b119a616deafb2bbbc8d0858d5d17f02c538f98166650e5afef5860b0",
+        "evaluation/cases/heldout/H12/invoices/original.txt": "23771b765117b6383d79f3278219a30c7e3da141af555e35cda78ca9687c960e",
+        "evaluation/cases/heldout/H12/ledger.csv": "ff011647a39ebb9f0f8ddbcbb5e55278087d7e85799a80a9eb6aba2ac5b22ce3",
+        "evaluation/cases/heldout/H12/manifest.json": "ceaeee9fcf73010e8b83c203598f0e8a4d6d8f7fad95f86acca47ab5a1f85666",
+        "evaluation/labels/heldout/H12.json": "10ca80366110e67ae46226d4202f509251ec58546e4e82050a13894992322c6a"
+      }
+    },
+    {
+      "case_id": "H13",
+      "stratum": "duplicates",
+      "feature": "duplicate_bytes",
+      "files": {
+        "evaluation/cases/heldout/H13/bank.csv": "e4aebac5f68ca9e054e73cca9a1b3dfb6a340237e97991210dbe5157c57c12dd",
+        "evaluation/cases/heldout/H13/invoices/copy.txt": "b7d993a10d0e9b2e4a4228d2071cb093ed10fae626c148c9f5a967a2eb4a2fd4",
+        "evaluation/cases/heldout/H13/invoices/original.txt": "b7d993a10d0e9b2e4a4228d2071cb093ed10fae626c148c9f5a967a2eb4a2fd4",
+        "evaluation/cases/heldout/H13/ledger.csv": "d1102ecfc14333c51e774a2985b90864a975c40cb74b16e066231acf6d7c680d",
+        "evaluation/cases/heldout/H13/manifest.json": "ad658dcb35b552adc34a07a5963aa2aa50b887366f8cf9eb1ebb0016d3c9394a",
+        "evaluation/labels/heldout/H13.json": "adb238ae098112205f59bd7eada6c0d1e008b89dbfed5a9fb021c99ca8d1c538"
+      }
+    },
+    {
+      "case_id": "H14",
+      "stratum": "duplicates",
+      "feature": "duplicate_semantic",
+      "files": {
+        "evaluation/cases/heldout/H14/bank.csv": "80e38f768c5901618485b37b9379c648356765dc572d0e88ee9bf9a621acbed1",
+        "evaluation/cases/heldout/H14/invoices/copy.txt": "9b3a18a6f15754118d987a8f462b7ca9f83d402fe4220004956ccbddefc043e7",
+        "evaluation/cases/heldout/H14/invoices/original.txt": "fddad3eed1efae2b73068f469317dc62717509c62b2dd4dcf51464c138effa43",
+        "evaluation/cases/heldout/H14/ledger.csv": "a2226fe6bf3bfa337ac4f5564a7afb69b6d34535db5bcd7d07cf62daf4cbef4b",
+        "evaluation/cases/heldout/H14/manifest.json": "25414c3bd67c7dea07335a6ac9971aa8e4f0a741963103f2879df6d7d4cd8691",
+        "evaluation/labels/heldout/H14.json": "3e7f09e1e9ef58cad06d26b3dcc686393b290fa366a7e6d95634a95ebbb45eae"
+      }
+    },
+    {
+      "case_id": "H15",
+      "stratum": "duplicates",
+      "feature": "conflicting_amount",
+      "files": {
+        "evaluation/cases/heldout/H15/bank.csv": "d72eb79fbb317fbf759172641be1274f45e61a2b1dfe8174caa91c83066274b0",
+        "evaluation/cases/heldout/H15/invoices/copy.txt": "a73528aea29ba38a382d1206a47ff23284d8fedc734de5b42151463e53673450",
+        "evaluation/cases/heldout/H15/invoices/original.txt": "4cb63d707127a1221b22dbd2d89a7bb2dcfd41e449344454392ab02736702fa1",
+        "evaluation/cases/heldout/H15/ledger.csv": "0340fb1e57eaab7bca967705374e26deed40d7666709c819b2d0eb9e1ad58e50",
+        "evaluation/cases/heldout/H15/manifest.json": "b07a6728506b3ff362c980aa42a0e8cbb733fd4c8067f438477ce23ab08d23f6",
+        "evaluation/labels/heldout/H15.json": "e0c0ead9a18bc351ecc219701091f744c79d3292f3ee8ed8d20c65d1d46f511a"
+      }
+    },
+    {
+      "case_id": "H16",
+      "stratum": "duplicates",
+      "feature": "conflicting_currency",
+      "files": {
+        "evaluation/cases/heldout/H16/bank.csv": "9f4b736388ed62f8b75877bbdf8e17192cdf87865ebeb4f42f006196572b90e1",
+        "evaluation/cases/heldout/H16/invoices/copy.txt": "a288976b851057d48ec655ef334d00a7faeaec1d9e2ab02f9c3ee1844248ffb4",
+        "evaluation/cases/heldout/H16/invoices/original.txt": "73c039c81d7cc6787650802279ce62a24065102a8431b7f3a4f300e828545db2",
+        "evaluation/cases/heldout/H16/ledger.csv": "63d706603da944660ba5ad01decc34819c53f34ddd5b1628b466d070e0f4b4ba",
+        "evaluation/cases/heldout/H16/manifest.json": "2ac31fb43eae7a44a07340f00d95dd521bdc50a68b35e53e26815271c78b8a8b",
+        "evaluation/labels/heldout/H16.json": "19396254a20f5a7420beb64d5daa4ad5453848bf8f0e30d498a40888a3e72a17"
+      }
+    },
+    {
+      "case_id": "H17",
+      "stratum": "amounts",
+      "feature": "one_cent",
+      "files": {
+        "evaluation/cases/heldout/H17/bank.csv": "2e4652729f6e42756d0b4d3128bc79b95b003e8f36ca6f6e2b15a4f8d75079a5",
+        "evaluation/cases/heldout/H17/invoices/original.txt": "a8870f7af1f749e8efd39a31b4cdfb8ac3486fe8e6069a2137fa3573aedc904f",
+        "evaluation/cases/heldout/H17/ledger.csv": "029690c7eaa72b02d064d9cf3ee8965e10d7b87394c19cacc8bf16d6df2dee5e",
+        "evaluation/cases/heldout/H17/manifest.json": "24d0c4843151579e417f232e32463724ffb68d2033a509b5889f85f9b56e6db5",
+        "evaluation/labels/heldout/H17.json": "f544219379ce7009c6306009b60afad304d2744c1ed831687915a7d3f325ce67"
+      }
+    },
+    {
+      "case_id": "H18",
+      "stratum": "amounts",
+      "feature": "amount_conflict",
+      "files": {
+        "evaluation/cases/heldout/H18/bank.csv": "602cb6d6f7f96f8cfecb9dae245ffbdc2f75b4cd10672355fd844554c9590cc7",
+        "evaluation/cases/heldout/H18/invoices/original.txt": "9598187988f9ae93c5379b43a82b3a46105c7b5b90f3a820a3dbe0bf1437f26c",
+        "evaluation/cases/heldout/H18/ledger.csv": "9cf33179c915b93c1820da519905df226f108ff99fe1a373e5bf929394c194ba",
+        "evaluation/cases/heldout/H18/manifest.json": "f9bdc83c629bc79a8cc01dc3d2a95b4e134dae149b197d2979b0796ee6405d85",
+        "evaluation/labels/heldout/H18.json": "7b74d6502882b09b1a3f919c6109b6fc134fda8e407b27a56efb279c48482f33"
+      }
+    },
+    {
+      "case_id": "H19",
+      "stratum": "amounts",
+      "feature": "ambiguous_ledger",
+      "files": {
+        "evaluation/cases/heldout/H19/bank.csv": "49af2a72a914aa81f5e465327917944073b903faf6ec281f08b82232901734af",
+        "evaluation/cases/heldout/H19/invoices/original.txt": "f66124b3e08c667237c14e35c2d02febd070c086bdaa684ea8da5e5c5616d67f",
+        "evaluation/cases/heldout/H19/ledger.csv": "87c233c646d3ad080d2e5aa3027f10ea0c3a1ec4bdbda23fdadc48f2d78a81f3",
+        "evaluation/cases/heldout/H19/manifest.json": "fba691648c01314eb6e0582d03fa01db97b8234fdf42ffc21b30046bfb5b17db",
+        "evaluation/labels/heldout/H19.json": "a8db0eae344a600e11bbc22ab94136209695eb16c0b299e770eb1e6f483ba8a9"
+      }
+    },
+    {
+      "case_id": "H20",
+      "stratum": "amounts",
+      "feature": "ambiguous_bank",
+      "files": {
+        "evaluation/cases/heldout/H20/bank.csv": "1fd4e04fde575af057e31dec2fa72cc1d2de8f45cae0c56306529fafa9b1e6de",
+        "evaluation/cases/heldout/H20/invoices/original.txt": "9f16b78dcad8abee413245d62b5a911b2c60c5e0273055956ee1e70d49adef03",
+        "evaluation/cases/heldout/H20/ledger.csv": "946ce02f8890d075100239d43de7ce819ba8023496c9b03643437480348da210",
+        "evaluation/cases/heldout/H20/manifest.json": "42301b2e6dec51e91cccb228bcefdd587b0e32ca81f01ff84bf2c79032507bcf",
+        "evaluation/labels/heldout/H20.json": "a8dfc92af4a901f1265496d0bb0126ff31cfe166b19b34ffe7c6e5189f6aef1b"
+      }
+    },
+    {
+      "case_id": "H21",
+      "stratum": "fees",
+      "feature": "fee",
+      "files": {
+        "evaluation/cases/heldout/H21/bank.csv": "1e4ff1eec63f185159535cbe430ba56b836965a6ae2397c2a68903d9972e284b",
+        "evaluation/cases/heldout/H21/ledger.csv": "5ddf6bb9fe4d0085c94f3d4bb80d09d3b70c1fc6063d2ad312626cab2272d8e8",
+        "evaluation/cases/heldout/H21/manifest.json": "6c1eca5544f3accd31d18605664ac5223109d7d070a0d3c6cfc5dc288986160c",
+        "evaluation/labels/heldout/H21.json": "4a4b15976fc9cc413c102e39dc60a4ca96b4597bdde86ae0e337bb0e79cb21dd"
+      }
+    },
+    {
+      "case_id": "H22",
+      "stratum": "fees",
+      "feature": "fee_memo_only",
+      "files": {
+        "evaluation/cases/heldout/H22/bank.csv": "eee3bba5edd624a3fea29ec4701f5d74d85a8021fed1437fc93b98513a256728",
+        "evaluation/cases/heldout/H22/ledger.csv": "495653ddedbb89661daa84d16f31e8665a28921b3b5ff3268990f059f7be2a27",
+        "evaluation/cases/heldout/H22/manifest.json": "cd1131ff3a65ba17c95783217d8ca8da95af1b8c55611d18d12b2295f712656b",
+        "evaluation/labels/heldout/H22.json": "5dcf0083dff73d9495f078f0b172923dcb84e99df68f098b7f536d3749d805b0"
+      }
+    },
+    {
+      "case_id": "H23",
+      "stratum": "fees",
+      "feature": "recorded_fee",
+      "files": {
+        "evaluation/cases/heldout/H23/bank.csv": "4f27ed638aa1d2c01158e13971073a6c696edbd92814f29c83fbc1d0d4f1159b",
+        "evaluation/cases/heldout/H23/ledger.csv": "dcec6f345117aec38ce1988e16fe4e09916b9f1ba74cb0e58513199b357f0bb6",
+        "evaluation/cases/heldout/H23/manifest.json": "3614381ec9adb5b475772a6b7c81cc8d770055209e0c990ef77f347679d5e1c6",
+        "evaluation/labels/heldout/H23.json": "5afe5d438c919ef3f260810181c148a4d491e7163eeccec8d86e1b257ec6eac8"
+      }
+    },
+    {
+      "case_id": "H24",
+      "stratum": "fees",
+      "feature": "fee_competing_cash",
+      "files": {
+        "evaluation/cases/heldout/H24/bank.csv": "4f7f0e63520c2f0a9bbfadee735a518476a8f74b4aee45d071b9da6218881536",
+        "evaluation/cases/heldout/H24/ledger.csv": "eea000c61378033413b4e76543fa9ea3c53025c235475b11956a109d4599d1d0",
+        "evaluation/cases/heldout/H24/manifest.json": "434f87af7c459ef144ccf502a2d44335fd4ea9d7edf854763facea8ddcbc2ff8",
+        "evaluation/labels/heldout/H24.json": "f330a00822e25d9a8d30945add1acbeb94e6237f1ae9a53e3a32b6713eeb097c"
+      }
+    },
+    {
+      "case_id": "H25",
+      "stratum": "ap_missing",
+      "feature": "missing_ap",
+      "files": {
+        "evaluation/cases/heldout/H25/bank.csv": "58e8c3bd7012dff157a6f4c7351120d65581a049226ce0127e536e7ef62cbc43",
+        "evaluation/cases/heldout/H25/invoices/original.txt": "d2d5ceb8386195e4bb92ad02b0ddcedfc6884a8cba6e4adc7704b5e3bf0609f8",
+        "evaluation/cases/heldout/H25/ledger.csv": "a06baf5a699515a460025dbeeb9ca7af0fcf895d06f72187d7ae4a161ca156e3",
+        "evaluation/cases/heldout/H25/manifest.json": "39d3be44247d74aaf5a93253dbdc934ec72c15738652cf2aaa28834b41b70a0f",
+        "evaluation/labels/heldout/H25.json": "345de7b8b88c7dd19fde097e55d55cf6da7db3dac449b28857879838ab9d6756"
+      }
+    },
+    {
+      "case_id": "H26",
+      "stratum": "ap_missing",
+      "feature": "missing_partial_ap",
+      "files": {
+        "evaluation/cases/heldout/H26/bank.csv": "bec4ea082df1c0972690f5c392a6af774ded4b025a1fa9b0caf94f26a69d26e9",
+        "evaluation/cases/heldout/H26/invoices/original.txt": "964895ab420e637b9259f14b36d26cfecba14ee7a4cafb49dc4263f066d68ab7",
+        "evaluation/cases/heldout/H26/ledger.csv": "08cd0781f7d64ba3c2794b9ccbaf5956debb0cf4c163a341841fbeafe39d9407",
+        "evaluation/cases/heldout/H26/manifest.json": "6ae388415e87afb7a9d2f79675a5db5a9d01a656732bc148a525fe8df32a0b70",
+        "evaluation/labels/heldout/H26.json": "cb1f217cedb1baa8d629e31da57b3191282f73bde7699cf5153f43641d158863"
+      }
+    },
+    {
+      "case_id": "H27",
+      "stratum": "ap_missing",
+      "feature": "reservation",
+      "files": {
+        "evaluation/cases/heldout/H27/bank.csv": "2e6bb19d47b48d90c5a2a3af46500ad5718cb5faa137ecba50856701ccd714b7",
+        "evaluation/cases/heldout/H27/invoices/original.txt": "60b1e98f07efe7c0e9e48aecf43ad46a725f537563634e09de7cd389a27350c4",
+        "evaluation/cases/heldout/H27/ledger.csv": "46d451b54588325ed6a0ad2cc312eb641c54b78956ffb707cdc195495091c824",
+        "evaluation/cases/heldout/H27/manifest.json": "422a6503d8f2a90b016930665313390f44b072fc6b30a31800a18aec4dc38433",
+        "evaluation/labels/heldout/H27.json": "6df21b39187f0ac104efc40a72815a6189af8f9d0dccc3a07a51995ae0589567"
+      }
+    },
+    {
+      "case_id": "H28",
+      "stratum": "ap_missing",
+      "feature": "already_paid",
+      "files": {
+        "evaluation/cases/heldout/H28/bank.csv": "0bab3e8b75065b650d6b32eecb8198202f6f1433739d3fa1f13fd250801e8a85",
+        "evaluation/cases/heldout/H28/invoices/original.txt": "ef34f411f3dd09bbb393f34bf887d97a3db42b12b60ced8dae11420f13dfa9b7",
+        "evaluation/cases/heldout/H28/ledger.csv": "d0aed4332a9b55dcf96074de6d18752e05599ae1bfd7065ec313abf30008ffac",
+        "evaluation/cases/heldout/H28/manifest.json": "e6a147bb573bb27aa48af90248cfc2909bb8cea22165fce2420fac9b328dbe07",
+        "evaluation/labels/heldout/H28.json": "edf396ed91e437fcdab3d1c64a048d46aa3b8a3657b3c8d40a079a74e07e7a12"
+      }
+    },
+    {
+      "case_id": "H29",
+      "stratum": "timing_unsupported",
+      "feature": "prior_cutoff",
+      "files": {
+        "evaluation/cases/heldout/H29/bank.csv": "91e261774fb97bcea191b3bda4d5ba93b7e0c5dcfdf32093f3b8b1f9997060a2",
+        "evaluation/cases/heldout/H29/invoices/original.txt": "7b4b414ac2898f106afcedb70ce8abac62e9d8f103b51154057fdb0007b006a7",
+        "evaluation/cases/heldout/H29/ledger.csv": "424f42d8ab910ecf414a5f8c16407fe98ebf6ac885fd0268f5e9934956a1cdb9",
+        "evaluation/cases/heldout/H29/manifest.json": "6bd691fb989288b5ab59d902cb4c92630922033168f2a2292aac69ef4c61ff86",
+        "evaluation/labels/heldout/H29.json": "6029f888000f860a36f2226f655b574173b065e3249cc3469a1bad6a40956796"
+      }
+    },
+    {
+      "case_id": "H30",
+      "stratum": "timing_unsupported",
+      "feature": "outside_window",
+      "files": {
+        "evaluation/cases/heldout/H30/bank.csv": "e1087360dea76421478220ca98a020cdd41a4b4ca436a9ec2ccb01ad478ce086",
+        "evaluation/cases/heldout/H30/invoices/original.txt": "d43148f0b8dd1c143ce215f84a4ab18817709aec3d85d8d81ca71f0c95798beb",
+        "evaluation/cases/heldout/H30/ledger.csv": "7e0c13f7646919d092321124ab69c433e4a478116316a873c17ddcc1f64e22be",
+        "evaluation/cases/heldout/H30/manifest.json": "14f3b82c6124bd299ea0479d8d1ff5e25554d45279c63fba71ef63dac4b354ef",
+        "evaluation/labels/heldout/H30.json": "99abdb1124619601de6052045dd5b1f40aa361327c77d0e173190f330864d0eb"
+      }
+    },
+    {
+      "case_id": "H31",
+      "stratum": "timing_unsupported",
+      "feature": "unsupported_currency",
+      "files": {
+        "evaluation/cases/heldout/H31/bank.csv": "98aaf92c235e4eaea6352239a48fd42e9590deced225aba996959014cdea562d",
+        "evaluation/cases/heldout/H31/ledger.csv": "678fd3a37de22d2fbfe958ae67ce155fd170a846e7bd447c90fa1aaf17464caa",
+        "evaluation/cases/heldout/H31/manifest.json": "64040dcc202f17a92694540009a958b97ccedc8a025f5812864a6356ea8a695d",
+        "evaluation/labels/heldout/H31.json": "7b055f5dc6943b57b110bfcd22c982e5a321da5a961c8174999b5f7565998250"
+      }
+    },
+    {
+      "case_id": "H32",
+      "stratum": "timing_unsupported",
+      "feature": "unsupported_type",
+      "files": {
+        "evaluation/cases/heldout/H32/bank.csv": "598735386171d876a8d77937452ffbc7c60456d01e2f6434e93818d101b52c42",
+        "evaluation/cases/heldout/H32/ledger.csv": "c3d7d59bcdc7b254c51edc5f974a14b484c1f04ef0be0388b14c7f9b4dffeb56",
+        "evaluation/cases/heldout/H32/manifest.json": "e6684ca7e5e75be624cde0299144b2afbe1831f7adb67da109eaf8cd54fd60e6",
+        "evaluation/labels/heldout/H32.json": "c0fb7969c3709c08fbd15d8298888751c61f5a58fd5661cd8a5b763739796ccc"
+      }
+    }
+  ],
+  "aggregate_sha256": "f3299b697dc7a4634a28445cf29e9312bf12ff6b5f01844244e30baa97067c34",
+  "scoring_executed": false,
+  "limitations": "Authored synthetic cases and labels, not an external or accounting-certified benchmark. No acting provider or scorer was invoked while authoring."
+}

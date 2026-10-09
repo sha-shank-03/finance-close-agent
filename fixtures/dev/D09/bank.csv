@@ -1,0 +1,3 @@
+transaction_id,date,amount,currency,vendor_id,reference,transaction_type,memo
+B-D09,2026-09-21,-800.00,USD,V-D09,PAY-D09,vendor_payment,Authored fictional overpaid
+A-D09,2026-09-05,-7.00,USD,,ANCHOR-D09,bank_fee,Authored fictional overpaid

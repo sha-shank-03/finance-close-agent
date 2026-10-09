@@ -1,0 +1,35 @@
+{
+  "schema_version": 2,
+  "case_id": "H24",
+  "feature": "fee_competing_cash",
+  "bank_closing_cents": 995800,
+  "ledger_closing_cents": 995800,
+  "bank_records": 2,
+  "ledger_lines": 4,
+  "matches": {
+    "A-H24": "ANCHOR-H24-CASH"
+  },
+  "exceptions": [
+    {
+      "bank_id": null,
+      "ledger_line_id": "P-H24-CASH",
+      "reason": "UNMATCHED_LEDGER",
+      "exposure_cents": 3500
+    },
+    {
+      "bank_id": "B-H24",
+      "ledger_line_id": null,
+      "reason": "UNMATCHED_CASH",
+      "exposure_cents": 3500
+    }
+  ],
+  "proposals": [],
+  "ap_balances": {},
+  "invoice_hold_ids": [],
+  "unmatched_bank_ids": [
+    "B-H24"
+  ],
+  "unmatched_ledger_ids": [
+    "P-H24-CASH"
+  ]
+}

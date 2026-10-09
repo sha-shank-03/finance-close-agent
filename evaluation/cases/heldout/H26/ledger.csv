@@ -1,0 +1,7 @@
+entry_id,line_id,date,account,side,amount,currency,vendor_id,invoice_id,reference
+OLD-H26,OLD-H26-CASH,2026-08-20,cash,credit,200.00,USD,V-H26,I-H26,OLDPAY-H26
+OLD-H26,OLD-H26-ACCOUNTS_PAYABLE,2026-08-20,accounts_payable,debit,200.00,USD,V-H26,I-H26,OLDPAY-H26
+R-H26,R-H26-ACCOUNTS_PAYABLE,2026-08-02,accounts_payable,credit,1033.00,USD,V-H26,I-H26,
+R-H26,R-H26-EXPENSE,2026-08-02,expense,debit,1033.00,USD,V-H26,I-H26,
+ANCHOR-H26,ANCHOR-H26-CASH,2026-09-05,cash,credit,7.00,USD,,,ANCHOR-H26
+ANCHOR-H26,ANCHOR-H26-BANK_FEE_EXPENSE,2026-09-05,bank_fee_expense,debit,7.00,USD,,,ANCHOR-H26

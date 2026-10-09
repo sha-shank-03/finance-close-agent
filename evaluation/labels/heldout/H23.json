@@ -1,0 +1,19 @@
+{
+  "schema_version": 2,
+  "case_id": "H23",
+  "feature": "recorded_fee",
+  "bank_closing_cents": 995900,
+  "ledger_closing_cents": 995900,
+  "bank_records": 2,
+  "ledger_lines": 4,
+  "matches": {
+    "A-H23": "ANCHOR-H23-CASH",
+    "B-H23": "P-H23-CASH"
+  },
+  "exceptions": [],
+  "proposals": [],
+  "ap_balances": {},
+  "invoice_hold_ids": [],
+  "unmatched_bank_ids": [],
+  "unmatched_ledger_ids": []
+}

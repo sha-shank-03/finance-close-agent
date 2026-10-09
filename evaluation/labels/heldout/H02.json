@@ -1,0 +1,21 @@
+{
+  "schema_version": 2,
+  "case_id": "H02",
+  "feature": "normalized",
+  "bank_closing_cents": 896000,
+  "ledger_closing_cents": 896000,
+  "bank_records": 2,
+  "ledger_lines": 6,
+  "matches": {
+    "A-H02": "ANCHOR-H02-CASH",
+    "B-H02": "P-H02-CASH"
+  },
+  "exceptions": [],
+  "proposals": [],
+  "ap_balances": {
+    "V-H02:I-H02": 0
+  },
+  "invoice_hold_ids": [],
+  "unmatched_bank_ids": [],
+  "unmatched_ledger_ids": []
+}

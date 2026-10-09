@@ -1,0 +1,21 @@
+{
+  "schema_version": 2,
+  "case_id": "H10",
+  "feature": "fully_paid",
+  "bank_closing_cents": 936000,
+  "ledger_closing_cents": 936000,
+  "bank_records": 2,
+  "ledger_lines": 8,
+  "matches": {
+    "A-H10": "ANCHOR-H10-CASH",
+    "B-H10": "P-H10-CASH"
+  },
+  "exceptions": [],
+  "proposals": [],
+  "ap_balances": {
+    "V-H10:I-H10": 0
+  },
+  "invoice_hold_ids": [],
+  "unmatched_bank_ids": [],
+  "unmatched_ledger_ids": []
+}

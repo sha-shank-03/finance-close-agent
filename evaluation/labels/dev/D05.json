@@ -1,0 +1,21 @@
+{
+  "schema_version": 2,
+  "case_id": "D05",
+  "feature": "duplicate_semantic",
+  "bank_closing_cents": 898200,
+  "ledger_closing_cents": 898200,
+  "bank_records": 2,
+  "ledger_lines": 6,
+  "matches": {
+    "A-D05": "ANCHOR-D05-CASH",
+    "B-D05": "P-D05-CASH"
+  },
+  "exceptions": [],
+  "proposals": [],
+  "ap_balances": {
+    "V-D05:I-D05": 0
+  },
+  "invoice_hold_ids": [],
+  "unmatched_bank_ids": [],
+  "unmatched_ledger_ids": []
+}

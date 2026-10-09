@@ -1,0 +1,4 @@
+transaction_id,date,amount,currency,vendor_id,reference,transaction_type,memo
+A-H27,2026-09-05,-7.00,USD,,ANCHOR-H27,bank_fee,Authored fictional reservation
+B-H27,2026-09-20,-600.00,USD,V-H27,PAY-H27,vendor_payment,Authored fictional reservation
+B-H27-SECOND,2026-09-20,-500.00,USD,V-H27,PAY-H27,vendor_payment,Authored fictional reservation

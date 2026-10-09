@@ -1,0 +1,21 @@
+{
+  "schema_version": 2,
+  "case_id": "H09",
+  "feature": "partial",
+  "bank_closing_cents": 939300,
+  "ledger_closing_cents": 939300,
+  "bank_records": 2,
+  "ledger_lines": 8,
+  "matches": {
+    "A-H09": "ANCHOR-H09-CASH",
+    "B-H09": "P-H09-CASH"
+  },
+  "exceptions": [],
+  "proposals": [],
+  "ap_balances": {
+    "V-H09:I-H09": 22200
+  },
+  "invoice_hold_ids": [],
+  "unmatched_bank_ids": [],
+  "unmatched_ledger_ids": []
+}

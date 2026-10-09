@@ -1,0 +1,35 @@
+{
+  "schema_version": 2,
+  "case_id": "H22",
+  "feature": "fee_memo_only",
+  "bank_closing_cents": 996000,
+  "ledger_closing_cents": 999300,
+  "bank_records": 2,
+  "ledger_lines": 2,
+  "matches": {
+    "A-H22": "ANCHOR-H22-CASH"
+  },
+  "exceptions": [
+    {
+      "bank_id": "B-H22",
+      "ledger_line_id": null,
+      "reason": "MISSING_INVOICE",
+      "exposure_cents": 3300
+    },
+    {
+      "bank_id": "B-H22",
+      "ledger_line_id": null,
+      "reason": "UNMATCHED_CASH",
+      "exposure_cents": 3300
+    }
+  ],
+  "proposals": [],
+  "ap_balances": {},
+  "invoice_hold_ids": [
+    "B-H22"
+  ],
+  "unmatched_bank_ids": [
+    "B-H22"
+  ],
+  "unmatched_ledger_ids": []
+}

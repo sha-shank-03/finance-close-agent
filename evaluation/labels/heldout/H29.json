@@ -1,0 +1,35 @@
+{
+  "schema_version": 2,
+  "case_id": "H29",
+  "feature": "prior_cutoff",
+  "bank_closing_cents": 897100,
+  "ledger_closing_cents": 999300,
+  "bank_records": 2,
+  "ledger_lines": 6,
+  "matches": {
+    "A-H29": "ANCHOR-H29-CASH"
+  },
+  "exceptions": [
+    {
+      "bank_id": "B-H29",
+      "ledger_line_id": null,
+      "reason": "TIMING_DIFFERENCE",
+      "exposure_cents": 102200
+    },
+    {
+      "bank_id": "B-H29",
+      "ledger_line_id": null,
+      "reason": "UNMATCHED_CASH",
+      "exposure_cents": 102200
+    }
+  ],
+  "proposals": [],
+  "ap_balances": {
+    "V-H29:I-H29": 0
+  },
+  "invoice_hold_ids": [],
+  "unmatched_bank_ids": [
+    "B-H29"
+  ],
+  "unmatched_ledger_ids": []
+}

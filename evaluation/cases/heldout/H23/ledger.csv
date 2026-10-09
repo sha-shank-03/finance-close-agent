@@ -1,0 +1,5 @@
+entry_id,line_id,date,account,side,amount,currency,vendor_id,invoice_id,reference
+ANCHOR-H23,ANCHOR-H23-BANK_FEE_EXPENSE,2026-09-05,bank_fee_expense,debit,7.00,USD,,,ANCHOR-H23
+ANCHOR-H23,ANCHOR-H23-CASH,2026-09-05,cash,credit,7.00,USD,,,ANCHOR-H23
+P-H23,P-H23-BANK_FEE_EXPENSE,2026-09-20,bank_fee_expense,debit,34.00,USD,,,PAY-H23
+P-H23,P-H23-CASH,2026-09-20,cash,credit,34.00,USD,,,PAY-H23
