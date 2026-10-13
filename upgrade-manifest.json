@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "candidate_version": "u1-candidate-v1",
+  "state": "authored_not_accepted",
+  "milestone": "U1",
+  "source_anchor_commit": "652f15cf4dca6927235aa477e194604d94475c0c",
+  "branch": "codex/industry-upgrade",
+  "finance_code_sha256": "c404a522b6495476b13a7afdf705de9dc20d18f5ec14b0af32f27192853b3dad",
+  "prompt_version": "gateway-u1-v1",
+  "prompt_sha256": "ea4a5aabe423bdf1133223bc40153c9ff62430add9acf040fc99c21b4ebce54b",
+  "wire_version": 1,
+  "automatic_transport_retries": 0,
+  "dataset": "fixtures/u1/proposal",
+  "provenance": "One exposed worker-authored fictional MIT-licensed USD journey; synthetic local double only.",
+  "changed_files": [
+    {
+      "path": "README.md",
+      "status": "modified",
+      "v1_sha256": "3ad339d3cfc4514a45b0000954ea3a3906ad09bd702a51063970435676550084",
+      "candidate_sha256": "afe401e79fc401fe2c73c2ab4d2808d7673a90ad53daca1604ea6e8c868465fd"
+    },
+    {
+      "path": "docs/u1-gateway.md",
+      "status": "added",
+      "v1_sha256": null,
+      "candidate_sha256": "808d1547d384b95ad85fa92bb92e8f2889667f4631d45c0836b5f195e31da05f"
+    },
+    {
+      "path": "evaluation/gateway_acceptance.py",
+      "status": "added",
+      "v1_sha256": null,
+      "candidate_sha256": "2c08046191453bcb65a361a098fd6a774fc09ad8cc5431dc07f3cc27492cd862"
+    },
+    {
+      "path": "evaluation/gateway_transport.py",
+      "status": "added",
+      "v1_sha256": null,
+      "candidate_sha256": "a791f1ed04d4b9928b549af3bb326315af9f294684628abe023153f228cb03c8"
+    },
+    {
+      "path": "evaluation/gateway_verify.py",
+      "status": "added",
+      "v1_sha256": null,
+      "candidate_sha256": "36fc715f281f5daa4e5df6c13848c6288e885d5d68056e8fd00712b06656e18e"
+    },
+    {
+      "path": "finance_close/agent.py",
+      "status": "modified",
+      "v1_sha256": "82049232b7814d906c7f94c456cbefe8fc9f8c82b045bbfca770a7f0d3291db7",
+      "candidate_sha256": "eae063ba89d271f3aae972123018860a39d81e747541a681f95f4415b62adc41"
+    },
+    {
+      "path": "finance_close/cli.py",
+      "status": "modified",
+      "v1_sha256": "f7d506cef100485373bfff8d183fcd9a996f94debf8e810f08064f6c5b0f1aba",
+      "candidate_sha256": "805406ef248d90f77acf640b18c36df5ff5c5588542e37d81cd6f60d2ce08da5"
+    },
+    {
+      "path": "finance_close/gateway.py",
+      "status": "added",
+      "v1_sha256": null,
+      "candidate_sha256": "5b2fa95e6d803de5ca4b1e2b6cbebd565311b1876a04508274152e1be301d07c"
+    },
+    {
+      "path": "finance_close/gateway_journal.py",
+      "status": "added",
+      "v1_sha256": null,
+      "candidate_sha256": "844d4760ce1b802e87cde8f363079b7a4facc917a2b94b3a5c3b6c8b4c1ce67d"
+    },
+    {
+      "path": "finance_close/gateway_loop.py",
+      "status": "added",
+      "v1_sha256": null,
+      "candidate_sha256": "395f021efc51c616ef9a1f59421f8f5b935c7e207fc47ac8976f818394446783"
+    },
+    {
+      "path": "finance_close/gateway_tools.py",
+      "status": "added",
+      "v1_sha256": null,
+      "candidate_sha256": "0e6e48cd35f5493201ad0bfebc190600b86c258d54b659630086fbe0162025ba"
+    },
+    {
+      "path": "finance_close/ingest.py",
+      "status": "modified",
+      "v1_sha256": "65d521436a77768452b9adbb6bae5031846b1af12690d7785383dd75aeb7ddd1",
+      "candidate_sha256": "5949a0dc9e947792d0dbf1c23605629e2017f4da5b59892d92299654660905ee"
+    },
+    {
+      "path": "finance_close/invoice_aliases.py",
+      "status": "added",
+      "v1_sha256": null,
+      "candidate_sha256": "048d0797895721d2d4921e282f73b9c9b2d5f5b2f18a6bd46232e47e3a03dedb"
+    },
+    {
+      "path": "finance_close/net_worker.py",
+      "status": "added",
+      "v1_sha256": null,
+      "candidate_sha256": "9528bc345f7b0344b42a5f9b9d4f0426be63b1cf66ed20c31b0469af11065ae8"
+    },
+    {
+      "path": "finance_close/render.py",
+      "status": "modified",
+      "v1_sha256": "8da14195aef7ab826da3d4a36caf629c57bc163092b32ac928cf59e7dfd8fa55",
+      "candidate_sha256": "566808dfb4ff17d5dffae4bb1fce93fea7949698f52bad60caa60a90de7a8002"
+    },
+    {
+      "path": "fixtures/u1/proposal/bank.csv",
+      "status": "added",
+      "v1_sha256": null,
+      "candidate_sha256": "c8a4ff2d86c6bea78dd47c361a181326abeecd76357d00f2df48c786bc73372c"
+    },
+    {
+      "path": "fixtures/u1/proposal/invoices/original.txt",
+      "status": "added",
+      "v1_sha256": null,
+      "candidate_sha256": "391f3c3e4946110a8e5ce3398b14719d7aed81892450ecfc99fbbc71b2eb0fe1"
+    },
+    {
+      "path": "fixtures/u1/proposal/ledger.csv",
+      "status": "added",
+      "v1_sha256": null,
+      "candidate_sha256": "86b20db24725912a2d848e24eb149cb6ee7ab376d2894ec9b86f7973026f5f97"
+    },
+    {
+      "path": "fixtures/u1/proposal/manifest.json",
+      "status": "added",
+      "v1_sha256": null,
+      "candidate_sha256": "8fedd9cc47f1fd0646bcb172c5734d51be8d49496a8d2307df76c812151c032d"
+    },
+    {
+      "path": "tests/test_gateway_u1_pure.py",
+      "status": "added",
+      "v1_sha256": null,
+      "candidate_sha256": "614a0d373dd69f9e05a06a935e2a97a23d8e28ce78b3c2924896afb552dd8def"
+    },
+    {
+      "path": "tools/u1_pure.py",
+      "status": "added",
+      "v1_sha256": null,
+      "candidate_sha256": "addfcf38da9014d698a732452f1496e0650c2ba78dc1a76c5927bd3c9f63ffae"
+    }
+  ],
+  "v1_preservation": {
+    "freeze_manifest_sha256": "789aa6862f42e8c130cefba74a6460704f700ca9bcd4c6b299abc09242a6faf5",
+    "frozen_files_checked_without_scoring": 155,
+    "unchanged": true,
+    "published_first_failure_and_regression_evidence": "EVIDENCE.md unchanged; no historical score/freeze regenerated."
+  },
+  "executed_checks": {
+    "pure_components": {
+      "tests": 22,
+      "exit": 0,
+      "actual_test_sockets": 0,
+      "actual_test_children": 0
+    },
+    "changed_python_ast": {
+      "files": 15,
+      "passed": true
+    }
+  },
+  "unexecuted": [
+    "full regression suite",
+    "HTTP Gateway local-double journey",
+    "owned process/socket transport controls",
+    "independent end-to-end exact-cents/review verification",
+    "live inference",
+    "external sandbox integration"
+  ],
+  "live_calls": 0,
+  "credential_accessed": false,
+  "worker_self_acceptance": false
+}

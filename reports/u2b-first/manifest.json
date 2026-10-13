@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "summary_sha256": "19261fa3e23c0972b77fe0f2825e289ebdc236bae7f8fe177a087766c7e37f57",
+  "first_report_sha256": {
+    "dev": "b1e61e992de468317b265355bfc71075eed2ed6fb9f75734589d37537cfd20f0",
+    "capability": "fff69275a4fe614338ccf94fe4dab8f09d253758ef0171cd7940dd6c58e64508"
+  },
+  "first_code_fingerprint": "17e084d3080809e81aac3fdaf86fe9167df634ffd3d6f83cd538ef8a18f6d414"
+}

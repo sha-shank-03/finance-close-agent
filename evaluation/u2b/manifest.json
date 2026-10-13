@@ -1,0 +1,573 @@
+{
+  "schema_version": 1,
+  "dataset_version": "u2b-authored-v1",
+  "created_date": "2026-10-12",
+  "author": "finance-close-agent worker",
+  "license": "MIT fictional source/data",
+  "status": "authored_frozen_before_native_evaluation",
+  "split_counts": {
+    "dev": 16,
+    "capability": 16
+  },
+  "strata": [
+    "exact",
+    "amounts",
+    "duplicates",
+    "missing_invoice",
+    "ap_missing",
+    "partial",
+    "fees",
+    "timing_unsupported"
+  ],
+  "records": [
+    {
+      "case_id": "D11",
+      "split": "dev",
+      "stratum": "exact",
+      "variant": 1,
+      "input": "fixtures/u2b/dev/D11",
+      "label": "evaluation/u2b/labels/dev/D11.json",
+      "label_sha256": "b4eb8c0a2f17c7130ea7d0eaec6c4f13d0e3e89c55efeeb883b074ea384f9996",
+      "files": {
+        "fixtures/u2b/dev/D11/bank.csv": "fc8e779cac6317e4508178d2f6b8dacbc1b13af7b8b201a3ed7965ae90a4155b",
+        "fixtures/u2b/dev/D11/invoices/copy-1.txt": "2eda5b9573b0eb2f5da97c2b64cf61b41bd5948276d0a0e4a9ae248e0f164a5b",
+        "fixtures/u2b/dev/D11/ledger.csv": "4d1bfa1c72655e2439256c50604160f7acf5a13f297f4fa953d8b7ef9f2d3d10",
+        "fixtures/u2b/dev/D11/manifest.json": "bff4570636470b76fc0f892fd418d705f79aedb1c5d162f26c647dc698bc5565"
+      },
+      "author_exposed": true,
+      "lineage": "Independently authored U2-B dev exact variant1"
+    },
+    {
+      "case_id": "D12",
+      "split": "dev",
+      "stratum": "exact",
+      "variant": 2,
+      "input": "fixtures/u2b/dev/D12",
+      "label": "evaluation/u2b/labels/dev/D12.json",
+      "label_sha256": "effab90fe2ff6238876df2142f8e170ac88c9b0390e52ae2d46c0b1bf93cc7b5",
+      "files": {
+        "fixtures/u2b/dev/D12/bank.csv": "ca0d9767afa10fcd6d6ef6588a227fead5bfa7d79164dfa655d8a761952cf512",
+        "fixtures/u2b/dev/D12/invoices/copy-1.txt": "1e062ccf3c4ee7f27ea58f2ba42c92430c363322a1ce57e077eaed80cdae7354",
+        "fixtures/u2b/dev/D12/invoices/copy-2.txt": "8895875ea9accd9557b00cc81743f9825d97c4a84a68523a64039f81ce1d30b3",
+        "fixtures/u2b/dev/D12/ledger.csv": "f54ebe3c526453df2debbd049e5521e089e16bc20231be435efd9d10c4baf943",
+        "fixtures/u2b/dev/D12/manifest.json": "3e50e92eaafbd2cd7a26deb832e3b315846ce6ba34e3b8fef7c339a393c21896"
+      },
+      "author_exposed": true,
+      "lineage": "Independently authored U2-B dev exact variant2"
+    },
+    {
+      "case_id": "D21",
+      "split": "dev",
+      "stratum": "amounts",
+      "variant": 1,
+      "input": "fixtures/u2b/dev/D21",
+      "label": "evaluation/u2b/labels/dev/D21.json",
+      "label_sha256": "8f4deebfe3bd95fc2020d534c5c0dc49c0a746e167e7682ad4728384ce65c5d2",
+      "files": {
+        "fixtures/u2b/dev/D21/bank.csv": "ab3471f7b8df978c2c172c2478fd492e05401532a964f95450b5f38019f5f977",
+        "fixtures/u2b/dev/D21/invoices/copy-1.txt": "aaa00c293bb61e83029125bbb01cfaf1b88d752e2700045e02a4bd20bd0870dc",
+        "fixtures/u2b/dev/D21/ledger.csv": "aaaa522a246d8dde11b7f7f55d26648e6b82080a6279bab51b207b823d0fa663",
+        "fixtures/u2b/dev/D21/manifest.json": "b42430e8f85ed32ef470a53ef6e16c253469a2655d89fd65a62d7c67651bb406"
+      },
+      "author_exposed": true,
+      "lineage": "Independently authored U2-B dev amounts variant1"
+    },
+    {
+      "case_id": "D22",
+      "split": "dev",
+      "stratum": "amounts",
+      "variant": 2,
+      "input": "fixtures/u2b/dev/D22",
+      "label": "evaluation/u2b/labels/dev/D22.json",
+      "label_sha256": "354ec78ecc1750b38dbfef1d67ef31836dbf1276e9f423d22cb7c83532bb4a4e",
+      "files": {
+        "fixtures/u2b/dev/D22/bank.csv": "c73cd11269935ec1a088e7c251a027d7f2c46e327ae0cfaceb90dc41228f77f8",
+        "fixtures/u2b/dev/D22/invoices/copy-1.txt": "cccbf4d836b6e4897e9781541f5fb6cc04346faddf65b2dfa7d88903aadf63f4",
+        "fixtures/u2b/dev/D22/ledger.csv": "525b38c1e6a084b3f9d39501250d70a7e8fb37eb9d99416e0afdba39256edf2d",
+        "fixtures/u2b/dev/D22/manifest.json": "d2c806dc8f7f5b39c603b952ebda61cda9df030a1fb3bb24eea2ef13d06fd283"
+      },
+      "author_exposed": true,
+      "lineage": "Independently authored U2-B dev amounts variant2"
+    },
+    {
+      "case_id": "D31",
+      "split": "dev",
+      "stratum": "duplicates",
+      "variant": 1,
+      "input": "fixtures/u2b/dev/D31",
+      "label": "evaluation/u2b/labels/dev/D31.json",
+      "label_sha256": "eee5b0e6c20306709bcda6ac03d1bed89a6f225332436161f7df5138e9b0564a",
+      "files": {
+        "fixtures/u2b/dev/D31/bank.csv": "9638fe0e21c1f8c8b0a8c73c9a83cf18bdbbf96b64fe4b41c5df3bca536103df",
+        "fixtures/u2b/dev/D31/invoices/copy-1.txt": "5587c3e2bdd0fe950400d43ca8e969f8a1324826d918faf21d35cff25ab0509b",
+        "fixtures/u2b/dev/D31/ledger.csv": "c4125b83bba2d579c43e0f83043e506037ba5341630b79033380e154ce5e3c86",
+        "fixtures/u2b/dev/D31/manifest.json": "834e2a8219916702fbcea507bb39ccb38272629c4bc429f36603dc9683d71966"
+      },
+      "author_exposed": true,
+      "lineage": "Independently authored U2-B dev duplicates variant1"
+    },
+    {
+      "case_id": "D32",
+      "split": "dev",
+      "stratum": "duplicates",
+      "variant": 2,
+      "input": "fixtures/u2b/dev/D32",
+      "label": "evaluation/u2b/labels/dev/D32.json",
+      "label_sha256": "f15cec98d94b3939ca5060d4a32306f9cd35b148f7d7abcc58f84bcba195e028",
+      "files": {
+        "fixtures/u2b/dev/D32/bank.csv": "778247116d950aa5f1b59a26f631f4e38a14db9206406fd1c5302f0468f9edc9",
+        "fixtures/u2b/dev/D32/invoices/copy-1.txt": "9cbe2a4abd611a88817c99cd2625915e801bb452b0e8e94187c1847a1b1e1d88",
+        "fixtures/u2b/dev/D32/ledger.csv": "042563aa79ce3a0dd1dcf493a67a937de6b88f3e1b04321496f9283d4191d17c",
+        "fixtures/u2b/dev/D32/manifest.json": "b8bb3d58716d9c8b036051d33c7bc39468117c9afe0fe65f4285da3c8b1492aa"
+      },
+      "author_exposed": true,
+      "lineage": "Independently authored U2-B dev duplicates variant2"
+    },
+    {
+      "case_id": "D41",
+      "split": "dev",
+      "stratum": "missing_invoice",
+      "variant": 1,
+      "input": "fixtures/u2b/dev/D41",
+      "label": "evaluation/u2b/labels/dev/D41.json",
+      "label_sha256": "8645c96d2eb03c35e5d2ca701b2a0bfff117cad2a95ba5e675e4e66a732b4fe7",
+      "files": {
+        "fixtures/u2b/dev/D41/bank.csv": "f08a1e2e5fe07d22138c08650107b1977dc73a6030182dbf61eee1b7712ef9ec",
+        "fixtures/u2b/dev/D41/ledger.csv": "ba4931d8eff022c78093689292913884e4c680d5bab6c8c2534b47347590cbe1",
+        "fixtures/u2b/dev/D41/manifest.json": "490346e0f869350ba49150e01a934669490392a9238c2071944d0a3c15b9b142"
+      },
+      "author_exposed": true,
+      "lineage": "Independently authored U2-B dev missing_invoice variant1"
+    },
+    {
+      "case_id": "D42",
+      "split": "dev",
+      "stratum": "missing_invoice",
+      "variant": 2,
+      "input": "fixtures/u2b/dev/D42",
+      "label": "evaluation/u2b/labels/dev/D42.json",
+      "label_sha256": "3740b073590ff14b528914838107688ebfc3431f09b4347b99a2cb102f931cb2",
+      "files": {
+        "fixtures/u2b/dev/D42/bank.csv": "1ac704c53ab8acf13b4af8ea8c7a9baf14432e12371a220349e75b384c9a73dc",
+        "fixtures/u2b/dev/D42/invoices/copy-1.txt": "7b4dbc0f631889810aa151317004eda8f91ccf3e85aba7452b81dd0ce1a8dc9c",
+        "fixtures/u2b/dev/D42/invoices/copy-2.txt": "4af6bb8e82195c2888da6ac6e53823095609dbc19bf29875525eca97fed0c5c6",
+        "fixtures/u2b/dev/D42/ledger.csv": "8a25000f329477381eb03fd91fa2bea651e62f1d920e156cae4af9de5d2020cb",
+        "fixtures/u2b/dev/D42/manifest.json": "65cd8df14b34ba229bf29b8d6bb5dde43e8eac6cf7f697e7c2f858b734618223"
+      },
+      "author_exposed": true,
+      "lineage": "Independently authored U2-B dev missing_invoice variant2"
+    },
+    {
+      "case_id": "D51",
+      "split": "dev",
+      "stratum": "ap_missing",
+      "variant": 1,
+      "input": "fixtures/u2b/dev/D51",
+      "label": "evaluation/u2b/labels/dev/D51.json",
+      "label_sha256": "ac573d122c672fa8f59b286427125e55f244c61df21244c77a358da77c08a008",
+      "files": {
+        "fixtures/u2b/dev/D51/bank.csv": "1f4404a80287d9e51785fc902006157705ba6f385f718065d605db07e6c44cb0",
+        "fixtures/u2b/dev/D51/invoices/copy-1.txt": "7fb71f3e790ecd8c1dadd75ceb8533eb231c37b19204f1baddab8b44452fd89f",
+        "fixtures/u2b/dev/D51/ledger.csv": "9848d78a1765393c2393c31f5f2946ee5e6820b3df362cd5bab76026a45ba124",
+        "fixtures/u2b/dev/D51/manifest.json": "e389ee2ec330c02391c8a742d6daed4c616edb0403e929153e28039c1aaf04c0"
+      },
+      "author_exposed": true,
+      "lineage": "Independently authored U2-B dev ap_missing variant1"
+    },
+    {
+      "case_id": "D52",
+      "split": "dev",
+      "stratum": "ap_missing",
+      "variant": 2,
+      "input": "fixtures/u2b/dev/D52",
+      "label": "evaluation/u2b/labels/dev/D52.json",
+      "label_sha256": "518ebeb397a5a2bfb5745f328e1803f0704281dbe4987063d8e029e6a5e791bb",
+      "files": {
+        "fixtures/u2b/dev/D52/bank.csv": "74b20cb0df31c2c2bf58ef03af4bdc8ae469809aa0d4a897731828b495975af3",
+        "fixtures/u2b/dev/D52/invoices/copy-1.txt": "08a4cd5382795bc1012de3b31f9715dc7f23c1a730dbc9c8619ec33d06cf2bd2",
+        "fixtures/u2b/dev/D52/ledger.csv": "8c56b004cfdf575837eb6009d59936505022a63c2332483f35b2bb31a225a246",
+        "fixtures/u2b/dev/D52/manifest.json": "71f4be12ee671790d561379c3d3d4dd483d3d18e384d7b9b5edd6bd664625a30"
+      },
+      "author_exposed": true,
+      "lineage": "Independently authored U2-B dev ap_missing variant2"
+    },
+    {
+      "case_id": "D61",
+      "split": "dev",
+      "stratum": "partial",
+      "variant": 1,
+      "input": "fixtures/u2b/dev/D61",
+      "label": "evaluation/u2b/labels/dev/D61.json",
+      "label_sha256": "d06ad74299cb63f540a9a54a7f110301bdd96353438f5c43967b1f317739cda4",
+      "files": {
+        "fixtures/u2b/dev/D61/bank.csv": "75bde6c5333498b02acaeb84b33840ac50e8cab0575f9dd09435f4d27d99f048",
+        "fixtures/u2b/dev/D61/invoices/copy-1.txt": "adc42fcc4b1e1c0082303719a594ff3b6fc05730ea76a3c0744cf5b2705b4458",
+        "fixtures/u2b/dev/D61/ledger.csv": "d019be02516ca99681e169f5ce5aad51fc9f6f22555f57dfa72123efa0e96cf4",
+        "fixtures/u2b/dev/D61/manifest.json": "fe52024294262fb1a53364eb24c4ed18111599a2629ea44e2b8639a46b874ae4"
+      },
+      "author_exposed": true,
+      "lineage": "Independently authored U2-B dev partial variant1"
+    },
+    {
+      "case_id": "D62",
+      "split": "dev",
+      "stratum": "partial",
+      "variant": 2,
+      "input": "fixtures/u2b/dev/D62",
+      "label": "evaluation/u2b/labels/dev/D62.json",
+      "label_sha256": "6943e429bc21eb68556add8d5be03ed991780803690fdcdc32c7de21d2b774de",
+      "files": {
+        "fixtures/u2b/dev/D62/bank.csv": "d9bc3a23bc2c9f74c20938cc9eaf891e72c226b5cdc0769f981a7b2f8e957a5f",
+        "fixtures/u2b/dev/D62/invoices/copy-1.txt": "6e2d7a99b24bb399592ad867910cd481dd066bb8150f0957b28e1c9abbab10d0",
+        "fixtures/u2b/dev/D62/ledger.csv": "5128ad81ed3950d9ccd25f4e976c17a6350f34230c980545ce1a4911f5451d51",
+        "fixtures/u2b/dev/D62/manifest.json": "bf63493b7e487a18d991cf211eb793bd6745d220bb2d02135a2efcf9ac482639"
+      },
+      "author_exposed": true,
+      "lineage": "Independently authored U2-B dev partial variant2"
+    },
+    {
+      "case_id": "D71",
+      "split": "dev",
+      "stratum": "fees",
+      "variant": 1,
+      "input": "fixtures/u2b/dev/D71",
+      "label": "evaluation/u2b/labels/dev/D71.json",
+      "label_sha256": "ddcf456837173345a32951d55715895bddf2091e0fa9dc20bc41fbbf528541ad",
+      "files": {
+        "fixtures/u2b/dev/D71/bank.csv": "344f16757666fe9737e618ac9abaf91c971370639d25234e1a7afb90d6b45625",
+        "fixtures/u2b/dev/D71/ledger.csv": "5bfc4d72864ffe52df0d1be9f707d8cf2fe662440a94a155705cb950895ffb3d",
+        "fixtures/u2b/dev/D71/manifest.json": "36679f332c8a402ec6e8f780db605a9c7c7c485f290349c9d06d0b5b9fb5b368"
+      },
+      "author_exposed": true,
+      "lineage": "Independently authored U2-B dev fees variant1"
+    },
+    {
+      "case_id": "D72",
+      "split": "dev",
+      "stratum": "fees",
+      "variant": 2,
+      "input": "fixtures/u2b/dev/D72",
+      "label": "evaluation/u2b/labels/dev/D72.json",
+      "label_sha256": "043a29b24950df639adda693dd7095cd0ca174af1b85ef125386203bcccf8e33",
+      "files": {
+        "fixtures/u2b/dev/D72/bank.csv": "4946a40427a05217ba664454d30e6d20398993a9353a3dbac3a41e6e5d1ef7cd",
+        "fixtures/u2b/dev/D72/ledger.csv": "4efd91531f400a699fda06f994dc2e3fc41aeb227de925097666ece139612210",
+        "fixtures/u2b/dev/D72/manifest.json": "b0820f156b28078cab008ed2d19bd5a794ff04932b7607768909fb00f9bd77a1"
+      },
+      "author_exposed": true,
+      "lineage": "Independently authored U2-B dev fees variant2"
+    },
+    {
+      "case_id": "D81",
+      "split": "dev",
+      "stratum": "timing_unsupported",
+      "variant": 1,
+      "input": "fixtures/u2b/dev/D81",
+      "label": "evaluation/u2b/labels/dev/D81.json",
+      "label_sha256": "425a7c06b87fc9acdf69537d68d5233400801b7f7e5690f08e800d1cbc6ddf11",
+      "files": {
+        "fixtures/u2b/dev/D81/bank.csv": "275c49b971ac81844c5a03968db82d3c1c1887cb6bb7ddecc9d9d12c397b555a",
+        "fixtures/u2b/dev/D81/invoices/copy-1.txt": "c19eb4858f38274b81f12ddbfc9abe25b7af03dde3ff14914c4737a730e10fda",
+        "fixtures/u2b/dev/D81/ledger.csv": "682b4e5b58d6dcad3b923d33721309dee93467da228241291299b744ab980ffa",
+        "fixtures/u2b/dev/D81/manifest.json": "accbc4fe7e88ed88c21c6e73a6855e30574163f03c9ea64b277333e5e4a8ac4e"
+      },
+      "author_exposed": true,
+      "lineage": "Independently authored U2-B dev timing_unsupported variant1"
+    },
+    {
+      "case_id": "D82",
+      "split": "dev",
+      "stratum": "timing_unsupported",
+      "variant": 2,
+      "input": "fixtures/u2b/dev/D82",
+      "label": "evaluation/u2b/labels/dev/D82.json",
+      "label_sha256": "e118083a6042a291fd713c3a80d46aab6240f2fe3e00dd56b61057ac627a5d26",
+      "files": {
+        "fixtures/u2b/dev/D82/bank.csv": "c4396eb0296b977f1d011bf997352516c97688ff6a7ac8566d8aca4e7b641db9",
+        "fixtures/u2b/dev/D82/invoices/copy-1.txt": "38fa2379822fa0b1594a95de016d8581d03fe80b44dc49abb381fabc767aee7c",
+        "fixtures/u2b/dev/D82/ledger.csv": "01eb0ca73c8daa6856db594d7316a47170edfdda901ac3bdd8bbe81299795976",
+        "fixtures/u2b/dev/D82/manifest.json": "f28208b816fae8a8f481aa66a7c295cd5e1d1f41dea101b6cc00d0a14e5d301f"
+      },
+      "author_exposed": true,
+      "lineage": "Independently authored U2-B dev timing_unsupported variant2"
+    },
+    {
+      "case_id": "C11",
+      "split": "capability",
+      "stratum": "exact",
+      "variant": 1,
+      "input": "fixtures/u2b/capability/C11",
+      "label": "evaluation/u2b/labels/capability/C11.json",
+      "label_sha256": "a96723fbd9ee6819522ead3562b2457bbc5c57fbb91907bb4ac1c328bd0ee9e0",
+      "files": {
+        "fixtures/u2b/capability/C11/bank.csv": "00d7f659f27a719a6bc4a16651c120dd58412f3d04d0c1aa5f828d32ab9cd9b0",
+        "fixtures/u2b/capability/C11/invoices/copy-1.txt": "5827992ca6cfc7af8dfec4f1567b3dbdb7d1d5bfe865a4ca5e7934456182a440",
+        "fixtures/u2b/capability/C11/ledger.csv": "a51f8afc2d3a5c5af22d73494e7c9c3701a6e910b2cbb1c7da7c3119e8e50f34",
+        "fixtures/u2b/capability/C11/manifest.json": "6af56022a24630b15541afcc38ed47dc79b965f68252a351f0ea2178b0143ba9"
+      },
+      "author_exposed": true,
+      "lineage": "Independently authored U2-B capability exact variant1"
+    },
+    {
+      "case_id": "C12",
+      "split": "capability",
+      "stratum": "exact",
+      "variant": 2,
+      "input": "fixtures/u2b/capability/C12",
+      "label": "evaluation/u2b/labels/capability/C12.json",
+      "label_sha256": "8c8d32ca108fdb05bda28d55909ea4bb6f0167467c319c7211d7f639d619c325",
+      "files": {
+        "fixtures/u2b/capability/C12/bank.csv": "57860287b5762a5d977a538aa02450531509a7dbc505b568640d7efe7bc4b046",
+        "fixtures/u2b/capability/C12/invoices/copy-1.txt": "10539490b8cf65a76a08ceb59a52d7cd840985511ae81deba12f27119e117678",
+        "fixtures/u2b/capability/C12/ledger.csv": "dd4648fecafa7ed3f022f5b04cb3e925b50046b6dc488b73106190521a48b9f3",
+        "fixtures/u2b/capability/C12/manifest.json": "f0f830c566b9a3f45e7376ee4d698f655b123b00f78648486702ade493fbbe44"
+      },
+      "author_exposed": true,
+      "lineage": "Independently authored U2-B capability exact variant2"
+    },
+    {
+      "case_id": "C21",
+      "split": "capability",
+      "stratum": "amounts",
+      "variant": 1,
+      "input": "fixtures/u2b/capability/C21",
+      "label": "evaluation/u2b/labels/capability/C21.json",
+      "label_sha256": "17b26f05142aaad397afbed7ea19c703f399d038d20cfbe92c2332c0019dc06c",
+      "files": {
+        "fixtures/u2b/capability/C21/bank.csv": "d4489a634237b40c67e83b3e78523a470596aadd3a0ab0ac202eba797079564d",
+        "fixtures/u2b/capability/C21/invoices/copy-1.txt": "7c8170a9eab805c7ff2bcdc7a6230b455fd338d63848c2f0c1731b10170c238a",
+        "fixtures/u2b/capability/C21/ledger.csv": "a432e96227763e8118752ca0062e849e488277f0759de547b2beac3e3c59ca21",
+        "fixtures/u2b/capability/C21/manifest.json": "d4d7936f1ecbe7f5a3eb36458463bb94f50e591d1ec3f792cd101804cb44878b"
+      },
+      "author_exposed": true,
+      "lineage": "Independently authored U2-B capability amounts variant1"
+    },
+    {
+      "case_id": "C22",
+      "split": "capability",
+      "stratum": "amounts",
+      "variant": 2,
+      "input": "fixtures/u2b/capability/C22",
+      "label": "evaluation/u2b/labels/capability/C22.json",
+      "label_sha256": "90df6e2fee848fc483e2c1c1b1a7ad25a0e2ecba2d498490e904588e497eb563",
+      "files": {
+        "fixtures/u2b/capability/C22/bank.csv": "a5e812221577719a294dad9eb3b0ae0147b96fbfd3e020823b034eec43064815",
+        "fixtures/u2b/capability/C22/invoices/copy-1.txt": "8399842e8daf04ae654717f9015cd32b8cb06c41d04fa4dac12a4d55fd65e1ce",
+        "fixtures/u2b/capability/C22/invoices/copy-2.txt": "adec50e2b67ebd957483c1dcbdf3cee6c35ca1cb2122292519d27410e9bd1d8e",
+        "fixtures/u2b/capability/C22/ledger.csv": "266f26e3e9359279735a2b94bdfc519bed5a9de98a64d6522a9f1203bc2e878e",
+        "fixtures/u2b/capability/C22/manifest.json": "08df2a03aeadac3bca2a29ea5a5717de68d160a2b43e34ff78f5c17bc9389e01"
+      },
+      "author_exposed": true,
+      "lineage": "Independently authored U2-B capability amounts variant2"
+    },
+    {
+      "case_id": "C31",
+      "split": "capability",
+      "stratum": "duplicates",
+      "variant": 1,
+      "input": "fixtures/u2b/capability/C31",
+      "label": "evaluation/u2b/labels/capability/C31.json",
+      "label_sha256": "95021ab53e3834dc2e16507beda581dd331c704822338fe02a795978688acea7",
+      "files": {
+        "fixtures/u2b/capability/C31/bank.csv": "6ed52bc6f7ee0c5d982ccbfe8dae153541b0afe2d2893f2ce28d697fe19e76bf",
+        "fixtures/u2b/capability/C31/invoices/copy-1.txt": "a926b908749a4d7ff7cbb69f73484e86235f9c0f2a634dc87bc15ee46870ff46",
+        "fixtures/u2b/capability/C31/ledger.csv": "4aa95ceb68812cd2eba5001933ee478e9cbb0eb8a6243df6e26902b9b62536e3",
+        "fixtures/u2b/capability/C31/manifest.json": "6a52126abd8aa5aee457806deb2844829aa729c4eef1260835bbf4101d41cbe4"
+      },
+      "author_exposed": true,
+      "lineage": "Independently authored U2-B capability duplicates variant1"
+    },
+    {
+      "case_id": "C32",
+      "split": "capability",
+      "stratum": "duplicates",
+      "variant": 2,
+      "input": "fixtures/u2b/capability/C32",
+      "label": "evaluation/u2b/labels/capability/C32.json",
+      "label_sha256": "7082a8f92149ca8a9ec6273ab01d46eb27dc4604e1dd9676a6c922c0465ed79d",
+      "files": {
+        "fixtures/u2b/capability/C32/bank.csv": "77c2487da7b5bbc7175a52ff127b293394dbcdbb1c9a910ea678605ef05c1a62",
+        "fixtures/u2b/capability/C32/invoices/copy-1.txt": "60bbc382a24b0cf6897b1eda7229a5d35622acd21e14c2463ebfb82932bd8d97",
+        "fixtures/u2b/capability/C32/invoices/copy-2.txt": "eec3288e85ab506b668c1af51392b1768f086cd4e90726cd7dc6a6bf586de034",
+        "fixtures/u2b/capability/C32/ledger.csv": "d6d2839f52868b83ceda10bfae551083221cb09ef768439918b988c37ee59850",
+        "fixtures/u2b/capability/C32/manifest.json": "5a2b93f341c8b5c33e1ae7bcedb1dc16c51c1a2441132ea0b57bfa51eef259c0"
+      },
+      "author_exposed": true,
+      "lineage": "Independently authored U2-B capability duplicates variant2"
+    },
+    {
+      "case_id": "C41",
+      "split": "capability",
+      "stratum": "missing_invoice",
+      "variant": 1,
+      "input": "fixtures/u2b/capability/C41",
+      "label": "evaluation/u2b/labels/capability/C41.json",
+      "label_sha256": "44563b84d1b449697e3f82bb6ce456613d81e1c947f3f685f93efedc3387ffdb",
+      "files": {
+        "fixtures/u2b/capability/C41/bank.csv": "caeee06a11a23f77bf1f64979fa7b93cc4e8dde310c73f93f55a7edbe5538574",
+        "fixtures/u2b/capability/C41/ledger.csv": "583dd9d140390b4d53f67843b014f5b9047033a9865d80cf3592a48b89ff9d7c",
+        "fixtures/u2b/capability/C41/manifest.json": "6f304d65b7a02eed80d1220fe2b97d2749ad3f94a6313c989feccd28eeb35d46"
+      },
+      "author_exposed": true,
+      "lineage": "Independently authored U2-B capability missing_invoice variant1"
+    },
+    {
+      "case_id": "C42",
+      "split": "capability",
+      "stratum": "missing_invoice",
+      "variant": 2,
+      "input": "fixtures/u2b/capability/C42",
+      "label": "evaluation/u2b/labels/capability/C42.json",
+      "label_sha256": "eaa7eceda1910396fd1d8eb7bc3be1dc6abc67073fabee32f73a2f031148cc8e",
+      "files": {
+        "fixtures/u2b/capability/C42/bank.csv": "64b9b04c7c3cc5f32d074eee946a39a05d022d1b91a00653f7d4e6b8a46dcc8d",
+        "fixtures/u2b/capability/C42/invoices/copy-1.txt": "435ac596b333054e6eaf93933641787684d788d8049c3fb4c7a5f2bc3091b6e3",
+        "fixtures/u2b/capability/C42/invoices/copy-2.txt": "6287eec2e6d7fbbd4b966e3de539c2e6e08a2892efb9049ee2bc41eab0effa26",
+        "fixtures/u2b/capability/C42/ledger.csv": "82d029804e980b8c58936b03638553d38fba3c16acf622dd901960c14c2e12c3",
+        "fixtures/u2b/capability/C42/manifest.json": "b73a0505745f01f2d2ceeee010db9d476e88e0ea770e3fad5e6ae5b62f16798f"
+      },
+      "author_exposed": true,
+      "lineage": "Independently authored U2-B capability missing_invoice variant2"
+    },
+    {
+      "case_id": "C51",
+      "split": "capability",
+      "stratum": "ap_missing",
+      "variant": 1,
+      "input": "fixtures/u2b/capability/C51",
+      "label": "evaluation/u2b/labels/capability/C51.json",
+      "label_sha256": "a5a6bab635a6a03c3e30d7d47380fa5897948c523e6d3a605f25d1842954d0a9",
+      "files": {
+        "fixtures/u2b/capability/C51/bank.csv": "b28cd723ab292ea20b90343554bf54f44513131cc5db439d1e63cb1fa3f88f46",
+        "fixtures/u2b/capability/C51/invoices/copy-1.txt": "a376581e57036780d539f41cd2c6be5a0d359aff2fb0ba55e6f25678b7b1e2d8",
+        "fixtures/u2b/capability/C51/ledger.csv": "8acbcca4c0f92fd593eba00b07b784d1cf0a9c475f1363202d981891cd536489",
+        "fixtures/u2b/capability/C51/manifest.json": "f9bb241e49cf39abd3ee627da808f630347f1d70cb765ecfc58b65bd4057f906"
+      },
+      "author_exposed": true,
+      "lineage": "Independently authored U2-B capability ap_missing variant1"
+    },
+    {
+      "case_id": "C52",
+      "split": "capability",
+      "stratum": "ap_missing",
+      "variant": 2,
+      "input": "fixtures/u2b/capability/C52",
+      "label": "evaluation/u2b/labels/capability/C52.json",
+      "label_sha256": "2b9476538b938fc86f5c02a7c1399ffda915c36920aaaf0601362b11235ed5eb",
+      "files": {
+        "fixtures/u2b/capability/C52/bank.csv": "5307b5c582791dc29321e046d1ce18b90038c7f505c68dd5d6a045c486f02c78",
+        "fixtures/u2b/capability/C52/invoices/copy-1.txt": "d774e54593a922173ad19c1a6a50950a5ed370bd3030db2c27de87c0917ac34a",
+        "fixtures/u2b/capability/C52/ledger.csv": "1e6686680bedf5877f2e797ab5860c0fddd73d548090e5e0f321a74b977c2ca2",
+        "fixtures/u2b/capability/C52/manifest.json": "aab8db83c333ed1a1269c2f4648d4a04c41dd61bb165168b9f86e506f65fe348"
+      },
+      "author_exposed": true,
+      "lineage": "Independently authored U2-B capability ap_missing variant2"
+    },
+    {
+      "case_id": "C61",
+      "split": "capability",
+      "stratum": "partial",
+      "variant": 1,
+      "input": "fixtures/u2b/capability/C61",
+      "label": "evaluation/u2b/labels/capability/C61.json",
+      "label_sha256": "e3a9c33663742bef2e989c206f186ce23fafa131eea63dc6c66f5e70029978cf",
+      "files": {
+        "fixtures/u2b/capability/C61/bank.csv": "25e21442979c76aaaa0100c816e92c5c3aaaf4ddb7d10f079f48b87c82c7f4d7",
+        "fixtures/u2b/capability/C61/invoices/copy-1.txt": "58da082e2d4d72c472b21489a0dbc68f46288526097e418c7926512711d30670",
+        "fixtures/u2b/capability/C61/ledger.csv": "810cf7c125074c6da2f4ad3b59f9a2086b3b0dd7f908e91d40047a760acbbc05",
+        "fixtures/u2b/capability/C61/manifest.json": "1f12b0595581c8ea49263470f7773feb3c3f0a21eb31737b168f01aad0efa6d8"
+      },
+      "author_exposed": true,
+      "lineage": "Independently authored U2-B capability partial variant1"
+    },
+    {
+      "case_id": "C62",
+      "split": "capability",
+      "stratum": "partial",
+      "variant": 2,
+      "input": "fixtures/u2b/capability/C62",
+      "label": "evaluation/u2b/labels/capability/C62.json",
+      "label_sha256": "e517a721ffdce80251004dbcb5d6a86791d8397d1247a7efea445c12093264a9",
+      "files": {
+        "fixtures/u2b/capability/C62/bank.csv": "d1c14088bcd4b2f094dcb2c9185c20915020bd61849638be36c0370a1f66b250",
+        "fixtures/u2b/capability/C62/invoices/copy-1.txt": "80bca80f99cb4c2b3f1e7079a25fbf8e114b5339bd9a915b4934de116f74c654",
+        "fixtures/u2b/capability/C62/ledger.csv": "e80fee55694ab888a9fd136f7c6e2c5b6fab4eec91f7b20166992fb6c5d20891",
+        "fixtures/u2b/capability/C62/manifest.json": "f453cf2b45c037498aea76b324afca4cb07682f1a9bb85b307729b9af59ae8f1"
+      },
+      "author_exposed": true,
+      "lineage": "Independently authored U2-B capability partial variant2"
+    },
+    {
+      "case_id": "C71",
+      "split": "capability",
+      "stratum": "fees",
+      "variant": 1,
+      "input": "fixtures/u2b/capability/C71",
+      "label": "evaluation/u2b/labels/capability/C71.json",
+      "label_sha256": "366c1934ebf63fd4841d4763d0fe58b0d54210d50ee0eca5171d490490c6b3ab",
+      "files": {
+        "fixtures/u2b/capability/C71/bank.csv": "02ffd6c188fdbb3a24f7838f1938b4f0f2bef80912b45f8c78b1c8e5aea63f54",
+        "fixtures/u2b/capability/C71/ledger.csv": "15aa1cf542d752657f406bf7a3f30ef902d8e0cf632fedb4e853c35b35a95643",
+        "fixtures/u2b/capability/C71/manifest.json": "cb5d8b7ecb1f0649515bca24213235109993858e8b8dd48ffea8280b303bf022"
+      },
+      "author_exposed": true,
+      "lineage": "Independently authored U2-B capability fees variant1"
+    },
+    {
+      "case_id": "C72",
+      "split": "capability",
+      "stratum": "fees",
+      "variant": 2,
+      "input": "fixtures/u2b/capability/C72",
+      "label": "evaluation/u2b/labels/capability/C72.json",
+      "label_sha256": "123509663438326efea1e3ff0b1d8e8ce7b1ee877474c2f4ff9d7fedcc32c129",
+      "files": {
+        "fixtures/u2b/capability/C72/bank.csv": "0087facbff29c21906e27a235df103a8e332d512cac177770d5e88d6fbe4d777",
+        "fixtures/u2b/capability/C72/ledger.csv": "4c9b83bd5ebc85e04bd7272c2584aa3966be5498fb67f652e265fa96b8178117",
+        "fixtures/u2b/capability/C72/manifest.json": "c0822347ad8bea926fbe99c732fa973646146f8a7e007f47235d7141f3849f91"
+      },
+      "author_exposed": true,
+      "lineage": "Independently authored U2-B capability fees variant2"
+    },
+    {
+      "case_id": "C81",
+      "split": "capability",
+      "stratum": "timing_unsupported",
+      "variant": 1,
+      "input": "fixtures/u2b/capability/C81",
+      "label": "evaluation/u2b/labels/capability/C81.json",
+      "label_sha256": "a28fa28e6b5254ff13bfd304e0abacdd2fadbd2b532e0a50d747ed3a48b71e52",
+      "files": {
+        "fixtures/u2b/capability/C81/bank.csv": "fd82fade7f1cef6faae0505237e00fe229aa376dd433bbc880ed962914f08cdf",
+        "fixtures/u2b/capability/C81/invoices/copy-1.txt": "c3251bfa2a34326a22adf90f216085dd52b0603e704832b17ff3f978ad42914b",
+        "fixtures/u2b/capability/C81/ledger.csv": "40cfa2365b73b9cc4708af6b9fc2086613e3aa06160aa7da83cd7d44bbba3f80",
+        "fixtures/u2b/capability/C81/manifest.json": "0994f3f0f57569f232b013c155d717dc274136c60713dfa927c85032086f30e9"
+      },
+      "author_exposed": true,
+      "lineage": "Independently authored U2-B capability timing_unsupported variant1"
+    },
+    {
+      "case_id": "C82",
+      "split": "capability",
+      "stratum": "timing_unsupported",
+      "variant": 2,
+      "input": "fixtures/u2b/capability/C82",
+      "label": "evaluation/u2b/labels/capability/C82.json",
+      "label_sha256": "9ee68bf92ad60f61f47e6fd92b81632788a9d9e80eb3970a564ef97b9b310481",
+      "files": {
+        "fixtures/u2b/capability/C82/bank.csv": "38d46e33cebe2a1a084ab9515d350292800d9c43d582946179d0f1c8848b82b0",
+        "fixtures/u2b/capability/C82/invoices/copy-1.txt": "921c170c1137eb90856e92e35f2c2f9acfcaea07f458e5b3a21606cc034f6c7b",
+        "fixtures/u2b/capability/C82/ledger.csv": "1d54c4734a16fa15ab8504030347c2ce4f2be0c5a2fbcd0446ae3c31eb09d8c7",
+        "fixtures/u2b/capability/C82/manifest.json": "8bd001479b61b4547b4e011bcbf3a88d283d88979931f5ccf167a43f9a5e9bf9"
+      },
+      "author_exposed": true,
+      "lineage": "Independently authored U2-B capability timing_unsupported variant2"
+    }
+  ],
+  "author_exposed": true,
+  "scoring_executed": false,
+  "main_unseen_tasks_created_or_inspected": 0,
+  "construction_similarity": "Both sets share authored finance issue families. Capability changes structure (multi-bank/multi-ledger, conflicts, history/cutoff/reservation dependencies); not independent external or blind distribution.",
+  "historical_regression": "Original12 development/32 exposed cases and freezes untouched; not scored by this slice.",
+  "quality_gate": "Report all states/failures/denominators; no positive uplift or numeric quality target."
+}

@@ -1,0 +1,2 @@
+transaction_id,date,amount,currency,vendor_id,reference,transaction_type,memo
+B-U1,2026-09-12,-600.00,USD,V-U1,transfer_42,vendor_payment,Fictional installment remittance

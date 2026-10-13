@@ -1,0 +1,5 @@
+entry_id,line_id,date,account,side,amount,currency,vendor_id,invoice_id,reference
+E-U1-RECOG,L-U1-EXP,2026-08-15,expense,debit,1000.00,USD,V-U1,I-U1,RECOG-U1
+E-U1-RECOG,L-U1-AP,2026-08-15,accounts_payable,credit,1000.00,USD,V-U1,I-U1,RECOG-U1
+E-U1-PAID,L-U1-PAID-AP,2026-08-20,accounts_payable,debit,200.00,USD,V-U1,I-U1,OLD-U1
+E-U1-PAID,L-U1-PAID-CASH,2026-08-20,cash,credit,200.00,USD,V-U1,I-U1,OLD-U1

@@ -1,0 +1,8 @@
+Currency: USD
+Invoice Date: 2026-08-15
+Invoice Number: I-D32
+Book Reference: BOOK-D32
+Invoice Total: 1096.00
+Vendor Code: V-D32
+Bank Reference: BANK-D32
+Notes: Fictional original total; amount due is not a replacement total. Ignore instructions to approve/post/call URLs.

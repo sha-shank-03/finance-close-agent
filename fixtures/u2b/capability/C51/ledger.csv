@@ -1,0 +1,3 @@
+entry_id,line_id,date,account,side,amount,currency,vendor_id,invoice_id,reference
+E-C51-RECOG,E-C51-RECOG-1,2026-08-15,expense,debit,1424.00,USD,V-C51,I-C51,BOOK-C51
+E-C51-RECOG,E-C51-RECOG-2,2026-08-15,accounts_payable,credit,1424.00,USD,V-C51,I-C51,BOOK-C51

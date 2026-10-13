@@ -1,0 +1,5 @@
+entry_id,line_id,date,account,side,amount,currency,vendor_id,invoice_id,reference
+E-D81-RECOG,E-D81-RECOG-1,2026-08-15,expense,debit,1344.00,USD,V-D81,I-D81,BOOK-D81
+E-D81-RECOG,E-D81-RECOG-2,2026-08-15,accounts_payable,credit,1344.00,USD,V-D81,I-D81,BOOK-D81
+E-D81-LATE,E-D81-LATE-1,2026-09-25,accounts_payable,debit,336.00,USD,V-D81,I-D81,BANK-D81
+E-D81-LATE,E-D81-LATE-2,2026-09-25,cash,credit,336.00,USD,V-D81,I-D81,BANK-D81

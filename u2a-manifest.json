@@ -1,0 +1,178 @@
+{
+  "schema_version": 1,
+  "candidate_version": "qbo-u2a-v1-format1",
+  "state": "formatting_corrected_pending_main_review",
+  "milestone": "U2-A",
+  "source_anchor_commit": "652f15cf4dca6927235aa477e194604d94475c0c",
+  "branch": "codex/industry-upgrade",
+  "u1_accepted": true,
+  "u1_review": "coordination/upgrades/2026-10-11/acceptance/finance-close-agent/20261011T0839/MAIN_REVIEW.md",
+  "u1_review_sha256": "65eceaaaa80acb4239b080a1f0342d4841548fcb65f0730ac79078bc9305d5d5",
+  "prior_u1_manifest": "upgrade-manifest.json",
+  "prior_u1_manifest_sha256": "7ceddbf5e37932f275884e6223c4fce17e3ba1b06d30c240a7720b727d06ae80",
+  "prior_u1_manifest_state_is_historical": true,
+  "accepted_u1_finance_code_sha256": "c404a522b6495476b13a7afdf705de9dc20d18f5ec14b0af32f27192853b3dad",
+  "current_finance_code_sha256": "7a9fda30cbfee70d3c40660a339363c5aa491588b81d7506bde3a20fc763950b",
+  "resume_policy": "Formatting changes aggregate code hash. Prior U1/U2-A journals/receipts keep their original pinned bytes; do not blindly resume under this source version.",
+  "api_version": "v3",
+  "minor_version": 75,
+  "schema_contract": "intuit-php-v6.3.1-minor75-subset-v1",
+  "config_schema_version": 1,
+  "sandbox_origin": "https://sandbox-quickbooks.api.intuit.com",
+  "allowlisted_entities": [
+    "Bill",
+    "BillPayment"
+  ],
+  "scope": "Host-pinned ID GET reads only; no queries, pages, links or model scope",
+  "caps": {
+    "selected_records": 24,
+    "bill_records": 8,
+    "bill_payment_records": 16,
+    "http_requests": 50,
+    "rows_per_response": 1,
+    "query_pages": 0,
+    "successful_body_bytes": 1048576,
+    "total_successful_body_bytes": 5242880,
+    "request_seconds": 15,
+    "total_seconds": 180,
+    "minimum_start_spacing_seconds": 0.5
+  },
+  "automatic_http_retries": 0,
+  "automatic_inference_retries": 0,
+  "ap_history_complete": false,
+  "ledger_imported": false,
+  "posting_supported": false,
+  "changed_files": [
+    {
+      "path": "README.md",
+      "status": "modified_since_u1",
+      "v1_sha256": "3ad339d3cfc4514a45b0000954ea3a3906ad09bd702a51063970435676550084",
+      "accepted_u1_sha256": "afe401e79fc401fe2c73c2ab4d2808d7673a90ad53daca1604ea6e8c868465fd",
+      "candidate_sha256": "701a8516007a79d73db9fe70cd564d81e7249b9dd9051e3f0ad43a9ccabdc2ff",
+      "pre_formatting_sha256": "a11b30357b78df1a0f0fa2b31ebad03644603f1b8c310c23999123d8cee6696f",
+      "formatting_only_revision": true
+    },
+    {
+      "path": "docs/u1-gateway.md",
+      "status": "modified_since_u1",
+      "v1_sha256": null,
+      "accepted_u1_sha256": "808d1547d384b95ad85fa92bb92e8f2889667f4631d45c0836b5f195e31da05f",
+      "candidate_sha256": "f1043655864ddfe8c12820405fcb8d93ec7d591728e041bf5d69f19bdb9962b6"
+    },
+    {
+      "path": "docs/u2a-qbo.md",
+      "status": "added",
+      "v1_sha256": null,
+      "accepted_u1_sha256": null,
+      "candidate_sha256": "98036095847d178ef14acf377ca0f2ab292359735fdd1f936a3fabc2742e0c80"
+    },
+    {
+      "path": "finance_close/qbo.py",
+      "status": "added",
+      "v1_sha256": null,
+      "accepted_u1_sha256": null,
+      "candidate_sha256": "9a02ffecaedf8633cd60fc8170732ab83ae21a021fb31964e84a7c51f2f332ef"
+    },
+    {
+      "path": "finance_close/qbo_transport.py",
+      "status": "added",
+      "v1_sha256": null,
+      "accepted_u1_sha256": null,
+      "candidate_sha256": "6a8a3f70d9acf03b099ee8e5ac7ef7537a4dceb96513fec6bad08a8a8d0e175b"
+    },
+    {
+      "path": "evaluation/qbo_u2a_contract.py",
+      "status": "added",
+      "v1_sha256": null,
+      "accepted_u1_sha256": null,
+      "candidate_sha256": "f7517341685be5d6f6bc415c4576c8911847c4c043482613a032984b2b1e43b0"
+    },
+    {
+      "path": "evaluation/qbo_u2a_acceptance.py",
+      "status": "added",
+      "v1_sha256": null,
+      "accepted_u1_sha256": null,
+      "candidate_sha256": "459c45a3f101e4e3b6ae527fc37d1cd7c459df34ff7aafc2e6af36c2ba3fa37c"
+    },
+    {
+      "path": "tests/test_qbo_u2a_pure.py",
+      "status": "added",
+      "v1_sha256": null,
+      "accepted_u1_sha256": null,
+      "candidate_sha256": "31f59d1b8351b0103a8c6983cb6b5f0f5b1f74a1b0027111408a5bf38bd3c348"
+    },
+    {
+      "path": "tools/u2a_pure.py",
+      "status": "added",
+      "v1_sha256": null,
+      "accepted_u1_sha256": null,
+      "candidate_sha256": "0dd6cc716486c3b2258710cf322c81091191c0efb44a920e70bedc19a495563d"
+    },
+    {
+      "path": "finance_close/render.py",
+      "status": "formatting_only_since_u1",
+      "v1_sha256": "8da14195aef7ab826da3d4a36caf629c57bc163092b32ac928cf59e7dfd8fa55",
+      "accepted_u1_sha256": "566808dfb4ff17d5dffae4bb1fce93fea7949698f52bad60caa60a90de7a8002",
+      "pre_formatting_sha256": "566808dfb4ff17d5dffae4bb1fce93fea7949698f52bad60caa60a90de7a8002",
+      "candidate_sha256": "1f42b6c9a98dbf3ce5800ae0550dfa83e1e6564a94e8fc6d915ef2095a46f7f9",
+      "formatting_only_revision": true,
+      "ast_equivalent_including_locations": true
+    }
+  ],
+  "latest_pure": {
+    "tests": 36,
+    "exit_code": 0,
+    "wall_seconds": 0.09399999998277053,
+    "own_process_peak_working_set_bytes": 42602496,
+    "source_hashes_match": false,
+    "actual_test_sockets": 0,
+    "actual_test_children": 0,
+    "receipt": "u2a-pure-fourth/receipt.json",
+    "source_hashes_match_note": "Historical receipt remains pinned to pre-correction render bytes; renderer AST including source locations is equivalent. No tests rerun."
+  },
+  "retained_pure_receipts": [
+    "u2a-pure-first/receipt.json",
+    "u2a-pure-second/receipt.json",
+    "u2a-pure-third/receipt.json",
+    "u2a-pure-fourth/receipt.json"
+  ],
+  "unexecuted": [
+    "Tests/native batches under post-formatting byte hash (not rerun; renderer AST equivalent)",
+    "real QBO sandbox/credential access",
+    "live model calls",
+    "fresh corpus/baseline/full suite",
+    "final main acceptance/publication"
+  ],
+  "source_ledger": "u2a-sources.json",
+  "prepared_batch": "u2a-integration-batch.json",
+  "provenance": "One authored fictional native wire contract; no copied vendor SDK or new accuracy corpus; source and fixture MIT.",
+  "reviewer_docs": "docs/u2a-qbo.md",
+  "coordination_reference_note": "Source-ledger, pure receipts, review and batch paths refer to preserved worker/main coordination records; they are not runtime dependencies. Public reviewer docs contain primary links and exact commands.",
+  "adapter_version": "qbo-u2a-v1",
+  "formatting_revision": 1,
+  "previous_candidate_version": "qbo-u2a-v1",
+  "previous_manifest_sha256": "77d987c6f78d9c5883f8301ba7fc1ce9041e66a372da8d3ca104295f358dd80a",
+  "previous_manifest_preserved_copy": "format-correction-20261012/pre-change/u2a-manifest.json",
+  "previous_finance_code_sha256": "cf1626c5ea0a285607ebd5f010e6c68673f61e343f54afe486f182c0b7ea6262",
+  "prior_main_execution": {
+    "path": "coordination/upgrades/2026-10-11/acceptance/finance-close-agent/20261012T0709/",
+    "pure_tests": 36,
+    "pure_exit": 0,
+    "contract_http_controls": 16,
+    "contract_http_exit": 0,
+    "deadline_controls": 8,
+    "deadline_exit": 0,
+    "original_git_diff_check_exit": 2,
+    "pinned_manifest_sha256": "77d987c6f78d9c5883f8301ba7fc1ce9041e66a372da8d3ca104295f358dd80a",
+    "main_milestone_acceptance": "pending_raw_capture_validation",
+    "rerun_by_worker": false
+  },
+  "formatting_correction": {
+    "date": "2026-10-12",
+    "scope": "Only 11 CR bytes removed on named added lines; source text/AST semantics unchanged",
+    "renderer_ast_sha256": "a0c37edfdc3a37adbf8cc33ca65a89d7a4740ddd614f0a4bb505512c0f43af92",
+    "renderer_ast_includes_locations": true,
+    "receipt": "format-correction-20261012/receipt.json",
+    "no_native_batch_rerun": true
+  }
+}

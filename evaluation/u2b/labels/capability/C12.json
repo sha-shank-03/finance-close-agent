@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "case_id": "C12",
+  "stratum": "exact",
+  "split": "capability",
+  "author_exposed": true,
+  "matches": {
+    "B-C12-1": "E-C12-PAID-2"
+  },
+  "exceptions": [],
+  "proposals": [],
+  "bank_closing_cents": 968900,
+  "ledger_closing_cents": 968900,
+  "reservation_priority": "Host case IDs sorted; CSV row order grants no cash matching priority",
+  "lineage": "Independently authored U2-B capability exact variant2"
+}

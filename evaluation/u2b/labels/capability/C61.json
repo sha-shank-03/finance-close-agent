@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "case_id": "C61",
+  "stratum": "partial",
+  "split": "capability",
+  "author_exposed": true,
+  "matches": {},
+  "exceptions": [
+    {
+      "bank_id": "B-C61-2",
+      "ledger_line_id": null,
+      "reason": "OVERPAYMENT",
+      "exposure_cents": 10000
+    },
+    {
+      "bank_id": "B-C61-2",
+      "ledger_line_id": null,
+      "reason": "UNMATCHED_CASH",
+      "exposure_cents": 10000
+    }
+  ],
+  "proposals": [
+    {
+      "bank_id": "B-C61-1",
+      "rule_id": "MISSING_AP_PAYMENT_V1",
+      "date": "2026-09-12",
+      "currency": "USD",
+      "lines": [
+        {
+          "account": "accounts_payable",
+          "side": "debit",
+          "amount_cents": 37300
+        },
+        {
+          "account": "cash",
+          "side": "credit",
+          "amount_cents": 37300
+        }
+      ]
+    }
+  ],
+  "bank_closing_cents": 952700,
+  "ledger_closing_cents": 1000000,
+  "reservation_priority": "Host case IDs sorted; CSV row order grants no cash matching priority",
+  "lineage": "Independently authored U2-B capability partial variant1"
+}

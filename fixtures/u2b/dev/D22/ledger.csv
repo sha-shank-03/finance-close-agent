@@ -1,0 +1,5 @@
+entry_id,line_id,date,account,side,amount,currency,vendor_id,invoice_id,reference
+E-D22-RECOG,E-D22-RECOG-1,2026-08-15,expense,debit,1028.00,USD,V-D22,I-D22,BOOK-D22
+E-D22-RECOG,E-D22-RECOG-2,2026-08-15,accounts_payable,credit,1028.00,USD,V-D22,I-D22,BOOK-D22
+E-D22-CASH,E-D22-CASH-1,2026-09-12,accounts_payable,debit,257.00,USD,V-D22,I-D22,FUZZY-D22
+E-D22-CASH,E-D22-CASH-2,2026-09-12,cash,credit,257.00,USD,V-D22,I-D22,FUZZY-D22

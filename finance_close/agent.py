@@ -10,7 +10,7 @@ from .store import utc_now
 from .tools import Tools, wire_schemas
 
 
-def cover_residuals(store, incomplete=False):
+def cover_residuals(store, incomplete=False, tools_factory=Tools):
     with store.transaction():
         store.db.execute("DELETE FROM exceptions WHERE reason='UNMATCHED_LEDGER' AND ledger_line_id IN (SELECT line_id FROM matches)")
         for row in store.db.execute("SELECT line_id,signed_cents,data FROM ledger WHERE account='cash' AND line_id NOT IN (SELECT line_id FROM matches)").fetchall():
@@ -21,7 +21,7 @@ def cover_residuals(store, incomplete=False):
             store.db.execute("INSERT OR IGNORE INTO exceptions VALUES (?,NULL,?,?,?,?)", (key, row["line_id"], "UNMATCHED_LEDGER", abs(row["signed_cents"]), canonical([line["evidence"]["amount"]])))
         if incomplete:
             for row in store.db.execute("SELECT bank_id FROM cases WHERE state='OPEN'").fetchall():
-                tools = Tools(store, row[0])
+                tools = tools_factory(store, row[0])
                 bank = store.bank(row[0])
                 ids = [bank["evidence"]["amount"], bank["evidence"]["reference"]]
                 for reason in tools.required_flags():
@@ -30,7 +30,10 @@ def cover_residuals(store, incomplete=False):
                     tools.add_exception("UNMATCHED_CASH", ids)
 
 
-def investigate(store, provider, cancelled=None, after_tool_commit=None):
+def investigate(store, provider, cancelled=None, after_tool_commit=None, tools_factory=Tools):
+    if provider.mode == "gateway":
+        from .gateway_loop import investigate_gateway
+        return investigate_gateway(store, provider, cancelled, after_tool_commit)
     if provider.mode not in {"scripted", "ollama"}:
         raise ForbiddenAction("Unsupported provider mode")
     config_hash = object_hash(provider_config(provider))
@@ -55,7 +58,7 @@ def investigate(store, provider, cancelled=None, after_tool_commit=None):
             raise IncompleteRun("Case budget exceeded; no rows silently dropped")
         cases = store.db.execute("SELECT bank_id FROM cases WHERE state='OPEN' ORDER BY bank_id").fetchall()
         for row in cases:
-            bank_id, tools = row[0], Tools(store, row[0])
+            bank_id, tools = row[0], tools_factory(store, row[0])
             repeated = {}
             for item in store.history(bank_id):
                 if item["status"] == "ok":
@@ -131,16 +134,16 @@ def investigate(store, provider, cancelled=None, after_tool_commit=None):
                         store.set_meta("run_elapsed_seconds", elapsed())
                 if attempt_status == "ok" and after_tool_commit:
                     after_tool_commit(store, bank_id)
-        cover_residuals(store)
+        cover_residuals(store, tools_factory=tools_factory)
         with store.transaction():
             store.set_meta("run_state", "PACKET_READY")
     except KeyboardInterrupt:
-        cover_residuals(store, incomplete=True)
+        cover_residuals(store, incomplete=True, tools_factory=tools_factory)
         with store.transaction():
             store.set_meta("run_state", "CANCELLED")
         raise
     except IncompleteRun:
-        cover_residuals(store, incomplete=True)
+        cover_residuals(store, incomplete=True, tools_factory=tools_factory)
         with store.transaction():
             store.set_meta("run_state", "BUDGET_EXHAUSTED")
         raise

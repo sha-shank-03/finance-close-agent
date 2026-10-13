@@ -44,6 +44,12 @@ def packet(store):
     attempts = [{**dict(row), "usage": json.loads(row["usage"]) if row["usage"] else None} for row in db.execute("SELECT * FROM provider_attempts ORDER BY sequence")]
     value["provider"].update({"inference_calls": int(store.meta("inference_calls") or 0), "attempts": attempts, "evidence_mode": store.meta("provider_evidence_mode") or "scripted", "config_hash": store.meta("provider_config_hash")})
     value["provider"]["evidence_claim"] = "scripted workflow; no model inference" if value["provider"]["mode"] == "scripted" else "local protocol double; no live model quality claim" if value["provider"]["evidence_mode"] == "protocol_test_double" else "live local provider; quality unverified"
+    if value["provider"]["mode"] == "gateway":
+        value["provider"].update({"prompt_version": store.meta("gateway_prompt_version"),
+                                  "code_hash": store.meta("gateway_code_hash"),
+                                  "run_id": store.meta("gateway_run_id"),
+                                  "failure_class": store.meta("gateway_failure_class"),
+                                  "evidence_claim": "Gateway function-call local double; synthetic decisions/usage, no live model quality claim" if value["provider"]["evidence_mode"] == "local-double" else "Gateway live inference; independent outcome verification required"})
     return value
 
 
@@ -77,4 +83,7 @@ def write_packet(store, out, before_rename=None):
         os.replace(temp, out / name)
     trace = [{"sequence": r["sequence"], "bank_id": r["bank_id"], "decision": json.loads(r["decision"]), "result": json.loads(r["result"]), "status": r["status"], "created_at": r["created_at"]} for r in store.db.execute("SELECT * FROM events ORDER BY sequence")]
     (out / "trace.json").write_text(json.dumps(trace, indent=2) + "\n", encoding="utf-8")
+    if store.meta("provider") == "gateway":
+        from .gateway_journal import export_metrics
+        export_metrics(store, out)
     return value

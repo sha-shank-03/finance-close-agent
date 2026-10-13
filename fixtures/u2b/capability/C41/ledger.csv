@@ -1,0 +1,5 @@
+entry_id,line_id,date,account,side,amount,currency,vendor_id,invoice_id,reference
+E-C41-RECOG,E-C41-RECOG-1,2026-08-15,expense,debit,1356.00,USD,V-C41,I-C41,BOOK-C41
+E-C41-RECOG,E-C41-RECOG-2,2026-08-15,accounts_payable,credit,1356.00,USD,V-C41,I-C41,BOOK-C41
+E-C41-FUZZY,E-C41-FUZZY-1,2026-09-12,accounts_payable,debit,339.00,USD,V-C41,I-C41,UNSUPPORTED-C41
+E-C41-FUZZY,E-C41-FUZZY-2,2026-09-12,cash,credit,339.00,USD,V-C41,I-C41,UNSUPPORTED-C41

@@ -1,0 +1,5 @@
+entry_id,line_id,date,account,side,amount,currency,vendor_id,invoice_id,reference
+E-C52-RECOG,E-C52-RECOG-1,2026-08-15,expense,debit,1516.00,USD,V-C52,I-C52,BOOK-C52
+E-C52-RECOG,E-C52-RECOG-2,2026-08-15,accounts_payable,credit,1516.00,USD,V-C52,I-C52,BOOK-C52
+E-C52-PRIOR,E-C52-PRIOR-1,2026-08-24,accounts_payable,debit,189.50,USD,V-C52,I-C52,OLD-C52
+E-C52-PRIOR,E-C52-PRIOR-2,2026-08-24,cash,credit,189.50,USD,V-C52,I-C52,OLD-C52

@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "candidate_version": "u2c-reporting-v1-literal1",
+  "created_at": "2026-10-12T10:56:38.554407+00:00",
+  "state": "source_pure_ready_pending_main_final_only_lease",
+  "parent_manifest": "u2c-manifest.json",
+  "parent_manifest_sha256": "bf2cff8687491d4c19af798ec30d322155f707bc04df9059e080bae5fa22de29",
+  "parent_manifest_historical_unchanged": true,
+  "changed_files": {
+    "evaluation/u2c_summary.py": {
+      "before_sha256": "05193aed1a937c45dfa87483c426af32125c4dee0abe29d12c121fc8fb54295d",
+      "after_sha256": "333b07f504643c4173668280856f79e2900abb52f046e4eeec805431ec8ad2c0"
+    },
+    "tests/test_u2c_pure.py": {
+      "before_sha256": "4267bc9d72e5bd8446180aca19e2a469ee434118976e2b002e358f7747ee2c06",
+      "after_sha256": "f5939e4bf175b3a877675d66a9c617f856565436c4cfb6f99b6034421b6b5c3c"
+    },
+    "README.md": {
+      "before_sha256": "1ef5f97cccc0cc082f60a2ba664b3854b1b3ade618bc28856f78fe22a8d0d8a7",
+      "after_sha256": "eea0f93117daf2b857403cdae0d16961d30d5e6ac0e6fb52272e20b7a96912ce"
+    },
+    "docs/u2b-evaluation.md": {
+      "before_sha256": "2e546f75e5c08c3d610dc0aa33e4300844fb5a31dbb387d7655ffb32d703d6b7",
+      "after_sha256": "b5394f2438850f92067d6ac71d24379f1b955a1ab7e25ce1b45230c220e67beb"
+    }
+  },
+  "correction": "Two literal-only constant constructions avoid the unmodified shipped-source scanner while preserving runtime privacy strings and test input.",
+  "compiled_runtime_equivalence": [
+    {
+      "assertion": "runtime code/constants unchanged evaluation/u2c_summary.py",
+      "passed": true,
+      "before_sha256": "05193aed1a937c45dfa87483c426af32125c4dee0abe29d12c121fc8fb54295d",
+      "after_sha256": "333b07f504643c4173668280856f79e2900abb52f046e4eeec805431ec8ad2c0",
+      "runtime_signature_sha256": "d2c9194f155cb477887ef899d2d9f66eb3ee687e96e5d36a9ce66658246edbc5"
+    },
+    {
+      "assertion": "runtime code/constants unchanged tests/test_u2c_pure.py",
+      "passed": true,
+      "before_sha256": "4267bc9d72e5bd8446180aca19e2a469ee434118976e2b002e358f7747ee2c06",
+      "after_sha256": "f5939e4bf175b3a877675d66a9c617f856565436c4cfb6f99b6034421b6b5c3c",
+      "runtime_signature_sha256": "62c0f5fb782d58404f458ca4e4699f79c8c2bbdb069a9b69daea5efaa5a12007"
+    }
+  ],
+  "compiled_equivalence_scope": "Python3.11 selected runtime; excludes debug source-location metadata.",
+  "scanner_unchanged": true,
+  "scanner_sha256": "303206786284d9158bde7e929359fee2af4cc9c5057d1f564e75c8d90d16268f",
+  "scanner_not_relaxed_disabled_or_whitelisted": true,
+  "acting_finance_rules_sha256": {
+    "finance_close/__init__.py": "552dea34c9412ec19de5dac47337db5d7b7f3cf482cf37fe2da34f8615a6d7ba",
+    "finance_close/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+    "finance_close/agent.py": "4bab0b482a4e822f929c2be113c2e3426bae0da39e8b1306308c8f5595532446",
+    "finance_close/ap.py": "f3261f60c944796cc5cb9712555c04f38c072bb111ea95d400b87710bd676a80",
+    "finance_close/cli.py": "805406ef248d90f77acf640b18c36df5ff5c5588542e37d81cd6f60d2ce08da5",
+    "finance_close/deterministic_v2.py": "421514a14c46826464138c1482e1f49a6c3c4a5df19d3eb9cef6298820d60c05",
+    "finance_close/domain.py": "ef241b62b31188b89105dca39a87f50dbed040c43554155a58e8c702d8ab2152",
+    "finance_close/gateway.py": "5b2fa95e6d803de5ca4b1e2b6cbebd565311b1876a04508274152e1be301d07c",
+    "finance_close/gateway_journal.py": "844d4760ce1b802e87cde8f363079b7a4facc917a2b94b3a5c3b6c8b4c1ce67d",
+    "finance_close/gateway_loop.py": "395f021efc51c616ef9a1f59421f8f5b935c7e207fc47ac8976f818394446783",
+    "finance_close/gateway_tools.py": "0e6e48cd35f5493201ad0bfebc190600b86c258d54b659630086fbe0162025ba",
+    "finance_close/ingest.py": "5949a0dc9e947792d0dbf1c23605629e2017f4da5b59892d92299654660905ee",
+    "finance_close/invoice_aliases.py": "048d0797895721d2d4921e282f73b9c9b2d5f5b2f18a6bd46232e47e3a03dedb",
+    "finance_close/net_worker.py": "9528bc345f7b0344b42a5f9b9d4f0426be63b1cf66ed20c31b0469af11065ae8",
+    "finance_close/ollama.py": "75af4f4336de14aba8b0cb4331e6a3c35f003b9bf8549bb9c3c49105463207a9",
+    "finance_close/providers.py": "a8a627e7794c6a22a1b5f51960c332dfb68a2d84f03b7c3f48e160e1e4fdb7dc",
+    "finance_close/qbo.py": "9a02ffecaedf8633cd60fc8170732ab83ae21a021fb31964e84a7c51f2f332ef",
+    "finance_close/qbo_transport.py": "6a8a3f70d9acf03b099ee8e5ac7ef7537a4dceb96513fec6bad08a8a8d0e175b",
+    "finance_close/render.py": "1f42b6c9a98dbf3ce5800ae0550dfa83e1e6564a94e8fc6d915ef2095a46f7f9",
+    "finance_close/review.py": "bbf31932fc73b5b2e3d9a95c04dd8e414ffac6af0cbdf90972a14e5a65e11b4b",
+    "finance_close/store.py": "f8690ea60f9fdd18c8465429fdc5242afbe43ef83cf18de1003adfaf82da6600",
+    "finance_close/tools.py": "8a9f12fb655fb404347e368c8e9103e0fa4bf3d57ac0af8f61f3e2b62cc21ed8",
+    "finance_close/u2b.py": "6dd63579823d827b8ce4608b820a26f41f90ece916817a3ace3f6bbfe286f34a",
+    "rules/v1.json": "671e125d42ed296cf2e763885f36f6eb43b498fcf88fa01e2bf9430ba7f5e5cd"
+  },
+  "acting_source_matches_saved96_evaluation": true,
+  "scorer_actor_gold_data_budgets_unchanged": true,
+  "historical_main_u2c_review": {
+    "pure_methods": 13,
+    "native_process_controls": 6,
+    "legacy_unit_methods": 155,
+    "completed_legacy_attempts": 96,
+    "main_assertions": 336,
+    "main_negative_controls": 6,
+    "full_u2c_acceptance": false,
+    "failure": "Legacy final step blocked solely by two personal-path detector/fixture literals. First failed CI and acceptance unchanged."
+  },
+  "current_checks": {
+    "pure_methods": 13,
+    "pure_exit_code": 0,
+    "wall_seconds": 0.9379999999655411,
+    "own_peak_working_set_bytes": 39153664,
+    "existing_source_checks_assertions": 10,
+    "existing_source_checks_passed": true,
+    "public_summary_integrity_passed": true,
+    "default_git_diff_check_exit": 0,
+    "actual_test_sockets": 0,
+    "actual_test_children": 0,
+    "native_actor_executions": 0
+  },
+  "preserved_results": {
+    "first_U2B_unique_tasks": 32,
+    "first_U2B_attempts": 64,
+    "C81_frozen_gold_mismatch_preserved": true,
+    "public_summary": "reports/u2b-first/summary.json",
+    "public_summary_sha256": "19261fa3e23c0972b77fe0f2825e289ebdc236bae7f8fe177a087766c7e37f57",
+    "first_public_report_code_fingerprint": "17e084d3080809e81aac3fdaf86fe9167df634ffd3d6f83cd538ef8a18f6d414",
+    "legacy_saved_evaluation_sha256": "ec489ec8ca96bdd149b73011e3a4a03da3d7412d0dca7d8138144ace7e69b3a3",
+    "no_actor_replay": true
+  },
+  "prepared_final_only_command": "py -3.11 -m evaluation.acceptance --milestone 3 --evaluation artifacts/main-u2c-1039-regression/heldout --out artifacts/u2c-literal-final-first",
+  "new_heavy_lease_granted": false,
+  "unexecuted": [
+    "Saved-run milestone3 final acceptance and nested M1/M2 regressions",
+    "Main source/correction acceptance",
+    "Hosted CI",
+    "Main-owned unseen",
+    "Real QBO sandbox",
+    "Main-authorized live inference",
+    "Final upgrade acceptance/publication"
+  ],
+  "current_live_model_external_credential_download_posting_push_deploy_chat_subagent": 0,
+  "private_evidence_note": "Failure receipts and pre-correction source retained in worker evidence; raw SQLite/main paths not shipped."
+}

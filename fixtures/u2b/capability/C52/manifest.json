@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "entity_id": "FICTIONAL-C52",
+  "account": "cash",
+  "currency": "USD",
+  "period_start": "2026-09-01",
+  "period_end": "2026-09-30",
+  "bank_opening": "10000.00",
+  "ledger_opening": "10000.00",
+  "statement_closing": "9621.00",
+  "fictional": true,
+  "ap_history_complete": []
+}

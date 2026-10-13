@@ -9,6 +9,7 @@ from pathlib import Path
 
 from .agent import investigate
 from .domain import ForbiddenAction, IncompleteRun, InvalidInput
+from .gateway import GatewayFailure, GatewayProvider, validate_config
 from .ingest import ROOT, parse_bundle
 from .providers import OllamaProvider, ScriptedProvider
 from .render import write_packet
@@ -16,11 +17,11 @@ from .review import review_proposal
 from .store import Store
 
 
-def run_bundle(source, out, provider=None, test_fault=None, test_cancel_after_tools=None):
+def run_bundle(source, out, provider=None, test_fault=None, test_cancel_after_tools=None, invoice_format="v1"):
     source, out = Path(source).resolve(), Path(out).resolve()
     if out.is_relative_to(source) or source.is_relative_to(out):
         raise InvalidInput("Output and input bundle directories must not overlap")
-    bundle = parse_bundle(source)
+    bundle = parse_bundle(source, invoice_format=invoice_format)
     store = Store(out / "state.sqlite")
     provider = provider or ScriptedProvider()
     if test_cancel_after_tools is not None and (type(test_cancel_after_tools) is not int or not 0 <= test_cancel_after_tools <= 250):
@@ -36,9 +37,13 @@ def run_bundle(source, out, provider=None, test_fault=None, test_cancel_after_to
             os._exit(85)
     try:
         store.initialize(bundle)
+        if store.meta("invoice_format") and store.meta("invoice_format") != invoice_format:
+            raise InvalidInput("Resume invoice parser configuration differs")
+        with store.transaction():
+            store.set_meta("invoice_format", invoice_format)
         try:
             investigate(store, provider, cancelled=test_cancelled, after_tool_commit=crash_after_proposal)
-        except (IncompleteRun, KeyboardInterrupt):
+        except (IncompleteRun, KeyboardInterrupt, GatewayFailure):
             write_packet(store, out)
             raise
         write_packet(store, out, before_rename=crash_before_rename)
@@ -55,10 +60,13 @@ def main(argv=None):
     for name in ["demo", "run"]:
         command = commands.add_parser(name)
         command.add_argument("--out", required=True)
-        command.add_argument("--provider", choices=["scripted", "ollama"], default="scripted")
+        command.add_argument("--provider", choices=["scripted", "ollama", "gateway"], default="scripted")
         command.add_argument("--model")
         command.add_argument("--endpoint", default="http://127.0.0.1:11434/api/chat")
         command.add_argument("--allow-local-model", action="store_true", help="Explicit opt-in to a separately installed local model; no download is performed")
+        command.add_argument("--gateway-config", help="Bounded nonsecret JSON config; doubles never load keys")
+        command.add_argument("--allow-gateway-live", action="store_true", help="Main-authorized runtime only; requires positive verified allocation and loader-supplied environment key")
+        command.add_argument("--invoice-format", choices=["v1", "aliases-v1"], default="v1")
         command.add_argument("--test-fault", choices=["after-proposal-commit", "before-packet-rename"], help="Integration-only fault injection; exits 85")
         command.add_argument("--test-cancel-after-tools", type=int, help="Integration-only cancellation injection; returns incomplete exit 3")
         if name == "run":
@@ -79,8 +87,24 @@ def main(argv=None):
         elif args.command in {"demo", "run"}:
             if args.provider == "ollama" and (not args.allow_local_model or not args.model):
                 raise InvalidInput("Ollama requires --model and --allow-local-model; default is offline scripted")
-            provider = OllamaProvider(args.model, args.endpoint) if args.provider == "ollama" else ScriptedProvider()
-            print(json.dumps(run_bundle(ROOT / "fixtures" / "demo" if args.command == "demo" else args.input, args.out, provider, args.test_fault, args.test_cancel_after_tools)))
+            if args.provider == "gateway":
+                if not args.gateway_config or args.model or args.allow_local_model or args.endpoint != "http://127.0.0.1:11434/api/chat":
+                    raise InvalidInput("Gateway requires its own explicit config without Ollama options")
+                config_path = Path(args.gateway_config)
+                if config_path.stat().st_size > 8192:
+                    raise InvalidInput("Gateway config exceeds 8 KiB")
+                from .domain import strict_json
+                config = validate_config(strict_json(config_path.read_text(encoding="utf-8")))
+                # Only this explicitly gated LIVE runtime consumes the one loader
+                # variable. No broad environment reads or DPAPI operations exist.
+                loader = (lambda: os.environ.get("AI_GATEWAY_API_KEY")) if config["mode"] == "live" else None
+                provider = GatewayProvider({k: v for k, v in config.items()}, token_loader=loader,
+                                           allow_live=args.allow_gateway_live)
+            else:
+                if args.gateway_config or args.allow_gateway_live:
+                    raise InvalidInput("Gateway flags require provider gateway")
+                provider = OllamaProvider(args.model, args.endpoint) if args.provider == "ollama" else ScriptedProvider()
+            print(json.dumps(run_bundle(ROOT / "fixtures" / "demo" if args.command == "demo" else args.input, args.out, provider, args.test_fault, args.test_cancel_after_tools, args.invoice_format)))
         else:
             out = Path(args.run).resolve()
             if not (out / "state.sqlite").is_file():
@@ -103,6 +127,9 @@ def main(argv=None):
     except (IncompleteRun, KeyboardInterrupt) as exc:
         print(json.dumps({"error": str(exc) or "Cancelled", "type": type(exc).__name__}), file=sys.stderr)
         return 3
+    except GatewayFailure as exc:
+        print(json.dumps({"error": "Gateway halted; inspect sanitized request journal", "type": "GatewayFailure", "failure_class": exc.kind, "automatic_retries": 0}), file=sys.stderr)
+        return 3 if exc.kind == "cancelled" else 4
     except (OSError, sqlite3.Error) as exc:
         print(json.dumps({"error": str(exc), "type": type(exc).__name__}), file=sys.stderr)
         return 4

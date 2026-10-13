@@ -1,0 +1,29 @@
+name: Offline integrity, failure contracts and authored quality
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  authored:
+    strategy:
+      max-parallel: 1
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.11.9'
+      - run: python tools/u2b_pure.py --out artifacts/u2b-pure-ci
+      - name: Pure dispatch interruption and summary contracts
+        run: python tools/u2c_pure.py --out artifacts/u2c-pure-ci
+      - name: Historical summary integrity
+        run: python -m evaluation.u2c_summary validate --bundle reports/u2b-first
+      - name: Native process failure contracts
+        run: python -m evaluation.u2c_acceptance --out artifacts/u2c-process-ci
+      # These two steps record all quality failures; no positive-uplift gate.
+      - run: python -m evaluation.u2b_run --split dev --out artifacts/u2b-dev-ci --max-seconds 180
+      - run: python -m evaluation.u2b_run --split capability --out artifacts/u2b-cap-ci --max-seconds 180
+      - run: python -m evaluation.u2b_controls --proposal-run artifacts/u2b-dev-ci/D51/deterministic-v2 --handoff-run artifacts/u2b-dev-ci/D62/deterministic-v2 --out artifacts/u2b-controls-ci
+      - run: python -m evaluation.u2b_ci --dev-report artifacts/u2b-dev-ci/report.json --capability-report artifacts/u2b-cap-ci/report.json --out artifacts/u2b-report-ci

@@ -1,0 +1,8 @@
+Invoice Number: I-U1
+Vendor Code: V-U1
+Invoice Date: 2026-08-15
+Invoice Total: 1000.00
+Currency: USD
+Bank Reference: transfer-42
+Book Reference: booked-transfer-42
+Notes: Fictional text-native invoice. No tax or FX calculation is requested.

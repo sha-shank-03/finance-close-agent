@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "case_id": "D12",
+  "stratum": "exact",
+  "split": "dev",
+  "author_exposed": true,
+  "matches": {
+    "B-D12-1": "E-D12-PAID-2"
+  },
+  "exceptions": [],
+  "proposals": [],
+  "bank_closing_cents": 976000,
+  "ledger_closing_cents": 976000,
+  "reservation_priority": "Host case IDs sorted; CSV row order grants no cash matching priority",
+  "lineage": "Independently authored U2-B dev exact variant2"
+}

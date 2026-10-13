@@ -1,0 +1,3 @@
+entry_id,line_id,date,account,side,amount,currency,vendor_id,invoice_id,reference
+E-D72-FEE,E-D72-FEE-1,2026-09-12,bank_fee_expense,debit,13.00,USD,,,FEE-BOOK-D72
+E-D72-FEE,E-D72-FEE-2,2026-09-12,cash,credit,13.00,USD,,,FEE-BOOK-D72

@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "case_id": "C21",
+  "stratum": "amounts",
+  "split": "capability",
+  "author_exposed": true,
+  "matches": {},
+  "exceptions": [
+    {
+      "bank_id": "B-C21-1",
+      "ledger_line_id": null,
+      "reason": "AMOUNT_CONFLICT",
+      "exposure_cents": 12345
+    },
+    {
+      "bank_id": "B-C21-1",
+      "ledger_line_id": null,
+      "reason": "UNMATCHED_CASH",
+      "exposure_cents": 30500
+    },
+    {
+      "bank_id": null,
+      "ledger_line_id": "E-C21-CASH-2",
+      "reason": "UNMATCHED_LEDGER",
+      "exposure_cents": 42845
+    }
+  ],
+  "proposals": [],
+  "bank_closing_cents": 969500,
+  "ledger_closing_cents": 957155,
+  "reservation_priority": "Host case IDs sorted; CSV row order grants no cash matching priority",
+  "lineage": "Independently authored U2-B capability amounts variant1"
+}

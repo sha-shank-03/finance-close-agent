@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "case_id": "D62",
+  "stratum": "partial",
+  "split": "dev",
+  "author_exposed": true,
+  "matches": {},
+  "exceptions": [
+    {
+      "bank_id": "B-D62-1",
+      "ledger_line_id": null,
+      "reason": "OVERPAYMENT",
+      "exposure_cents": 32500
+    },
+    {
+      "bank_id": "B-D62-1",
+      "ledger_line_id": null,
+      "reason": "UNMATCHED_CASH",
+      "exposure_cents": 32500
+    }
+  ],
+  "proposals": [],
+  "bank_closing_cents": 967500,
+  "ledger_closing_cents": 1000000,
+  "reservation_priority": "Host case IDs sorted; CSV row order grants no cash matching priority",
+  "lineage": "Independently authored U2-B dev partial variant2"
+}

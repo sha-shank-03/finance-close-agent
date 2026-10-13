@@ -1,0 +1,5 @@
+entry_id,line_id,date,account,side,amount,currency,vendor_id,invoice_id,reference
+E-D62-RECOG,E-D62-RECOG-1,2026-08-15,expense,debit,1300.00,USD,V-D62,I-D62,BOOK-D62
+E-D62-RECOG,E-D62-RECOG-2,2026-08-15,accounts_payable,credit,1300.00,USD,V-D62,I-D62,BOOK-D62
+E-D62-PRIOR,E-D62-PRIOR-1,2026-08-24,accounts_payable,debit,1000.00,USD,V-D62,I-D62,OLD-D62
+E-D62-PRIOR,E-D62-PRIOR-2,2026-08-24,cash,credit,1000.00,USD,V-D62,I-D62,OLD-D62

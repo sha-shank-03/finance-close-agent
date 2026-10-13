@@ -1,0 +1,7 @@
+entry_id,line_id,date,account,side,amount,currency,vendor_id,invoice_id,reference
+E-C11-RECOG,E-C11-RECOG-1,2026-08-15,expense,debit,1152.00,USD,V-C11,I-C11,BOOK-C11
+E-C11-RECOG,E-C11-RECOG-2,2026-08-15,accounts_payable,credit,1152.00,USD,V-C11,I-C11,BOOK-C11
+E-C11-PAID,E-C11-PAID-1,2026-09-12,accounts_payable,debit,288.00,USD,V-C11,I-C11,BANK-C11
+E-C11-PAID,E-C11-PAID-2,2026-09-12,cash,credit,288.00,USD,V-C11,I-C11,BANK-C11
+E-C11-SECOND,E-C11-SECOND-1,2026-09-12,accounts_payable,debit,144.00,USD,V-C11,I-C11,SECOND-C11
+E-C11-SECOND,E-C11-SECOND-2,2026-09-12,cash,credit,144.00,USD,V-C11,I-C11,SECOND-C11

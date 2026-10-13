@@ -1,0 +1,5 @@
+entry_id,line_id,date,account,side,amount,currency,vendor_id,invoice_id,reference
+E-C32-RECOG,E-C32-RECOG-1,2026-08-15,expense,debit,1380.00,USD,V-C32,I-C32,BOOK-C32
+E-C32-RECOG,E-C32-RECOG-2,2026-08-15,accounts_payable,credit,1380.00,USD,V-C32,I-C32,BOOK-C32
+E-C32-ONE,E-C32-ONE-1,2026-09-12,accounts_payable,debit,345.00,USD,V-C32,I-C32,BANK-C32
+E-C32-ONE,E-C32-ONE-2,2026-09-12,cash,credit,345.00,USD,V-C32,I-C32,BANK-C32

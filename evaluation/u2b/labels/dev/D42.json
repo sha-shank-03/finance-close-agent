@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "case_id": "D42",
+  "stratum": "missing_invoice",
+  "split": "dev",
+  "author_exposed": true,
+  "matches": {
+    "B-D42-1": "E-D42-CASH-2"
+  },
+  "exceptions": [
+    {
+      "bank_id": "B-D42-1",
+      "ledger_line_id": null,
+      "reason": "CONFLICTING_EVIDENCE",
+      "exposure_cents": 29100
+    }
+  ],
+  "proposals": [],
+  "bank_closing_cents": 970900,
+  "ledger_closing_cents": 970900,
+  "reservation_priority": "Host case IDs sorted; CSV row order grants no cash matching priority",
+  "lineage": "Independently authored U2-B dev missing_invoice variant2"
+}

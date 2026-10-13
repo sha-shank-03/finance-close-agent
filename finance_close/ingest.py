@@ -22,7 +22,9 @@ def load_rule():
     return json.loads(data), digest(data)
 
 
-def parse_bundle(root):
+def parse_bundle(root, invoice_format="v1"):
+    if invoice_format not in {"v1", "aliases-v1"}:
+        raise InvalidInput("Unsupported invoice format")
     root = Path(root).resolve(strict=True)
     paths = [root / "manifest.json", root / "bank.csv", root / "ledger.csv"]
     invoice_dir = root / "invoices"
@@ -137,15 +139,25 @@ def parse_bundle(root):
         raise InvalidInput("Imported journal entries must balance exactly")
     invoice_groups = {}
     for source in sources[3:]:
-        values, refs = {}, {}
-        for number, line in enumerate(source["text"].splitlines(), 1):
-            if not line.strip():
-                continue
-            key, separator, value = line.partition(":")
-            if not separator or key not in INVOICE_KEYS or key in values:
+        values, refs, labels = {}, {}, {}
+        if invoice_format == "aliases-v1":
+            from .invoice_aliases import invoice_fields
+            parsed_fields = invoice_fields(source["text"])
+        else:
+            parsed_fields = []
+            for number, line in enumerate(source["text"].splitlines(), 1):
+                if not line.strip():
+                    continue
+                key, separator, value = line.partition(":")
+                if not separator or key not in INVOICE_KEYS:
+                    raise InvalidInput("Invoice keys must be documented and unique")
+                parsed_fields.append((number, key, key, value.strip()))
+        for number, label, key, value in parsed_fields:
+            if key not in INVOICE_KEYS or key in values:
                 raise InvalidInput("Invoice keys must be documented and unique")
             values[key] = value.strip()
-            refs[key] = field(source["path"], f"line:{number}:{key}", value.strip())
+            labels[key] = label
+            refs[key] = field(source["path"], f"line:{number}:{label}", value.strip())
         if not {"Invoice ID", "Vendor ID", "Issued", "Amount", "Currency"} <= set(values):
             raise InvalidInput("Invoice is missing required fields")
         inv_id, vendor = identifier(values["Invoice ID"]), identifier(values["Vendor ID"])
@@ -156,6 +168,8 @@ def parse_bundle(root):
         if amount <= 0 or not re.fullmatch(r"[A-Z]{3}", values["Currency"]):
             raise InvalidInput("Invalid invoice amount/currency")
         item = {"id": inv_id, "vendor_id": vendor, "amount_cents": amount, "currency": values["Currency"], "date": values["Issued"], "reference": values.get("Payment Reference", ""), "ledger_reference": values.get("Ledger Reference", ""), "notes": values.get("Notes", ""), "source_path": source["path"], "evidence": refs}
+        if invoice_format == "aliases-v1":
+            item["field_labels"] = labels
         invoice_groups.setdefault((vendor, inv_id), []).append(item)
     for copies in invoice_groups.values():
         signature = lambda item: [item[key] for key in ["id", "vendor_id", "amount_cents", "currency", "date", "reference", "ledger_reference"]]

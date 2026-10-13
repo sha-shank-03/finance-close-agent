@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "case_id": "C81",
+  "stratum": "timing_unsupported",
+  "split": "capability",
+  "author_exposed": true,
+  "matches": {},
+  "exceptions": [
+    {
+      "bank_id": "B-C81-1",
+      "ledger_line_id": null,
+      "reason": "UNSUPPORTED_CURRENCY",
+      "exposure_cents": 40700
+    },
+    {
+      "bank_id": "B-C81-1",
+      "ledger_line_id": null,
+      "reason": "UNMATCHED_CASH",
+      "exposure_cents": 40700
+    }
+  ],
+  "proposals": [],
+  "bank_closing_cents": 1000000,
+  "ledger_closing_cents": 1000000,
+  "reservation_priority": "Host case IDs sorted; CSV row order grants no cash matching priority",
+  "lineage": "Independently authored U2-B capability timing_unsupported variant1"
+}

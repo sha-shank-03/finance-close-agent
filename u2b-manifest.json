@@ -1,0 +1,216 @@
+{
+  "schema_version": 1,
+  "candidate_version": "u2b-source-v1-format1",
+  "created_at": "2026-10-12T08:04:31.714623+00:00",
+  "milestone": "U2-B",
+  "state": "source_pure_ready_pending_main_native_lease",
+  "source_anchor_commit": "652f15cf4dca6927235aa477e194604d94475c0c",
+  "branch": "codex/industry-upgrade",
+  "parent_manifest": "u2a-manifest.json",
+  "parent_manifest_sha256": "4a1bec355a8eb9138506685726230608ea8b95ce09f90920e2aaf4e1e98b727d",
+  "parent_version": "qbo-u2a-v1-format1",
+  "parent_manifest_is_historical": true,
+  "u1_local_independently_accepted": true,
+  "u2a_local_independently_accepted": true,
+  "u2a_main_review": {
+    "pure_tests": 36,
+    "http_controls": 16,
+    "deadline_controls": 8,
+    "raw_capture_event_assertions": 215,
+    "negative_controls": 5,
+    "format_byte_ast_hash_checks": 76,
+    "git_diff_check_exit": 0
+  },
+  "changed_files": {
+    "finance_close/agent.py": {
+      "before_sha256": "eae063ba89d271f3aae972123018860a39d81e747541a681f95f4415b62adc41",
+      "after_sha256": "4bab0b482a4e822f929c2be113c2e3426bae0da39e8b1306308c8f5595532446",
+      "new": false
+    },
+    "README.md": {
+      "before_sha256": "701a8516007a79d73db9fe70cd564d81e7249b9dd9051e3f0ad43a9ccabdc2ff",
+      "after_sha256": "22809eb8e10fae77253889e3b3ca127f1ae13fe4bd655a7abe1b851003f7d140",
+      "new": false
+    },
+    "docs/u2a-qbo.md": {
+      "before_sha256": "98036095847d178ef14acf377ca0f2ab292359735fdd1f936a3fabc2742e0c80",
+      "after_sha256": "bea2dacb8d2e2adda74b2c95f68357fcf770a93a44a47055317efb9962e90cf5",
+      "new": false
+    },
+    "finance_close/deterministic_v2.py": {
+      "before_sha256": null,
+      "after_sha256": "421514a14c46826464138c1482e1f49a6c3c4a5df19d3eb9cef6298820d60c05",
+      "new": true
+    },
+    "finance_close/u2b.py": {
+      "before_sha256": null,
+      "after_sha256": "6dd63579823d827b8ce4608b820a26f41f90ece916817a3ace3f6bbfe286f34a",
+      "new": true
+    },
+    "evaluation/u2b_author.py": {
+      "before_sha256": null,
+      "after_sha256": "1632a0b65342d12b0162a4a19e2111164f5ad85d9ef047e9443072ab8e869451",
+      "new": true
+    },
+    "evaluation/u2b_verify.py": {
+      "before_sha256": null,
+      "after_sha256": "1c6e060ee17f7b6634cb9e7e3fa57865dfa2ae225793bf3f68877c2cd2eb59a4",
+      "new": true
+    },
+    "evaluation/u2b_run.py": {
+      "before_sha256": null,
+      "after_sha256": "5291626fafbbd17ae07809cc8df7201d0ce374e57bc0340925bf220124e9abf2",
+      "new": true
+    },
+    "evaluation/u2b_controls.py": {
+      "before_sha256": null,
+      "after_sha256": "0056dd84077f18342cdf23da122461bf9405591c8134ef3b131d5b4e88810fcd",
+      "new": true
+    },
+    "evaluation/u2b_ci.py": {
+      "before_sha256": null,
+      "after_sha256": "7e7a1043f920c0a6ecf8e3d8c6265509e9273861bfe7f42a0202862f9be9fa0a",
+      "new": true
+    },
+    "tests/test_u2b_pure.py": {
+      "before_sha256": null,
+      "after_sha256": "d85ffc73178e2f43e98d0671f18ec24f78c7dbc531a0df743641e2b447ff613a",
+      "new": true
+    },
+    "tools/u2b_pure.py": {
+      "before_sha256": null,
+      "after_sha256": "6e28952049af2764ada4b4424f23c76324a0536fe81236830e3b336a9b3d07dd",
+      "new": true
+    },
+    "docs/u2b-evaluation.md": {
+      "before_sha256": null,
+      "after_sha256": "0bb5f9bbfc954a7c4248f069ea3825a9c0e2218806b3f74fcc1e73a001e13bb4",
+      "new": true
+    },
+    ".github/workflows/u2b-offline.yml": {
+      "before_sha256": null,
+      "after_sha256": "75f1e04fd9d94ca2c93a63185f3143a58dbeac4ebb9c95fd3b82ffb0e6fbc39c",
+      "new": true
+    }
+  },
+  "prior_finance_code_sha256": "7a9fda30cbfee70d3c40660a339363c5aa491588b81d7506bde3a20fc763950b",
+  "current_finance_code_sha256": "3a7d99677b138f45b7664bc81b4dc770172d6292869c220c200933a01323ba82",
+  "source_binding_algorithm": "SHA256 canonical JSON sorted [Python filename, SHA256 file bytes] in finance_close; matches Gateway journal binding.",
+  "resume_policy": "Preserve journals under recorded accepted code; no resume/migration of old journals under this candidate. U2-B CLI requires fresh output.",
+  "dataset": {
+    "manifest": "evaluation/u2b/manifest.json",
+    "manifest_sha256": "f20cc5b72a180c5c6e5722e87c0a4d888aa728db6a2747b46757a46725120f86",
+    "version": "u2b-authored-v1",
+    "counts": {
+      "dev": 16,
+      "capability": 16
+    },
+    "strata": [
+      "exact",
+      "amounts",
+      "duplicates",
+      "missing_invoice",
+      "ap_missing",
+      "partial",
+      "fees",
+      "timing_unsupported"
+    ],
+    "per_stratum_per_split": 2,
+    "author_exposed": true,
+    "main_unseen_created_or_inspected": 0,
+    "native_scoring_executed": false,
+    "construction_similarity": "Both sets share authored finance issue families. Capability changes structure (multi-bank/multi-ledger, conflicts, history/cutoff/reservation dependencies); not independent external or blind distribution.",
+    "frozen_before_native_evaluation": true
+  },
+  "actor_boundary": {
+    "labels_in_actor_argv": false,
+    "evaluator_imported_by_actor": false,
+    "baseline_imports": "Shared Tools only; decisions read observations. No file/network/label reads.",
+    "os_sandbox_claim": false,
+    "tools_authority": "Same U2bTools for both scripted and deterministic-v2; inherited schemas and exact source guards.",
+    "shared_cumulative_limits": {
+      "tools_per_case": 10,
+      "decisions_per_case": 12,
+      "decisions_per_run": 250,
+      "cases_per_run": 50,
+      "run_seconds": 180
+    },
+    "posting_supported": false,
+    "external_history": "Any attached QBO capture adds EXTERNAL_HISTORY_NOT_CERTIFIED; not imported and never certifies complete local AP."
+  },
+  "policies": {
+    "scripted": "Existing observation policy_version2",
+    "deterministic-v2": "deterministic-v2.1; explicit invoice aliases/source-backed globally unique references; inspect copies/history; ties/fuzzy ambiguity held"
+  },
+  "scorer": "Independent standard-library CSV/text/SQLite reconstruction without finance_close imports; separately held authored labels; exact cents/provenance/reservations/state.",
+  "pure_components": {
+    "latest_unique_methods": 14,
+    "passed": 14,
+    "native_tasks": 0,
+    "manual_gold_oracle_states": 2,
+    "negative_mutations": 5,
+    "latest_wall_seconds": 7.39000000001397,
+    "own_process_peak_working_set_bytes": 43442176,
+    "actual_test_children": 0,
+    "actual_test_sockets": 0,
+    "first_cleanup_error_preserved": true,
+    "tests_are_native_accuracy_evidence": false
+  },
+  "native_outcomes": {
+    "unique_tasks_executed": 0,
+    "attempts": 0,
+    "quality_score": null,
+    "positive_uplift_required": false,
+    "numeric_quality_target": null,
+    "actual_billed_cost": null,
+    "model_calls": 0,
+    "external_calls": 0
+  },
+  "historical_integrity": {
+    "original_freeze": "evaluation/heldout-freeze.json",
+    "original_freeze_sha256": "789aa6862f42e8c130cefba74a6460704f700ca9bcd4c6b299abc09242a6faf5",
+    "original_frozen_files_verified": 155,
+    "original_EVIDENCE_sha256": "677c879de69e60db0ef63c55b29a6e5286b6e39aae739d49c20d1d650f7e6c8a",
+    "old_12_dev_32_exposed_regression": "Untouched; full regression not executed in this source slice."
+  },
+  "prepared_commands": [
+    "py -3.11 -m finance_close.u2b --input fixtures/u2b/dev/D51 --out artifacts/u2b-demo-first --policy deterministic-v2",
+    "py -3.11 -m evaluation.u2b_verify --run artifacts/u2b-demo-first --source fixtures/u2b/dev/D51 --labels evaluation/u2b/labels/dev/D51.json --out artifacts/u2b-demo-first/independent.json",
+    "py -3.11 -m evaluation.u2b_run --split dev --out artifacts/u2b-dev-first --max-seconds 180",
+    "py -3.11 -m evaluation.u2b_run --split capability --out artifacts/u2b-cap-first --max-seconds 180",
+    "py -3.11 -m evaluation.u2b_controls --proposal-run artifacts/u2b-dev-first/D51/deterministic-v2 --handoff-run artifacts/u2b-dev-first/D62/deterministic-v2 --out artifacts/u2b-controls-first",
+    "py -3.11 -m evaluation.u2b_ci --dev-report artifacts/u2b-dev-first/report.json --capability-report artifacts/u2b-cap-first/report.json --out artifacts/u2b-ci-first"
+  ],
+  "reviewer_guide": "docs/u2b-evaluation.md",
+  "workflow": ".github/workflows/u2b-offline.yml",
+  "hosted_ci_executed": false,
+  "unexecuted": [
+    "U2-B demo and native scorer",
+    "Both authored paired splits",
+    "Five copy controls against native positive runs",
+    "Offline report packaging command",
+    "Full legacy suite/regression",
+    "Main-owned unseen evaluation",
+    "Genuine QBO sandbox compatibility",
+    "Main-authorized live model smoke/evaluation",
+    "Final main upgrade acceptance and publication"
+  ],
+  "license": "Existing MIT source/data; new fictional authored source and labels MIT; no new dependency.",
+  "private_evidence_note": "Worker coordination retains immutable parent source, pure runs/failure, batch request and main review. No private paths or receipts shipped.",
+  "previous_candidate_version": "u2b-source-v1",
+  "previous_manifest_sha256": "2b2ae3eb164c63faa34971d3a8e21a933bd43d5df3ba101812972006b98e7e82",
+  "formatting_revision": {
+    "kind": "documentation_only",
+    "README_removed_CR_bytes": 3,
+    "README_changed_lines": [
+      3,
+      4,
+      5
+    ],
+    "u2a_guide_removed_CR_bytes": 52,
+    "guide_text_unchanged_by_formatting": true,
+    "Python_source_pins_unchanged": true,
+    "pure_not_repeated": true,
+    "historical_first_manifest_and_checkpoint_preserved": true
+  }
+}

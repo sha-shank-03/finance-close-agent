@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "case_id": "C41",
+  "stratum": "missing_invoice",
+  "split": "capability",
+  "author_exposed": true,
+  "matches": {},
+  "exceptions": [
+    {
+      "bank_id": "B-C41-1",
+      "ledger_line_id": null,
+      "reason": "AMBIGUOUS_MATCH",
+      "exposure_cents": 33900
+    },
+    {
+      "bank_id": "B-C41-1",
+      "ledger_line_id": null,
+      "reason": "MISSING_INVOICE",
+      "exposure_cents": 33900
+    },
+    {
+      "bank_id": "B-C41-1",
+      "ledger_line_id": null,
+      "reason": "UNMATCHED_CASH",
+      "exposure_cents": 33900
+    },
+    {
+      "bank_id": null,
+      "ledger_line_id": "E-C41-FUZZY-2",
+      "reason": "UNMATCHED_LEDGER",
+      "exposure_cents": 33900
+    }
+  ],
+  "proposals": [],
+  "bank_closing_cents": 966100,
+  "ledger_closing_cents": 966100,
+  "reservation_priority": "Host case IDs sorted; CSV row order grants no cash matching priority",
+  "lineage": "Independently authored U2-B capability missing_invoice variant1"
+}

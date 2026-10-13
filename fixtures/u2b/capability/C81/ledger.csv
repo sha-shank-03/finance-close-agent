@@ -1,0 +1,3 @@
+entry_id,line_id,date,account,side,amount,currency,vendor_id,invoice_id,reference
+E-C81-RECOG,E-C81-RECOG-1,2026-08-15,expense,debit,1628.00,USD,V-C81,I-C81,BOOK-C81
+E-C81-RECOG,E-C81-RECOG-2,2026-08-15,accounts_payable,credit,1628.00,USD,V-C81,I-C81,BOOK-C81

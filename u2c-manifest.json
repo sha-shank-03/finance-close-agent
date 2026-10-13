@@ -1,0 +1,195 @@
+{
+  "schema_version": 1,
+  "candidate_version": "u2c-reporting-v1",
+  "created_at": "2026-10-12T09:55:25.950651+00:00",
+  "state": "source_pure_ready_pending_main_native_lease",
+  "milestone": "U2-C",
+  "parent_manifest": "u2b-manifest.json",
+  "parent_manifest_sha256": "367269b5a4e1da6d581b99b9885a3744e09e224d8fdd5a32a4768102fb5575e8",
+  "parent_manifest_historical_unchanged": true,
+  "source_anchor_commit": "652f15cf4dca6927235aa477e194604d94475c0c",
+  "changed_files": {
+    "evaluation/u2b_run.py": {
+      "before_sha256": "5291626fafbbd17ae07809cc8df7201d0ce374e57bc0340925bf220124e9abf2",
+      "after_sha256": "be39b2efd28684892271d9e53c507fd2aeaed63dd3a4148348793aa297dd629e",
+      "new": false
+    },
+    "evaluation/u2b_ci.py": {
+      "before_sha256": "7e7a1043f920c0a6ecf8e3d8c6265509e9273861bfe7f42a0202862f9be9fa0a",
+      "after_sha256": "971933d251978e2ea13ff2b4bc72233a1471d96a6c6110ac6221d655cfcf8c7a",
+      "new": false
+    },
+    "README.md": {
+      "before_sha256": "22809eb8e10fae77253889e3b3ca127f1ae13fe4bd655a7abe1b851003f7d140",
+      "after_sha256": "1ef5f97cccc0cc082f60a2ba664b3854b1b3ade618bc28856f78fe22a8d0d8a7",
+      "new": false
+    },
+    "docs/u2b-evaluation.md": {
+      "before_sha256": "0bb5f9bbfc954a7c4248f069ea3825a9c0e2218806b3f74fcc1e73a001e13bb4",
+      "after_sha256": "2e546f75e5c08c3d610dc0aa33e4300844fb5a31dbb387d7655ffb32d703d6b7",
+      "new": false
+    },
+    ".github/workflows/u2b-offline.yml": {
+      "before_sha256": "75f1e04fd9d94ca2c93a63185f3143a58dbeac4ebb9c95fd3b82ffb0e6fbc39c",
+      "after_sha256": "203d610fd750abefb3afd259d2bd7b9572a5a691e426daae5087eb892e2c0203",
+      "new": false
+    },
+    "evaluation/u2c_progress.py": {
+      "before_sha256": null,
+      "after_sha256": "ae1fca253bcaedf29377cddb142fdb6acc952ea94c1a92cdbba3f172425493fe",
+      "new": true
+    },
+    "evaluation/u2c_summary.py": {
+      "before_sha256": null,
+      "after_sha256": "05193aed1a937c45dfa87483c426af32125c4dee0abe29d12c121fc8fb54295d",
+      "new": true
+    },
+    "evaluation/u2c_acceptance.py": {
+      "before_sha256": null,
+      "after_sha256": "448c6f64a9931b0b74db2d895d254729c42b5e9c0444f0936847342b1ab8e7e1",
+      "new": true
+    },
+    "tests/test_u2c_pure.py": {
+      "before_sha256": null,
+      "after_sha256": "4267bc9d72e5bd8446180aca19e2a469ee434118976e2b002e358f7747ee2c06",
+      "new": true
+    },
+    "tools/u2c_pure.py": {
+      "before_sha256": null,
+      "after_sha256": "f3b9933ee678460baff45d7c37da2aa7778737882c87d5c64ddf3bc12f7b2876",
+      "new": true
+    },
+    "docs/u2b-case-study.md": {
+      "before_sha256": null,
+      "after_sha256": "252e028f648b080ce4778271bf51e3590bedb0abbd1345150c4044008dd1fa6d",
+      "new": true
+    },
+    "reports/u2b-first/summary.json": {
+      "before_sha256": null,
+      "after_sha256": "19261fa3e23c0972b77fe0f2825e289ebdc236bae7f8fe177a087766c7e37f57",
+      "new": true
+    },
+    "reports/u2b-first/manifest.json": {
+      "before_sha256": null,
+      "after_sha256": "9ab8ce7081b2a2480ba3003f1dd1ad34df92670f234c6a31b73a54c1d20f3af5",
+      "new": true
+    }
+  },
+  "finance_actor_source_unchanged": true,
+  "scorer_source_unchanged": true,
+  "frozen_gold_and_data_unchanged": true,
+  "finance_code_sha256": "3a7d99677b138f45b7664bc81b4dc770172d6292869c220c200933a01323ba82",
+  "current_evaluator_source_sha256": {
+    "evaluation/__init__.py": "41a80545e662a0475ea55f7979f7ae18861d12308accc44dc71e8023b433d390",
+    "evaluation/acceptance.py": "5e00afddb76c10facc64afc8793dd91b639982b8d4856752bd46447213932f74",
+    "evaluation/author_fixtures.py": "f154e66ec98c5d5bfd3c57c4e563c1c09e6486ed66f95d8a2a8914166139439b",
+    "evaluation/baseline.py": "a7bc7721c0df36b6488bc1714d5a081d6d226ae9c04cd92639fcf68835791d6e",
+    "evaluation/ci.py": "740a9297511d67ba9f9ef1e859be7b65b49be5e1db7ccc7ed33ddd24ece29661",
+    "evaluation/freeze.py": "e7c799f63eaa6aa3e116df731a95c23d986bbabf71564528a8d680ac9100ca53",
+    "evaluation/gateway_acceptance.py": "2c08046191453bcb65a361a098fd6a774fc09ad8cc5431dc07f3cc27492cd862",
+    "evaluation/gateway_transport.py": "a791f1ed04d4b9928b549af3bb326315af9f294684628abe023153f228cb03c8",
+    "evaluation/gateway_verify.py": "36fc715f281f5daa4e5df6c13848c6288e885d5d68056e8fd00712b06656e18e",
+    "evaluation/m2_acceptance.py": "7ce4724c687b21a7b4e828f68e983bba0165b320fb8c9b5b28aa374d898e11c3",
+    "evaluation/m3_acceptance.py": "303206786284d9158bde7e929359fee2af4cc9c5057d1f564e75c8d90d16268f",
+    "evaluation/metrics.py": "4656bbbac641955c19f8c8a91c047f6e03d3aa7b05e32d19a20a995bc0e873fa",
+    "evaluation/protocol.py": "77b84b68719399b89d8c06003ed716580d971e68670ee02eab21c7d80e4b0d2b",
+    "evaluation/qbo_u2a_acceptance.py": "459c45a3f101e4e3b6ae527fc37d1cd7c459df34ff7aafc2e6af36c2ba3fa37c",
+    "evaluation/qbo_u2a_contract.py": "f7517341685be5d6f6bc415c4576c8911847c4c043482613a032984b2b1e43b0",
+    "evaluation/release.py": "c5327511cb8deef94c26fb83376a4c8a8f69805cfaeb9e06594e8b6523bf589c",
+    "evaluation/report.py": "ba48c3ef4aa875f9b6e21373c8d08252115673ebbad524f46cf9241dac12c778",
+    "evaluation/run.py": "438246a006dc0008e5c49c9808e5f10670dba7ac2e6bc8f5e731f55842d5cbb0",
+    "evaluation/scoring.py": "1849f53bea6b1e579b25e3b4bea65b20105827086b4d0fc7f4141ae66ed33036",
+    "evaluation/u2b_author.py": "1632a0b65342d12b0162a4a19e2111164f5ad85d9ef047e9443072ab8e869451",
+    "evaluation/u2b_ci.py": "971933d251978e2ea13ff2b4bc72233a1471d96a6c6110ac6221d655cfcf8c7a",
+    "evaluation/u2b_controls.py": "0056dd84077f18342cdf23da122461bf9405591c8134ef3b131d5b4e88810fcd",
+    "evaluation/u2b_run.py": "be39b2efd28684892271d9e53c507fd2aeaed63dd3a4148348793aa297dd629e",
+    "evaluation/u2b_verify.py": "1c6e060ee17f7b6634cb9e7e3fa57865dfa2ae225793bf3f68877c2cd2eb59a4",
+    "evaluation/u2c_acceptance.py": "448c6f64a9931b0b74db2d895d254729c42b5e9c0444f0936847342b1ab8e7e1",
+    "evaluation/u2c_progress.py": "ae1fca253bcaedf29377cddb142fdb6acc952ea94c1a92cdbba3f172425493fe",
+    "evaluation/u2c_summary.py": "05193aed1a937c45dfa87483c426af32125c4dee0abe29d12c121fc8fb54295d",
+    "evaluation/verify.py": "46ddfdabc2214a3859cae62b5932137f0e6fdd857e8cccdf2d7fed3ec1f1167a"
+  },
+  "first_code_fingerprint": "17e084d3080809e81aac3fdaf86fe9167df634ffd3d6f83cd538ef8a18f6d414",
+  "first_report_sha256": {
+    "dev": "b1e61e992de468317b265355bfc71075eed2ed6fb9f75734589d37537cfd20f0",
+    "capability": "fff69275a4fe614338ccf94fe4dab8f09d253758ef0171cd7940dd6c58e64508"
+  },
+  "historical_first_results": {
+    "unique_tasks": 32,
+    "native_attempts": 64,
+    "repetitions": 1,
+    "both_policies_dev_exact": 16,
+    "both_policies_capability_exact": 15,
+    "denominator_per_split_policy": 16,
+    "pairs_tied": 32,
+    "C81": "Frozen-gold mismatch: extra INCOMPLETE_HISTORY40700 hold; conservative behavior preserved, no tuning.",
+    "main_assertions": 773,
+    "main_native_commands": 6,
+    "first_report_and_native_artifacts_unchanged": true
+  },
+  "public_summary": {
+    "summary": "reports/u2b-first/summary.json",
+    "summary_sha256": "19261fa3e23c0972b77fe0f2825e289ebdc236bae7f8fe177a087766c7e37f57",
+    "manifest": "reports/u2b-first/manifest.json",
+    "manifest_sha256": "9ab8ce7081b2a2480ba3003f1dd1ad34df92670f234c6a31b73a54c1d20f3af5",
+    "exported_from_preserved_first_reports": true,
+    "native_reexecution": false,
+    "raw_SQLite_personal_paths_coordination_argv_PID": false,
+    "validator": "Allowlist, derivation, fingerprint and byte-hash checks; no cryptographic authenticity service."
+  },
+  "progress_contract": {
+    "version": 2,
+    "intended_before_dispatch": true,
+    "STARTED_fsync_before_launch": true,
+    "DISPATCHED_only_after_process_creation": true,
+    "terminal_launch_error_has_no_native_exit": true,
+    "deadline_unexecuted_no_attempt_no_latency": true,
+    "interrupted_result_unknown_no_implicit_redispatch": true,
+    "gold_denominator": "all planned slots; unscored material gold missed/unverified",
+    "unsafe_outcome_unknown_when_unscored": true,
+    "atomic_snapshots_follow_fsynced_journal": true,
+    "power_loss_or_uninterruptible_OS_claim": false
+  },
+  "pure": {
+    "latest_unique_methods": 13,
+    "latest_exit_code": 0,
+    "first_12_method_run_retained_errors": 5,
+    "cause": "Name counts shadowed imported function in summary; corrected alias.",
+    "second_12_method_exit": 0,
+    "third_13_method_exit": 0,
+    "socket_process_actual_launches": 0,
+    "one_default_Popen_call_is_separately_mocked_to_reject": true,
+    "wall_seconds": 0.9849999999860302,
+    "own_process_peak_working_set_bytes": 39378944,
+    "native_domain_tasks": 0
+  },
+  "current_correction": {
+    "native_commands_executed": 0,
+    "model_calls": 0,
+    "external_calls": 0,
+    "credential_accessed": false,
+    "credential_presence_checked": false,
+    "downloads": 0,
+    "posting": false,
+    "new_chat_subagent": false,
+    "push_deploy": false
+  },
+  "cost": "Measured billed cost null. Historical model/external calls0; partial observed results unknown.",
+  "quality_threshold": null,
+  "positive_uplift_required": false,
+  "prepared_native_commands": [
+    "py -3.11 -m evaluation.u2c_acceptance --out artifacts/u2c-process-first",
+    "py -3.11 -m evaluation.ci --out artifacts/u2c-regression-first --allow-heldout"
+  ],
+  "unexecuted": [
+    "Native process failure contracts",
+    "Full legacy regression",
+    "New-reporter native authored reproduction (not in requested batch)",
+    "Hosted CI",
+    "Main-owned unseen evaluation",
+    "Genuine QBO sandbox compatibility",
+    "Main-authorized live inference",
+    "Final independent upgrade acceptance/publication"
+  ],
+  "license": "Existing MIT source and fictional data; no new package dependency."
+}

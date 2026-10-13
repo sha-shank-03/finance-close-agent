@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "case_id": "C71",
+  "stratum": "fees",
+  "split": "capability",
+  "author_exposed": true,
+  "matches": {
+    "B-C71-2": "E-C71-FEE-2"
+  },
+  "exceptions": [],
+  "proposals": [
+    {
+      "bank_id": "B-C71-1",
+      "rule_id": "BANK_FEE_V1",
+      "date": "2026-09-12",
+      "currency": "USD",
+      "lines": [
+        {
+          "account": "bank_fee_expense",
+          "side": "debit",
+          "amount_cents": 9750
+        },
+        {
+          "account": "cash",
+          "side": "credit",
+          "amount_cents": 9750
+        }
+      ]
+    }
+  ],
+  "bank_closing_cents": 988950,
+  "ledger_closing_cents": 998700,
+  "reservation_priority": "Host case IDs sorted; CSV row order grants no cash matching priority",
+  "lineage": "Independently authored U2-B capability fees variant1"
+}

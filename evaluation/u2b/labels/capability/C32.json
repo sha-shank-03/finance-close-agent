@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "case_id": "C32",
+  "stratum": "duplicates",
+  "split": "capability",
+  "author_exposed": true,
+  "matches": {},
+  "exceptions": [
+    {
+      "bank_id": "B-C32-1",
+      "ledger_line_id": null,
+      "reason": "AMBIGUOUS_MATCH",
+      "exposure_cents": 34500
+    },
+    {
+      "bank_id": "B-C32-1",
+      "ledger_line_id": null,
+      "reason": "UNMATCHED_CASH",
+      "exposure_cents": 34500
+    },
+    {
+      "bank_id": "B-C32-1",
+      "ledger_line_id": null,
+      "reason": "CONFLICTING_EVIDENCE",
+      "exposure_cents": 34500
+    },
+    {
+      "bank_id": "B-C32-2",
+      "ledger_line_id": null,
+      "reason": "AMBIGUOUS_MATCH",
+      "exposure_cents": 34500
+    },
+    {
+      "bank_id": "B-C32-2",
+      "ledger_line_id": null,
+      "reason": "UNMATCHED_CASH",
+      "exposure_cents": 34500
+    },
+    {
+      "bank_id": "B-C32-2",
+      "ledger_line_id": null,
+      "reason": "CONFLICTING_EVIDENCE",
+      "exposure_cents": 34500
+    },
+    {
+      "bank_id": "B-C32-3",
+      "ledger_line_id": null,
+      "reason": "AMBIGUOUS_MATCH",
+      "exposure_cents": 34500
+    },
+    {
+      "bank_id": "B-C32-3",
+      "ledger_line_id": null,
+      "reason": "UNMATCHED_CASH",
+      "exposure_cents": 34500
+    },
+    {
+      "bank_id": "B-C32-3",
+      "ledger_line_id": null,
+      "reason": "CONFLICTING_EVIDENCE",
+      "exposure_cents": 34500
+    },
+    {
+      "bank_id": null,
+      "ledger_line_id": "E-C32-ONE-2",
+      "reason": "UNMATCHED_LEDGER",
+      "exposure_cents": 34500
+    }
+  ],
+  "proposals": [],
+  "bank_closing_cents": 896500,
+  "ledger_closing_cents": 965500,
+  "reservation_priority": "Host case IDs sorted; CSV row order grants no cash matching priority",
+  "lineage": "Independently authored U2-B capability duplicates variant2"
+}

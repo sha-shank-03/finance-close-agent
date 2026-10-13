@@ -1,0 +1,2688 @@
+{
+  "schema_version": 1,
+  "summary_version": "u2b-public-first-v1",
+  "evidence_type": "historical author-exposed offline first reports; no rerun",
+  "authorship": "Worker-authored fictional MIT source/data; both splits exposed and share construction families",
+  "unique_tasks": 32,
+  "planned_slots": 64,
+  "dispatched": 64,
+  "terminal": 64,
+  "repetitions": 1,
+  "separate_demo_adds_unique_tasks": false,
+  "equal_budgets": {
+    "tools_per_case": 10,
+    "decisions_per_case": 12,
+    "decisions_per_run": 250,
+    "cases_per_run": 50,
+    "run_seconds": 180,
+    "split_seconds": 180,
+    "child_seconds": 30
+  },
+  "model_calls": 0,
+  "external_calls": 0,
+  "actual_measured_cost": null,
+  "quality_gate": null,
+  "positive_uplift_required": false,
+  "splits": [
+    {
+      "split": "dev",
+      "first_report_sha256": "b1e61e992de468317b265355bfc71075eed2ed6fb9f75734589d37537cfd20f0",
+      "first_code_sha256": {
+        "finance_close/__init__.py": "552dea34c9412ec19de5dac47337db5d7b7f3cf482cf37fe2da34f8615a6d7ba",
+        "finance_close/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+        "finance_close/agent.py": "4bab0b482a4e822f929c2be113c2e3426bae0da39e8b1306308c8f5595532446",
+        "finance_close/ap.py": "f3261f60c944796cc5cb9712555c04f38c072bb111ea95d400b87710bd676a80",
+        "finance_close/cli.py": "805406ef248d90f77acf640b18c36df5ff5c5588542e37d81cd6f60d2ce08da5",
+        "finance_close/deterministic_v2.py": "421514a14c46826464138c1482e1f49a6c3c4a5df19d3eb9cef6298820d60c05",
+        "finance_close/domain.py": "ef241b62b31188b89105dca39a87f50dbed040c43554155a58e8c702d8ab2152",
+        "finance_close/gateway.py": "5b2fa95e6d803de5ca4b1e2b6cbebd565311b1876a04508274152e1be301d07c",
+        "finance_close/gateway_journal.py": "844d4760ce1b802e87cde8f363079b7a4facc917a2b94b3a5c3b6c8b4c1ce67d",
+        "finance_close/gateway_loop.py": "395f021efc51c616ef9a1f59421f8f5b935c7e207fc47ac8976f818394446783",
+        "finance_close/gateway_tools.py": "0e6e48cd35f5493201ad0bfebc190600b86c258d54b659630086fbe0162025ba",
+        "finance_close/ingest.py": "5949a0dc9e947792d0dbf1c23605629e2017f4da5b59892d92299654660905ee",
+        "finance_close/invoice_aliases.py": "048d0797895721d2d4921e282f73b9c9b2d5f5b2f18a6bd46232e47e3a03dedb",
+        "finance_close/net_worker.py": "9528bc345f7b0344b42a5f9b9d4f0426be63b1cf66ed20c31b0469af11065ae8",
+        "finance_close/ollama.py": "75af4f4336de14aba8b0cb4331e6a3c35f003b9bf8549bb9c3c49105463207a9",
+        "finance_close/providers.py": "a8a627e7794c6a22a1b5f51960c332dfb68a2d84f03b7c3f48e160e1e4fdb7dc",
+        "finance_close/qbo.py": "9a02ffecaedf8633cd60fc8170732ab83ae21a021fb31964e84a7c51f2f332ef",
+        "finance_close/qbo_transport.py": "6a8a3f70d9acf03b099ee8e5ac7ef7537a4dceb96513fec6bad08a8a8d0e175b",
+        "finance_close/render.py": "1f42b6c9a98dbf3ce5800ae0550dfa83e1e6564a94e8fc6d915ef2095a46f7f9",
+        "finance_close/review.py": "bbf31932fc73b5b2e3d9a95c04dd8e414ffac6af0cbdf90972a14e5a65e11b4b",
+        "finance_close/store.py": "f8690ea60f9fdd18c8465429fdc5242afbe43ef83cf18de1003adfaf82da6600",
+        "finance_close/tools.py": "8a9f12fb655fb404347e368c8e9103e0fa4bf3d57ac0af8f61f3e2b62cc21ed8",
+        "finance_close/u2b.py": "6dd63579823d827b8ce4608b820a26f41f90ece916817a3ace3f6bbfe286f34a",
+        "evaluation/__init__.py": "41a80545e662a0475ea55f7979f7ae18861d12308accc44dc71e8023b433d390",
+        "evaluation/acceptance.py": "5e00afddb76c10facc64afc8793dd91b639982b8d4856752bd46447213932f74",
+        "evaluation/author_fixtures.py": "f154e66ec98c5d5bfd3c57c4e563c1c09e6486ed66f95d8a2a8914166139439b",
+        "evaluation/baseline.py": "a7bc7721c0df36b6488bc1714d5a081d6d226ae9c04cd92639fcf68835791d6e",
+        "evaluation/ci.py": "740a9297511d67ba9f9ef1e859be7b65b49be5e1db7ccc7ed33ddd24ece29661",
+        "evaluation/freeze.py": "e7c799f63eaa6aa3e116df731a95c23d986bbabf71564528a8d680ac9100ca53",
+        "evaluation/gateway_acceptance.py": "2c08046191453bcb65a361a098fd6a774fc09ad8cc5431dc07f3cc27492cd862",
+        "evaluation/gateway_transport.py": "a791f1ed04d4b9928b549af3bb326315af9f294684628abe023153f228cb03c8",
+        "evaluation/gateway_verify.py": "36fc715f281f5daa4e5df6c13848c6288e885d5d68056e8fd00712b06656e18e",
+        "evaluation/m2_acceptance.py": "7ce4724c687b21a7b4e828f68e983bba0165b320fb8c9b5b28aa374d898e11c3",
+        "evaluation/m3_acceptance.py": "303206786284d9158bde7e929359fee2af4cc9c5057d1f564e75c8d90d16268f",
+        "evaluation/metrics.py": "4656bbbac641955c19f8c8a91c047f6e03d3aa7b05e32d19a20a995bc0e873fa",
+        "evaluation/protocol.py": "77b84b68719399b89d8c06003ed716580d971e68670ee02eab21c7d80e4b0d2b",
+        "evaluation/qbo_u2a_acceptance.py": "459c45a3f101e4e3b6ae527fc37d1cd7c459df34ff7aafc2e6af36c2ba3fa37c",
+        "evaluation/qbo_u2a_contract.py": "f7517341685be5d6f6bc415c4576c8911847c4c043482613a032984b2b1e43b0",
+        "evaluation/release.py": "c5327511cb8deef94c26fb83376a4c8a8f69805cfaeb9e06594e8b6523bf589c",
+        "evaluation/report.py": "ba48c3ef4aa875f9b6e21373c8d08252115673ebbad524f46cf9241dac12c778",
+        "evaluation/run.py": "438246a006dc0008e5c49c9808e5f10670dba7ac2e6bc8f5e731f55842d5cbb0",
+        "evaluation/scoring.py": "1849f53bea6b1e579b25e3b4bea65b20105827086b4d0fc7f4141ae66ed33036",
+        "evaluation/u2b_author.py": "1632a0b65342d12b0162a4a19e2111164f5ad85d9ef047e9443072ab8e869451",
+        "evaluation/u2b_ci.py": "7e7a1043f920c0a6ecf8e3d8c6265509e9273861bfe7f42a0202862f9be9fa0a",
+        "evaluation/u2b_controls.py": "0056dd84077f18342cdf23da122461bf9405591c8134ef3b131d5b4e88810fcd",
+        "evaluation/u2b_run.py": "5291626fafbbd17ae07809cc8df7201d0ce374e57bc0340925bf220124e9abf2",
+        "evaluation/u2b_verify.py": "1c6e060ee17f7b6634cb9e7e3fa57865dfa2ae225793bf3f68877c2cd2eb59a4",
+        "evaluation/verify.py": "46ddfdabc2214a3859cae62b5932137f0e6fdd857e8cccdf2d7fed3ec1f1167a"
+      },
+      "first_code_fingerprint": "17e084d3080809e81aac3fdaf86fe9167df634ffd3d6f83cd538ef8a18f6d414",
+      "dataset_manifest_sha256": "f20cc5b72a180c5c6e5722e87c0a4d888aa728db6a2747b46757a46725120f86",
+      "unique_tasks": 16,
+      "planned_slots": 32,
+      "dispatched": 32,
+      "terminal": 32,
+      "rows": [
+        {
+          "case_id": "D11",
+          "policy": "scripted",
+          "stratum": "exact",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": true,
+          "resolved_completion": true,
+          "correct_handoff": false,
+          "human_handoff_present": false,
+          "unsafe_committed": false,
+          "elapsed_seconds": 1.172000000020489,
+          "metrics": {
+            "matches": {
+              "tp": 1,
+              "predicted": 1,
+              "gold": 1
+            },
+            "holds": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "proposals": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            }
+          },
+          "material": {
+            "gold": 0,
+            "missed": 0
+          },
+          "extra_holds": [],
+          "exact_hold_assertion_failed": false
+        },
+        {
+          "case_id": "D11",
+          "policy": "deterministic-v2",
+          "stratum": "exact",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": true,
+          "resolved_completion": true,
+          "correct_handoff": false,
+          "human_handoff_present": false,
+          "unsafe_committed": false,
+          "elapsed_seconds": 1.0939999999827705,
+          "metrics": {
+            "matches": {
+              "tp": 1,
+              "predicted": 1,
+              "gold": 1
+            },
+            "holds": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "proposals": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            }
+          },
+          "material": {
+            "gold": 0,
+            "missed": 0
+          },
+          "extra_holds": [],
+          "exact_hold_assertion_failed": false
+        },
+        {
+          "case_id": "D12",
+          "policy": "scripted",
+          "stratum": "exact",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": true,
+          "resolved_completion": true,
+          "correct_handoff": false,
+          "human_handoff_present": false,
+          "unsafe_committed": false,
+          "elapsed_seconds": 1.1089999999967404,
+          "metrics": {
+            "matches": {
+              "tp": 1,
+              "predicted": 1,
+              "gold": 1
+            },
+            "holds": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "proposals": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            }
+          },
+          "material": {
+            "gold": 0,
+            "missed": 0
+          },
+          "extra_holds": [],
+          "exact_hold_assertion_failed": false
+        },
+        {
+          "case_id": "D12",
+          "policy": "deterministic-v2",
+          "stratum": "exact",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": true,
+          "resolved_completion": true,
+          "correct_handoff": false,
+          "human_handoff_present": false,
+          "unsafe_committed": false,
+          "elapsed_seconds": 1.172000000020489,
+          "metrics": {
+            "matches": {
+              "tp": 1,
+              "predicted": 1,
+              "gold": 1
+            },
+            "holds": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "proposals": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            }
+          },
+          "material": {
+            "gold": 0,
+            "missed": 0
+          },
+          "extra_holds": [],
+          "exact_hold_assertion_failed": false
+        },
+        {
+          "case_id": "D21",
+          "policy": "scripted",
+          "stratum": "amounts",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": true,
+          "resolved_completion": false,
+          "correct_handoff": true,
+          "human_handoff_present": true,
+          "unsafe_committed": false,
+          "elapsed_seconds": 1.1869999999762513,
+          "metrics": {
+            "matches": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "holds": {
+              "tp": 3,
+              "predicted": 3,
+              "gold": 3
+            },
+            "proposals": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            }
+          },
+          "material": {
+            "gold": 3,
+            "missed": 0
+          },
+          "extra_holds": [],
+          "exact_hold_assertion_failed": false
+        },
+        {
+          "case_id": "D21",
+          "policy": "deterministic-v2",
+          "stratum": "amounts",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": true,
+          "resolved_completion": false,
+          "correct_handoff": true,
+          "human_handoff_present": true,
+          "unsafe_committed": false,
+          "elapsed_seconds": 1.1400000000139698,
+          "metrics": {
+            "matches": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "holds": {
+              "tp": 3,
+              "predicted": 3,
+              "gold": 3
+            },
+            "proposals": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            }
+          },
+          "material": {
+            "gold": 3,
+            "missed": 0
+          },
+          "extra_holds": [],
+          "exact_hold_assertion_failed": false
+        },
+        {
+          "case_id": "D22",
+          "policy": "scripted",
+          "stratum": "amounts",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": true,
+          "resolved_completion": false,
+          "correct_handoff": true,
+          "human_handoff_present": true,
+          "unsafe_committed": false,
+          "elapsed_seconds": 1.1089999999967404,
+          "metrics": {
+            "matches": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "holds": {
+              "tp": 3,
+              "predicted": 3,
+              "gold": 3
+            },
+            "proposals": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            }
+          },
+          "material": {
+            "gold": 3,
+            "missed": 0
+          },
+          "extra_holds": [],
+          "exact_hold_assertion_failed": false
+        },
+        {
+          "case_id": "D22",
+          "policy": "deterministic-v2",
+          "stratum": "amounts",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": true,
+          "resolved_completion": false,
+          "correct_handoff": true,
+          "human_handoff_present": true,
+          "unsafe_committed": false,
+          "elapsed_seconds": 1.1869999999762513,
+          "metrics": {
+            "matches": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "holds": {
+              "tp": 3,
+              "predicted": 3,
+              "gold": 3
+            },
+            "proposals": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            }
+          },
+          "material": {
+            "gold": 3,
+            "missed": 0
+          },
+          "extra_holds": [],
+          "exact_hold_assertion_failed": false
+        },
+        {
+          "case_id": "D31",
+          "policy": "scripted",
+          "stratum": "duplicates",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": true,
+          "resolved_completion": false,
+          "correct_handoff": true,
+          "human_handoff_present": true,
+          "unsafe_committed": false,
+          "elapsed_seconds": 1.125,
+          "metrics": {
+            "matches": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "holds": {
+              "tp": 4,
+              "predicted": 4,
+              "gold": 4
+            },
+            "proposals": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            }
+          },
+          "material": {
+            "gold": 4,
+            "missed": 0
+          },
+          "extra_holds": [],
+          "exact_hold_assertion_failed": false
+        },
+        {
+          "case_id": "D31",
+          "policy": "deterministic-v2",
+          "stratum": "duplicates",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": true,
+          "resolved_completion": false,
+          "correct_handoff": true,
+          "human_handoff_present": true,
+          "unsafe_committed": false,
+          "elapsed_seconds": 1.172000000020489,
+          "metrics": {
+            "matches": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "holds": {
+              "tp": 4,
+              "predicted": 4,
+              "gold": 4
+            },
+            "proposals": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            }
+          },
+          "material": {
+            "gold": 4,
+            "missed": 0
+          },
+          "extra_holds": [],
+          "exact_hold_assertion_failed": false
+        },
+        {
+          "case_id": "D32",
+          "policy": "scripted",
+          "stratum": "duplicates",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": true,
+          "resolved_completion": false,
+          "correct_handoff": true,
+          "human_handoff_present": true,
+          "unsafe_committed": false,
+          "elapsed_seconds": 1.4380000000237487,
+          "metrics": {
+            "matches": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "holds": {
+              "tp": 5,
+              "predicted": 5,
+              "gold": 5
+            },
+            "proposals": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            }
+          },
+          "material": {
+            "gold": 5,
+            "missed": 0
+          },
+          "extra_holds": [],
+          "exact_hold_assertion_failed": false
+        },
+        {
+          "case_id": "D32",
+          "policy": "deterministic-v2",
+          "stratum": "duplicates",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": true,
+          "resolved_completion": false,
+          "correct_handoff": true,
+          "human_handoff_present": true,
+          "unsafe_committed": false,
+          "elapsed_seconds": 1.437000000034459,
+          "metrics": {
+            "matches": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "holds": {
+              "tp": 5,
+              "predicted": 5,
+              "gold": 5
+            },
+            "proposals": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            }
+          },
+          "material": {
+            "gold": 5,
+            "missed": 0
+          },
+          "extra_holds": [],
+          "exact_hold_assertion_failed": false
+        },
+        {
+          "case_id": "D41",
+          "policy": "scripted",
+          "stratum": "missing_invoice",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": true,
+          "resolved_completion": false,
+          "correct_handoff": true,
+          "human_handoff_present": true,
+          "unsafe_committed": false,
+          "elapsed_seconds": 1.077999999979511,
+          "metrics": {
+            "matches": {
+              "tp": 1,
+              "predicted": 1,
+              "gold": 1
+            },
+            "holds": {
+              "tp": 1,
+              "predicted": 1,
+              "gold": 1
+            },
+            "proposals": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            }
+          },
+          "material": {
+            "gold": 1,
+            "missed": 0
+          },
+          "extra_holds": [],
+          "exact_hold_assertion_failed": false
+        },
+        {
+          "case_id": "D41",
+          "policy": "deterministic-v2",
+          "stratum": "missing_invoice",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": true,
+          "resolved_completion": false,
+          "correct_handoff": true,
+          "human_handoff_present": true,
+          "unsafe_committed": false,
+          "elapsed_seconds": 1.1410000000032596,
+          "metrics": {
+            "matches": {
+              "tp": 1,
+              "predicted": 1,
+              "gold": 1
+            },
+            "holds": {
+              "tp": 1,
+              "predicted": 1,
+              "gold": 1
+            },
+            "proposals": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            }
+          },
+          "material": {
+            "gold": 1,
+            "missed": 0
+          },
+          "extra_holds": [],
+          "exact_hold_assertion_failed": false
+        },
+        {
+          "case_id": "D42",
+          "policy": "scripted",
+          "stratum": "missing_invoice",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": true,
+          "resolved_completion": false,
+          "correct_handoff": true,
+          "human_handoff_present": true,
+          "unsafe_committed": false,
+          "elapsed_seconds": 1.1719999999622814,
+          "metrics": {
+            "matches": {
+              "tp": 1,
+              "predicted": 1,
+              "gold": 1
+            },
+            "holds": {
+              "tp": 1,
+              "predicted": 1,
+              "gold": 1
+            },
+            "proposals": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            }
+          },
+          "material": {
+            "gold": 1,
+            "missed": 0
+          },
+          "extra_holds": [],
+          "exact_hold_assertion_failed": false
+        },
+        {
+          "case_id": "D42",
+          "policy": "deterministic-v2",
+          "stratum": "missing_invoice",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": true,
+          "resolved_completion": false,
+          "correct_handoff": true,
+          "human_handoff_present": true,
+          "unsafe_committed": false,
+          "elapsed_seconds": 1.2190000000409782,
+          "metrics": {
+            "matches": {
+              "tp": 1,
+              "predicted": 1,
+              "gold": 1
+            },
+            "holds": {
+              "tp": 1,
+              "predicted": 1,
+              "gold": 1
+            },
+            "proposals": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            }
+          },
+          "material": {
+            "gold": 1,
+            "missed": 0
+          },
+          "extra_holds": [],
+          "exact_hold_assertion_failed": false
+        },
+        {
+          "case_id": "D51",
+          "policy": "scripted",
+          "stratum": "ap_missing",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": true,
+          "resolved_completion": true,
+          "correct_handoff": false,
+          "human_handoff_present": false,
+          "unsafe_committed": false,
+          "elapsed_seconds": 1.202999999979511,
+          "metrics": {
+            "matches": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "holds": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "proposals": {
+              "tp": 1,
+              "predicted": 1,
+              "gold": 1
+            }
+          },
+          "material": {
+            "gold": 0,
+            "missed": 0
+          },
+          "extra_holds": [],
+          "exact_hold_assertion_failed": false
+        },
+        {
+          "case_id": "D51",
+          "policy": "deterministic-v2",
+          "stratum": "ap_missing",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": true,
+          "resolved_completion": true,
+          "correct_handoff": false,
+          "human_handoff_present": false,
+          "unsafe_committed": false,
+          "elapsed_seconds": 1.125,
+          "metrics": {
+            "matches": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "holds": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "proposals": {
+              "tp": 1,
+              "predicted": 1,
+              "gold": 1
+            }
+          },
+          "material": {
+            "gold": 0,
+            "missed": 0
+          },
+          "extra_holds": [],
+          "exact_hold_assertion_failed": false
+        },
+        {
+          "case_id": "D52",
+          "policy": "scripted",
+          "stratum": "ap_missing",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": true,
+          "resolved_completion": true,
+          "correct_handoff": false,
+          "human_handoff_present": false,
+          "unsafe_committed": false,
+          "elapsed_seconds": 1.1560000000172295,
+          "metrics": {
+            "matches": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "holds": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "proposals": {
+              "tp": 1,
+              "predicted": 1,
+              "gold": 1
+            }
+          },
+          "material": {
+            "gold": 0,
+            "missed": 0
+          },
+          "extra_holds": [],
+          "exact_hold_assertion_failed": false
+        },
+        {
+          "case_id": "D52",
+          "policy": "deterministic-v2",
+          "stratum": "ap_missing",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": true,
+          "resolved_completion": true,
+          "correct_handoff": false,
+          "human_handoff_present": false,
+          "unsafe_committed": false,
+          "elapsed_seconds": 1.202999999979511,
+          "metrics": {
+            "matches": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "holds": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "proposals": {
+              "tp": 1,
+              "predicted": 1,
+              "gold": 1
+            }
+          },
+          "material": {
+            "gold": 0,
+            "missed": 0
+          },
+          "extra_holds": [],
+          "exact_hold_assertion_failed": false
+        },
+        {
+          "case_id": "D61",
+          "policy": "scripted",
+          "stratum": "partial",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": true,
+          "resolved_completion": true,
+          "correct_handoff": false,
+          "human_handoff_present": false,
+          "unsafe_committed": false,
+          "elapsed_seconds": 1.125,
+          "metrics": {
+            "matches": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "holds": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "proposals": {
+              "tp": 1,
+              "predicted": 1,
+              "gold": 1
+            }
+          },
+          "material": {
+            "gold": 0,
+            "missed": 0
+          },
+          "extra_holds": [],
+          "exact_hold_assertion_failed": false
+        },
+        {
+          "case_id": "D61",
+          "policy": "deterministic-v2",
+          "stratum": "partial",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": true,
+          "resolved_completion": true,
+          "correct_handoff": false,
+          "human_handoff_present": false,
+          "unsafe_committed": false,
+          "elapsed_seconds": 0.9689999999827705,
+          "metrics": {
+            "matches": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "holds": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "proposals": {
+              "tp": 1,
+              "predicted": 1,
+              "gold": 1
+            }
+          },
+          "material": {
+            "gold": 0,
+            "missed": 0
+          },
+          "extra_holds": [],
+          "exact_hold_assertion_failed": false
+        },
+        {
+          "case_id": "D62",
+          "policy": "scripted",
+          "stratum": "partial",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": true,
+          "resolved_completion": false,
+          "correct_handoff": true,
+          "human_handoff_present": true,
+          "unsafe_committed": false,
+          "elapsed_seconds": 0.9849999999860302,
+          "metrics": {
+            "matches": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "holds": {
+              "tp": 2,
+              "predicted": 2,
+              "gold": 2
+            },
+            "proposals": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            }
+          },
+          "material": {
+            "gold": 2,
+            "missed": 0
+          },
+          "extra_holds": [],
+          "exact_hold_assertion_failed": false
+        },
+        {
+          "case_id": "D62",
+          "policy": "deterministic-v2",
+          "stratum": "partial",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": true,
+          "resolved_completion": false,
+          "correct_handoff": true,
+          "human_handoff_present": true,
+          "unsafe_committed": false,
+          "elapsed_seconds": 0.9690000000409782,
+          "metrics": {
+            "matches": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "holds": {
+              "tp": 2,
+              "predicted": 2,
+              "gold": 2
+            },
+            "proposals": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            }
+          },
+          "material": {
+            "gold": 2,
+            "missed": 0
+          },
+          "extra_holds": [],
+          "exact_hold_assertion_failed": false
+        },
+        {
+          "case_id": "D71",
+          "policy": "scripted",
+          "stratum": "fees",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": true,
+          "resolved_completion": true,
+          "correct_handoff": false,
+          "human_handoff_present": false,
+          "unsafe_committed": false,
+          "elapsed_seconds": 0.8130000000237487,
+          "metrics": {
+            "matches": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "holds": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "proposals": {
+              "tp": 1,
+              "predicted": 1,
+              "gold": 1
+            }
+          },
+          "material": {
+            "gold": 0,
+            "missed": 0
+          },
+          "extra_holds": [],
+          "exact_hold_assertion_failed": false
+        },
+        {
+          "case_id": "D71",
+          "policy": "deterministic-v2",
+          "stratum": "fees",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": true,
+          "resolved_completion": true,
+          "correct_handoff": false,
+          "human_handoff_present": false,
+          "unsafe_committed": false,
+          "elapsed_seconds": 0.875,
+          "metrics": {
+            "matches": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "holds": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "proposals": {
+              "tp": 1,
+              "predicted": 1,
+              "gold": 1
+            }
+          },
+          "material": {
+            "gold": 0,
+            "missed": 0
+          },
+          "extra_holds": [],
+          "exact_hold_assertion_failed": false
+        },
+        {
+          "case_id": "D72",
+          "policy": "scripted",
+          "stratum": "fees",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": true,
+          "resolved_completion": true,
+          "correct_handoff": false,
+          "human_handoff_present": false,
+          "unsafe_committed": false,
+          "elapsed_seconds": 0.875,
+          "metrics": {
+            "matches": {
+              "tp": 1,
+              "predicted": 1,
+              "gold": 1
+            },
+            "holds": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "proposals": {
+              "tp": 1,
+              "predicted": 1,
+              "gold": 1
+            }
+          },
+          "material": {
+            "gold": 0,
+            "missed": 0
+          },
+          "extra_holds": [],
+          "exact_hold_assertion_failed": false
+        },
+        {
+          "case_id": "D72",
+          "policy": "deterministic-v2",
+          "stratum": "fees",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": true,
+          "resolved_completion": true,
+          "correct_handoff": false,
+          "human_handoff_present": false,
+          "unsafe_committed": false,
+          "elapsed_seconds": 0.9060000000172295,
+          "metrics": {
+            "matches": {
+              "tp": 1,
+              "predicted": 1,
+              "gold": 1
+            },
+            "holds": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "proposals": {
+              "tp": 1,
+              "predicted": 1,
+              "gold": 1
+            }
+          },
+          "material": {
+            "gold": 0,
+            "missed": 0
+          },
+          "extra_holds": [],
+          "exact_hold_assertion_failed": false
+        },
+        {
+          "case_id": "D81",
+          "policy": "scripted",
+          "stratum": "timing_unsupported",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": true,
+          "resolved_completion": false,
+          "correct_handoff": true,
+          "human_handoff_present": true,
+          "unsafe_committed": false,
+          "elapsed_seconds": 1.0,
+          "metrics": {
+            "matches": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "holds": {
+              "tp": 3,
+              "predicted": 3,
+              "gold": 3
+            },
+            "proposals": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            }
+          },
+          "material": {
+            "gold": 3,
+            "missed": 0
+          },
+          "extra_holds": [],
+          "exact_hold_assertion_failed": false
+        },
+        {
+          "case_id": "D81",
+          "policy": "deterministic-v2",
+          "stratum": "timing_unsupported",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": true,
+          "resolved_completion": false,
+          "correct_handoff": true,
+          "human_handoff_present": true,
+          "unsafe_committed": false,
+          "elapsed_seconds": 1.0310000000172295,
+          "metrics": {
+            "matches": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "holds": {
+              "tp": 3,
+              "predicted": 3,
+              "gold": 3
+            },
+            "proposals": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            }
+          },
+          "material": {
+            "gold": 3,
+            "missed": 0
+          },
+          "extra_holds": [],
+          "exact_hold_assertion_failed": false
+        },
+        {
+          "case_id": "D82",
+          "policy": "scripted",
+          "stratum": "timing_unsupported",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": true,
+          "resolved_completion": false,
+          "correct_handoff": true,
+          "human_handoff_present": true,
+          "unsafe_committed": false,
+          "elapsed_seconds": 1.047000000020489,
+          "metrics": {
+            "matches": {
+              "tp": 1,
+              "predicted": 1,
+              "gold": 1
+            },
+            "holds": {
+              "tp": 1,
+              "predicted": 1,
+              "gold": 1
+            },
+            "proposals": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            }
+          },
+          "material": {
+            "gold": 1,
+            "missed": 0
+          },
+          "extra_holds": [],
+          "exact_hold_assertion_failed": false
+        },
+        {
+          "case_id": "D82",
+          "policy": "deterministic-v2",
+          "stratum": "timing_unsupported",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": true,
+          "resolved_completion": false,
+          "correct_handoff": true,
+          "human_handoff_present": true,
+          "unsafe_committed": false,
+          "elapsed_seconds": 1.062999999965541,
+          "metrics": {
+            "matches": {
+              "tp": 1,
+              "predicted": 1,
+              "gold": 1
+            },
+            "holds": {
+              "tp": 1,
+              "predicted": 1,
+              "gold": 1
+            },
+            "proposals": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            }
+          },
+          "material": {
+            "gold": 1,
+            "missed": 0
+          },
+          "extra_holds": [],
+          "exact_hold_assertion_failed": false
+        }
+      ]
+    },
+    {
+      "split": "capability",
+      "first_report_sha256": "fff69275a4fe614338ccf94fe4dab8f09d253758ef0171cd7940dd6c58e64508",
+      "first_code_sha256": {
+        "finance_close/__init__.py": "552dea34c9412ec19de5dac47337db5d7b7f3cf482cf37fe2da34f8615a6d7ba",
+        "finance_close/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+        "finance_close/agent.py": "4bab0b482a4e822f929c2be113c2e3426bae0da39e8b1306308c8f5595532446",
+        "finance_close/ap.py": "f3261f60c944796cc5cb9712555c04f38c072bb111ea95d400b87710bd676a80",
+        "finance_close/cli.py": "805406ef248d90f77acf640b18c36df5ff5c5588542e37d81cd6f60d2ce08da5",
+        "finance_close/deterministic_v2.py": "421514a14c46826464138c1482e1f49a6c3c4a5df19d3eb9cef6298820d60c05",
+        "finance_close/domain.py": "ef241b62b31188b89105dca39a87f50dbed040c43554155a58e8c702d8ab2152",
+        "finance_close/gateway.py": "5b2fa95e6d803de5ca4b1e2b6cbebd565311b1876a04508274152e1be301d07c",
+        "finance_close/gateway_journal.py": "844d4760ce1b802e87cde8f363079b7a4facc917a2b94b3a5c3b6c8b4c1ce67d",
+        "finance_close/gateway_loop.py": "395f021efc51c616ef9a1f59421f8f5b935c7e207fc47ac8976f818394446783",
+        "finance_close/gateway_tools.py": "0e6e48cd35f5493201ad0bfebc190600b86c258d54b659630086fbe0162025ba",
+        "finance_close/ingest.py": "5949a0dc9e947792d0dbf1c23605629e2017f4da5b59892d92299654660905ee",
+        "finance_close/invoice_aliases.py": "048d0797895721d2d4921e282f73b9c9b2d5f5b2f18a6bd46232e47e3a03dedb",
+        "finance_close/net_worker.py": "9528bc345f7b0344b42a5f9b9d4f0426be63b1cf66ed20c31b0469af11065ae8",
+        "finance_close/ollama.py": "75af4f4336de14aba8b0cb4331e6a3c35f003b9bf8549bb9c3c49105463207a9",
+        "finance_close/providers.py": "a8a627e7794c6a22a1b5f51960c332dfb68a2d84f03b7c3f48e160e1e4fdb7dc",
+        "finance_close/qbo.py": "9a02ffecaedf8633cd60fc8170732ab83ae21a021fb31964e84a7c51f2f332ef",
+        "finance_close/qbo_transport.py": "6a8a3f70d9acf03b099ee8e5ac7ef7537a4dceb96513fec6bad08a8a8d0e175b",
+        "finance_close/render.py": "1f42b6c9a98dbf3ce5800ae0550dfa83e1e6564a94e8fc6d915ef2095a46f7f9",
+        "finance_close/review.py": "bbf31932fc73b5b2e3d9a95c04dd8e414ffac6af0cbdf90972a14e5a65e11b4b",
+        "finance_close/store.py": "f8690ea60f9fdd18c8465429fdc5242afbe43ef83cf18de1003adfaf82da6600",
+        "finance_close/tools.py": "8a9f12fb655fb404347e368c8e9103e0fa4bf3d57ac0af8f61f3e2b62cc21ed8",
+        "finance_close/u2b.py": "6dd63579823d827b8ce4608b820a26f41f90ece916817a3ace3f6bbfe286f34a",
+        "evaluation/__init__.py": "41a80545e662a0475ea55f7979f7ae18861d12308accc44dc71e8023b433d390",
+        "evaluation/acceptance.py": "5e00afddb76c10facc64afc8793dd91b639982b8d4856752bd46447213932f74",
+        "evaluation/author_fixtures.py": "f154e66ec98c5d5bfd3c57c4e563c1c09e6486ed66f95d8a2a8914166139439b",
+        "evaluation/baseline.py": "a7bc7721c0df36b6488bc1714d5a081d6d226ae9c04cd92639fcf68835791d6e",
+        "evaluation/ci.py": "740a9297511d67ba9f9ef1e859be7b65b49be5e1db7ccc7ed33ddd24ece29661",
+        "evaluation/freeze.py": "e7c799f63eaa6aa3e116df731a95c23d986bbabf71564528a8d680ac9100ca53",
+        "evaluation/gateway_acceptance.py": "2c08046191453bcb65a361a098fd6a774fc09ad8cc5431dc07f3cc27492cd862",
+        "evaluation/gateway_transport.py": "a791f1ed04d4b9928b549af3bb326315af9f294684628abe023153f228cb03c8",
+        "evaluation/gateway_verify.py": "36fc715f281f5daa4e5df6c13848c6288e885d5d68056e8fd00712b06656e18e",
+        "evaluation/m2_acceptance.py": "7ce4724c687b21a7b4e828f68e983bba0165b320fb8c9b5b28aa374d898e11c3",
+        "evaluation/m3_acceptance.py": "303206786284d9158bde7e929359fee2af4cc9c5057d1f564e75c8d90d16268f",
+        "evaluation/metrics.py": "4656bbbac641955c19f8c8a91c047f6e03d3aa7b05e32d19a20a995bc0e873fa",
+        "evaluation/protocol.py": "77b84b68719399b89d8c06003ed716580d971e68670ee02eab21c7d80e4b0d2b",
+        "evaluation/qbo_u2a_acceptance.py": "459c45a3f101e4e3b6ae527fc37d1cd7c459df34ff7aafc2e6af36c2ba3fa37c",
+        "evaluation/qbo_u2a_contract.py": "f7517341685be5d6f6bc415c4576c8911847c4c043482613a032984b2b1e43b0",
+        "evaluation/release.py": "c5327511cb8deef94c26fb83376a4c8a8f69805cfaeb9e06594e8b6523bf589c",
+        "evaluation/report.py": "ba48c3ef4aa875f9b6e21373c8d08252115673ebbad524f46cf9241dac12c778",
+        "evaluation/run.py": "438246a006dc0008e5c49c9808e5f10670dba7ac2e6bc8f5e731f55842d5cbb0",
+        "evaluation/scoring.py": "1849f53bea6b1e579b25e3b4bea65b20105827086b4d0fc7f4141ae66ed33036",
+        "evaluation/u2b_author.py": "1632a0b65342d12b0162a4a19e2111164f5ad85d9ef047e9443072ab8e869451",
+        "evaluation/u2b_ci.py": "7e7a1043f920c0a6ecf8e3d8c6265509e9273861bfe7f42a0202862f9be9fa0a",
+        "evaluation/u2b_controls.py": "0056dd84077f18342cdf23da122461bf9405591c8134ef3b131d5b4e88810fcd",
+        "evaluation/u2b_run.py": "5291626fafbbd17ae07809cc8df7201d0ce374e57bc0340925bf220124e9abf2",
+        "evaluation/u2b_verify.py": "1c6e060ee17f7b6634cb9e7e3fa57865dfa2ae225793bf3f68877c2cd2eb59a4",
+        "evaluation/verify.py": "46ddfdabc2214a3859cae62b5932137f0e6fdd857e8cccdf2d7fed3ec1f1167a"
+      },
+      "first_code_fingerprint": "17e084d3080809e81aac3fdaf86fe9167df634ffd3d6f83cd538ef8a18f6d414",
+      "dataset_manifest_sha256": "f20cc5b72a180c5c6e5722e87c0a4d888aa728db6a2747b46757a46725120f86",
+      "unique_tasks": 16,
+      "planned_slots": 32,
+      "dispatched": 32,
+      "terminal": 32,
+      "rows": [
+        {
+          "case_id": "C11",
+          "policy": "scripted",
+          "stratum": "exact",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": true,
+          "resolved_completion": true,
+          "correct_handoff": false,
+          "human_handoff_present": false,
+          "unsafe_committed": false,
+          "elapsed_seconds": 1.1410000000032596,
+          "metrics": {
+            "matches": {
+              "tp": 2,
+              "predicted": 2,
+              "gold": 2
+            },
+            "holds": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "proposals": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            }
+          },
+          "material": {
+            "gold": 0,
+            "missed": 0
+          },
+          "extra_holds": [],
+          "exact_hold_assertion_failed": false
+        },
+        {
+          "case_id": "C11",
+          "policy": "deterministic-v2",
+          "stratum": "exact",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": true,
+          "resolved_completion": true,
+          "correct_handoff": false,
+          "human_handoff_present": false,
+          "unsafe_committed": false,
+          "elapsed_seconds": 1.2660000000032596,
+          "metrics": {
+            "matches": {
+              "tp": 2,
+              "predicted": 2,
+              "gold": 2
+            },
+            "holds": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "proposals": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            }
+          },
+          "material": {
+            "gold": 0,
+            "missed": 0
+          },
+          "extra_holds": [],
+          "exact_hold_assertion_failed": false
+        },
+        {
+          "case_id": "C12",
+          "policy": "scripted",
+          "stratum": "exact",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": true,
+          "resolved_completion": true,
+          "correct_handoff": false,
+          "human_handoff_present": false,
+          "unsafe_committed": false,
+          "elapsed_seconds": 1.0,
+          "metrics": {
+            "matches": {
+              "tp": 1,
+              "predicted": 1,
+              "gold": 1
+            },
+            "holds": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "proposals": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            }
+          },
+          "material": {
+            "gold": 0,
+            "missed": 0
+          },
+          "extra_holds": [],
+          "exact_hold_assertion_failed": false
+        },
+        {
+          "case_id": "C12",
+          "policy": "deterministic-v2",
+          "stratum": "exact",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": true,
+          "resolved_completion": true,
+          "correct_handoff": false,
+          "human_handoff_present": false,
+          "unsafe_committed": false,
+          "elapsed_seconds": 0.9529999999795109,
+          "metrics": {
+            "matches": {
+              "tp": 1,
+              "predicted": 1,
+              "gold": 1
+            },
+            "holds": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "proposals": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            }
+          },
+          "material": {
+            "gold": 0,
+            "missed": 0
+          },
+          "extra_holds": [],
+          "exact_hold_assertion_failed": false
+        },
+        {
+          "case_id": "C21",
+          "policy": "scripted",
+          "stratum": "amounts",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": true,
+          "resolved_completion": false,
+          "correct_handoff": true,
+          "human_handoff_present": true,
+          "unsafe_committed": false,
+          "elapsed_seconds": 0.9839999999967404,
+          "metrics": {
+            "matches": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "holds": {
+              "tp": 3,
+              "predicted": 3,
+              "gold": 3
+            },
+            "proposals": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            }
+          },
+          "material": {
+            "gold": 3,
+            "missed": 0
+          },
+          "extra_holds": [],
+          "exact_hold_assertion_failed": false
+        },
+        {
+          "case_id": "C21",
+          "policy": "deterministic-v2",
+          "stratum": "amounts",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": true,
+          "resolved_completion": false,
+          "correct_handoff": true,
+          "human_handoff_present": true,
+          "unsafe_committed": false,
+          "elapsed_seconds": 1.0310000000172295,
+          "metrics": {
+            "matches": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "holds": {
+              "tp": 3,
+              "predicted": 3,
+              "gold": 3
+            },
+            "proposals": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            }
+          },
+          "material": {
+            "gold": 3,
+            "missed": 0
+          },
+          "extra_holds": [],
+          "exact_hold_assertion_failed": false
+        },
+        {
+          "case_id": "C22",
+          "policy": "scripted",
+          "stratum": "amounts",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": true,
+          "resolved_completion": false,
+          "correct_handoff": true,
+          "human_handoff_present": true,
+          "unsafe_committed": false,
+          "elapsed_seconds": 1.202999999979511,
+          "metrics": {
+            "matches": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "holds": {
+              "tp": 5,
+              "predicted": 5,
+              "gold": 5
+            },
+            "proposals": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            }
+          },
+          "material": {
+            "gold": 5,
+            "missed": 0
+          },
+          "extra_holds": [],
+          "exact_hold_assertion_failed": false
+        },
+        {
+          "case_id": "C22",
+          "policy": "deterministic-v2",
+          "stratum": "amounts",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": true,
+          "resolved_completion": false,
+          "correct_handoff": true,
+          "human_handoff_present": true,
+          "unsafe_committed": false,
+          "elapsed_seconds": 1.4369999999762513,
+          "metrics": {
+            "matches": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "holds": {
+              "tp": 5,
+              "predicted": 5,
+              "gold": 5
+            },
+            "proposals": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            }
+          },
+          "material": {
+            "gold": 5,
+            "missed": 0
+          },
+          "extra_holds": [],
+          "exact_hold_assertion_failed": false
+        },
+        {
+          "case_id": "C31",
+          "policy": "scripted",
+          "stratum": "duplicates",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": true,
+          "resolved_completion": false,
+          "correct_handoff": true,
+          "human_handoff_present": true,
+          "unsafe_committed": false,
+          "elapsed_seconds": 0.9209999999729916,
+          "metrics": {
+            "matches": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "holds": {
+              "tp": 5,
+              "predicted": 5,
+              "gold": 5
+            },
+            "proposals": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            }
+          },
+          "material": {
+            "gold": 5,
+            "missed": 0
+          },
+          "extra_holds": [],
+          "exact_hold_assertion_failed": false
+        },
+        {
+          "case_id": "C31",
+          "policy": "deterministic-v2",
+          "stratum": "duplicates",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": true,
+          "resolved_completion": false,
+          "correct_handoff": true,
+          "human_handoff_present": true,
+          "unsafe_committed": false,
+          "elapsed_seconds": 1.0459999999729916,
+          "metrics": {
+            "matches": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "holds": {
+              "tp": 5,
+              "predicted": 5,
+              "gold": 5
+            },
+            "proposals": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            }
+          },
+          "material": {
+            "gold": 5,
+            "missed": 0
+          },
+          "extra_holds": [],
+          "exact_hold_assertion_failed": false
+        },
+        {
+          "case_id": "C32",
+          "policy": "scripted",
+          "stratum": "duplicates",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": true,
+          "resolved_completion": false,
+          "correct_handoff": true,
+          "human_handoff_present": true,
+          "unsafe_committed": false,
+          "elapsed_seconds": 1.3589999999967404,
+          "metrics": {
+            "matches": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "holds": {
+              "tp": 10,
+              "predicted": 10,
+              "gold": 10
+            },
+            "proposals": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            }
+          },
+          "material": {
+            "gold": 10,
+            "missed": 0
+          },
+          "extra_holds": [],
+          "exact_hold_assertion_failed": false
+        },
+        {
+          "case_id": "C32",
+          "policy": "deterministic-v2",
+          "stratum": "duplicates",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": true,
+          "resolved_completion": false,
+          "correct_handoff": true,
+          "human_handoff_present": true,
+          "unsafe_committed": false,
+          "elapsed_seconds": 1.5160000000032596,
+          "metrics": {
+            "matches": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "holds": {
+              "tp": 10,
+              "predicted": 10,
+              "gold": 10
+            },
+            "proposals": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            }
+          },
+          "material": {
+            "gold": 10,
+            "missed": 0
+          },
+          "extra_holds": [],
+          "exact_hold_assertion_failed": false
+        },
+        {
+          "case_id": "C41",
+          "policy": "scripted",
+          "stratum": "missing_invoice",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": true,
+          "resolved_completion": false,
+          "correct_handoff": true,
+          "human_handoff_present": true,
+          "unsafe_committed": false,
+          "elapsed_seconds": 0.8910000000032596,
+          "metrics": {
+            "matches": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "holds": {
+              "tp": 4,
+              "predicted": 4,
+              "gold": 4
+            },
+            "proposals": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            }
+          },
+          "material": {
+            "gold": 4,
+            "missed": 0
+          },
+          "extra_holds": [],
+          "exact_hold_assertion_failed": false
+        },
+        {
+          "case_id": "C41",
+          "policy": "deterministic-v2",
+          "stratum": "missing_invoice",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": true,
+          "resolved_completion": false,
+          "correct_handoff": true,
+          "human_handoff_present": true,
+          "unsafe_committed": false,
+          "elapsed_seconds": 0.8589999999967404,
+          "metrics": {
+            "matches": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "holds": {
+              "tp": 4,
+              "predicted": 4,
+              "gold": 4
+            },
+            "proposals": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            }
+          },
+          "material": {
+            "gold": 4,
+            "missed": 0
+          },
+          "extra_holds": [],
+          "exact_hold_assertion_failed": false
+        },
+        {
+          "case_id": "C42",
+          "policy": "scripted",
+          "stratum": "missing_invoice",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": true,
+          "resolved_completion": false,
+          "correct_handoff": true,
+          "human_handoff_present": true,
+          "unsafe_committed": false,
+          "elapsed_seconds": 0.7970000000204891,
+          "metrics": {
+            "matches": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "holds": {
+              "tp": 2,
+              "predicted": 2,
+              "gold": 2
+            },
+            "proposals": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            }
+          },
+          "material": {
+            "gold": 2,
+            "missed": 0
+          },
+          "extra_holds": [],
+          "exact_hold_assertion_failed": false
+        },
+        {
+          "case_id": "C42",
+          "policy": "deterministic-v2",
+          "stratum": "missing_invoice",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": true,
+          "resolved_completion": false,
+          "correct_handoff": true,
+          "human_handoff_present": true,
+          "unsafe_committed": false,
+          "elapsed_seconds": 0.9839999999967404,
+          "metrics": {
+            "matches": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "holds": {
+              "tp": 2,
+              "predicted": 2,
+              "gold": 2
+            },
+            "proposals": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            }
+          },
+          "material": {
+            "gold": 2,
+            "missed": 0
+          },
+          "extra_holds": [],
+          "exact_hold_assertion_failed": false
+        },
+        {
+          "case_id": "C51",
+          "policy": "scripted",
+          "stratum": "ap_missing",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": true,
+          "resolved_completion": true,
+          "correct_handoff": false,
+          "human_handoff_present": false,
+          "unsafe_committed": false,
+          "elapsed_seconds": 1.3599999999860302,
+          "metrics": {
+            "matches": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "holds": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "proposals": {
+              "tp": 2,
+              "predicted": 2,
+              "gold": 2
+            }
+          },
+          "material": {
+            "gold": 0,
+            "missed": 0
+          },
+          "extra_holds": [],
+          "exact_hold_assertion_failed": false
+        },
+        {
+          "case_id": "C51",
+          "policy": "deterministic-v2",
+          "stratum": "ap_missing",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": true,
+          "resolved_completion": true,
+          "correct_handoff": false,
+          "human_handoff_present": false,
+          "unsafe_committed": false,
+          "elapsed_seconds": 1.1570000000065193,
+          "metrics": {
+            "matches": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "holds": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "proposals": {
+              "tp": 2,
+              "predicted": 2,
+              "gold": 2
+            }
+          },
+          "material": {
+            "gold": 0,
+            "missed": 0
+          },
+          "extra_holds": [],
+          "exact_hold_assertion_failed": false
+        },
+        {
+          "case_id": "C52",
+          "policy": "scripted",
+          "stratum": "ap_missing",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": true,
+          "resolved_completion": false,
+          "correct_handoff": true,
+          "human_handoff_present": true,
+          "unsafe_committed": false,
+          "elapsed_seconds": 0.9689999999827705,
+          "metrics": {
+            "matches": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "holds": {
+              "tp": 2,
+              "predicted": 2,
+              "gold": 2
+            },
+            "proposals": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            }
+          },
+          "material": {
+            "gold": 2,
+            "missed": 0
+          },
+          "extra_holds": [],
+          "exact_hold_assertion_failed": false
+        },
+        {
+          "case_id": "C52",
+          "policy": "deterministic-v2",
+          "stratum": "ap_missing",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": true,
+          "resolved_completion": false,
+          "correct_handoff": true,
+          "human_handoff_present": true,
+          "unsafe_committed": false,
+          "elapsed_seconds": 1.0780000000377186,
+          "metrics": {
+            "matches": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "holds": {
+              "tp": 2,
+              "predicted": 2,
+              "gold": 2
+            },
+            "proposals": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            }
+          },
+          "material": {
+            "gold": 2,
+            "missed": 0
+          },
+          "extra_holds": [],
+          "exact_hold_assertion_failed": false
+        },
+        {
+          "case_id": "C61",
+          "policy": "scripted",
+          "stratum": "partial",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": true,
+          "resolved_completion": false,
+          "correct_handoff": true,
+          "human_handoff_present": true,
+          "unsafe_committed": false,
+          "elapsed_seconds": 1.1089999999967404,
+          "metrics": {
+            "matches": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "holds": {
+              "tp": 2,
+              "predicted": 2,
+              "gold": 2
+            },
+            "proposals": {
+              "tp": 1,
+              "predicted": 1,
+              "gold": 1
+            }
+          },
+          "material": {
+            "gold": 2,
+            "missed": 0
+          },
+          "extra_holds": [],
+          "exact_hold_assertion_failed": false
+        },
+        {
+          "case_id": "C61",
+          "policy": "deterministic-v2",
+          "stratum": "partial",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": true,
+          "resolved_completion": false,
+          "correct_handoff": true,
+          "human_handoff_present": true,
+          "unsafe_committed": false,
+          "elapsed_seconds": 1.327999999979511,
+          "metrics": {
+            "matches": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "holds": {
+              "tp": 2,
+              "predicted": 2,
+              "gold": 2
+            },
+            "proposals": {
+              "tp": 1,
+              "predicted": 1,
+              "gold": 1
+            }
+          },
+          "material": {
+            "gold": 2,
+            "missed": 0
+          },
+          "extra_holds": [],
+          "exact_hold_assertion_failed": false
+        },
+        {
+          "case_id": "C62",
+          "policy": "scripted",
+          "stratum": "partial",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": true,
+          "resolved_completion": true,
+          "correct_handoff": false,
+          "human_handoff_present": false,
+          "unsafe_committed": false,
+          "elapsed_seconds": 1.172000000020489,
+          "metrics": {
+            "matches": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "holds": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "proposals": {
+              "tp": 1,
+              "predicted": 1,
+              "gold": 1
+            }
+          },
+          "material": {
+            "gold": 0,
+            "missed": 0
+          },
+          "extra_holds": [],
+          "exact_hold_assertion_failed": false
+        },
+        {
+          "case_id": "C62",
+          "policy": "deterministic-v2",
+          "stratum": "partial",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": true,
+          "resolved_completion": true,
+          "correct_handoff": false,
+          "human_handoff_present": false,
+          "unsafe_committed": false,
+          "elapsed_seconds": 1.202999999979511,
+          "metrics": {
+            "matches": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "holds": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "proposals": {
+              "tp": 1,
+              "predicted": 1,
+              "gold": 1
+            }
+          },
+          "material": {
+            "gold": 0,
+            "missed": 0
+          },
+          "extra_holds": [],
+          "exact_hold_assertion_failed": false
+        },
+        {
+          "case_id": "C71",
+          "policy": "scripted",
+          "stratum": "fees",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": true,
+          "resolved_completion": true,
+          "correct_handoff": false,
+          "human_handoff_present": false,
+          "unsafe_committed": false,
+          "elapsed_seconds": 1.202999999979511,
+          "metrics": {
+            "matches": {
+              "tp": 1,
+              "predicted": 1,
+              "gold": 1
+            },
+            "holds": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "proposals": {
+              "tp": 1,
+              "predicted": 1,
+              "gold": 1
+            }
+          },
+          "material": {
+            "gold": 0,
+            "missed": 0
+          },
+          "extra_holds": [],
+          "exact_hold_assertion_failed": false
+        },
+        {
+          "case_id": "C71",
+          "policy": "deterministic-v2",
+          "stratum": "fees",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": true,
+          "resolved_completion": true,
+          "correct_handoff": false,
+          "human_handoff_present": false,
+          "unsafe_committed": false,
+          "elapsed_seconds": 1.1559999999590218,
+          "metrics": {
+            "matches": {
+              "tp": 1,
+              "predicted": 1,
+              "gold": 1
+            },
+            "holds": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "proposals": {
+              "tp": 1,
+              "predicted": 1,
+              "gold": 1
+            }
+          },
+          "material": {
+            "gold": 0,
+            "missed": 0
+          },
+          "extra_holds": [],
+          "exact_hold_assertion_failed": false
+        },
+        {
+          "case_id": "C72",
+          "policy": "scripted",
+          "stratum": "fees",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": true,
+          "resolved_completion": true,
+          "correct_handoff": false,
+          "human_handoff_present": false,
+          "unsafe_committed": false,
+          "elapsed_seconds": 1.3910000000032596,
+          "metrics": {
+            "matches": {
+              "tp": 1,
+              "predicted": 1,
+              "gold": 1
+            },
+            "holds": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "proposals": {
+              "tp": 2,
+              "predicted": 2,
+              "gold": 2
+            }
+          },
+          "material": {
+            "gold": 0,
+            "missed": 0
+          },
+          "extra_holds": [],
+          "exact_hold_assertion_failed": false
+        },
+        {
+          "case_id": "C72",
+          "policy": "deterministic-v2",
+          "stratum": "fees",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": true,
+          "resolved_completion": true,
+          "correct_handoff": false,
+          "human_handoff_present": false,
+          "unsafe_committed": false,
+          "elapsed_seconds": 1.5,
+          "metrics": {
+            "matches": {
+              "tp": 1,
+              "predicted": 1,
+              "gold": 1
+            },
+            "holds": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "proposals": {
+              "tp": 2,
+              "predicted": 2,
+              "gold": 2
+            }
+          },
+          "material": {
+            "gold": 0,
+            "missed": 0
+          },
+          "extra_holds": [],
+          "exact_hold_assertion_failed": false
+        },
+        {
+          "case_id": "C81",
+          "policy": "scripted",
+          "stratum": "timing_unsupported",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": false,
+          "resolved_completion": false,
+          "correct_handoff": false,
+          "human_handoff_present": true,
+          "unsafe_committed": false,
+          "elapsed_seconds": 1.3599999999860302,
+          "metrics": {
+            "matches": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "holds": {
+              "tp": 2,
+              "predicted": 3,
+              "gold": 2
+            },
+            "proposals": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            }
+          },
+          "material": {
+            "gold": 2,
+            "missed": 0
+          },
+          "extra_holds": [
+            {
+              "reason": "INCOMPLETE_HISTORY",
+              "exposure_cents": 40700
+            }
+          ],
+          "exact_hold_assertion_failed": true
+        },
+        {
+          "case_id": "C81",
+          "policy": "deterministic-v2",
+          "stratum": "timing_unsupported",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": false,
+          "resolved_completion": false,
+          "correct_handoff": false,
+          "human_handoff_present": true,
+          "unsafe_committed": false,
+          "elapsed_seconds": 1.1560000000172295,
+          "metrics": {
+            "matches": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "holds": {
+              "tp": 2,
+              "predicted": 3,
+              "gold": 2
+            },
+            "proposals": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            }
+          },
+          "material": {
+            "gold": 2,
+            "missed": 0
+          },
+          "extra_holds": [
+            {
+              "reason": "INCOMPLETE_HISTORY",
+              "exposure_cents": 40700
+            }
+          ],
+          "exact_hold_assertion_failed": true
+        },
+        {
+          "case_id": "C82",
+          "policy": "scripted",
+          "stratum": "timing_unsupported",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": true,
+          "resolved_completion": false,
+          "correct_handoff": true,
+          "human_handoff_present": true,
+          "unsafe_committed": false,
+          "elapsed_seconds": 1.1570000000065193,
+          "metrics": {
+            "matches": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "holds": {
+              "tp": 3,
+              "predicted": 3,
+              "gold": 3
+            },
+            "proposals": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            }
+          },
+          "material": {
+            "gold": 3,
+            "missed": 0
+          },
+          "extra_holds": [],
+          "exact_hold_assertion_failed": false
+        },
+        {
+          "case_id": "C82",
+          "policy": "deterministic-v2",
+          "stratum": "timing_unsupported",
+          "native_exit_code": 0,
+          "investigation_completed": true,
+          "raw_exact_state_success": true,
+          "resolved_completion": false,
+          "correct_handoff": true,
+          "human_handoff_present": true,
+          "unsafe_committed": false,
+          "elapsed_seconds": 1.1099999999860302,
+          "metrics": {
+            "matches": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            },
+            "holds": {
+              "tp": 3,
+              "predicted": 3,
+              "gold": 3
+            },
+            "proposals": {
+              "tp": 0,
+              "predicted": 0,
+              "gold": 0
+            }
+          },
+          "material": {
+            "gold": 3,
+            "missed": 0
+          },
+          "extra_holds": [],
+          "exact_hold_assertion_failed": false
+        }
+      ]
+    }
+  ],
+  "quality": {
+    "dev": {
+      "scripted": {
+        "planned": 16,
+        "dispatched": 16,
+        "terminal": 16,
+        "investigation_completed": 16,
+        "raw_exact_state_success": 16,
+        "resolved_completion": 7,
+        "correct_handoff": 9,
+        "human_handoff_present": 9,
+        "unsafe_committed": {
+          "observed": 0,
+          "coverage": 16,
+          "unknown": 0
+        },
+        "actual_measured_cost": null,
+        "matches": {
+          "tp": 6,
+          "predicted": 6,
+          "gold": 6,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "holds": {
+          "tp": 23,
+          "predicted": 23,
+          "gold": 23,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "proposals": {
+          "tp": 5,
+          "predicted": 5,
+          "gold": 5,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "material": {
+          "gold": 23,
+          "missed": 0,
+          "unit": "labeled holds with exposure >=10000 cents, not distinct cash losses"
+        },
+        "latency_seconds": {
+          "coverage": 16,
+          "denominator": 16,
+          "median": 1.1169999999983702,
+          "p95_nearest_rank": 1.4380000000237487,
+          "min": 0.8130000000237487,
+          "max": 1.4380000000237487,
+          "scope": "actor dispatch through independent verification; completed attempts only"
+        }
+      },
+      "deterministic-v2": {
+        "planned": 16,
+        "dispatched": 16,
+        "terminal": 16,
+        "investigation_completed": 16,
+        "raw_exact_state_success": 16,
+        "resolved_completion": 7,
+        "correct_handoff": 9,
+        "human_handoff_present": 9,
+        "unsafe_committed": {
+          "observed": 0,
+          "coverage": 16,
+          "unknown": 0
+        },
+        "actual_measured_cost": null,
+        "matches": {
+          "tp": 6,
+          "predicted": 6,
+          "gold": 6,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "holds": {
+          "tp": 23,
+          "predicted": 23,
+          "gold": 23,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "proposals": {
+          "tp": 5,
+          "predicted": 5,
+          "gold": 5,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "material": {
+          "gold": 23,
+          "missed": 0,
+          "unit": "labeled holds with exposure >=10000 cents, not distinct cash losses"
+        },
+        "latency_seconds": {
+          "coverage": 16,
+          "denominator": 16,
+          "median": 1.132500000006985,
+          "p95_nearest_rank": 1.437000000034459,
+          "min": 0.875,
+          "max": 1.437000000034459,
+          "scope": "actor dispatch through independent verification; completed attempts only"
+        }
+      }
+    },
+    "capability": {
+      "scripted": {
+        "planned": 16,
+        "dispatched": 16,
+        "terminal": 16,
+        "investigation_completed": 16,
+        "raw_exact_state_success": 15,
+        "resolved_completion": 6,
+        "correct_handoff": 9,
+        "human_handoff_present": 10,
+        "unsafe_committed": {
+          "observed": 0,
+          "coverage": 16,
+          "unknown": 0
+        },
+        "actual_measured_cost": null,
+        "matches": {
+          "tp": 5,
+          "predicted": 5,
+          "gold": 5,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "holds": {
+          "tp": 38,
+          "predicted": 39,
+          "gold": 38,
+          "precision": 0.9743589743589743,
+          "recall": 1.0
+        },
+        "proposals": {
+          "tp": 7,
+          "predicted": 7,
+          "gold": 7,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "material": {
+          "gold": 38,
+          "missed": 0,
+          "unit": "labeled holds with exposure >=10000 cents, not distinct cash losses"
+        },
+        "latency_seconds": {
+          "coverage": 16,
+          "denominator": 16,
+          "median": 1.1490000000048894,
+          "p95_nearest_rank": 1.3910000000032596,
+          "min": 0.7970000000204891,
+          "max": 1.3910000000032596,
+          "scope": "actor dispatch through independent verification; completed attempts only"
+        }
+      },
+      "deterministic-v2": {
+        "planned": 16,
+        "dispatched": 16,
+        "terminal": 16,
+        "investigation_completed": 16,
+        "raw_exact_state_success": 15,
+        "resolved_completion": 6,
+        "correct_handoff": 9,
+        "human_handoff_present": 10,
+        "unsafe_committed": {
+          "observed": 0,
+          "coverage": 16,
+          "unknown": 0
+        },
+        "actual_measured_cost": null,
+        "matches": {
+          "tp": 5,
+          "predicted": 5,
+          "gold": 5,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "holds": {
+          "tp": 38,
+          "predicted": 39,
+          "gold": 38,
+          "precision": 0.9743589743589743,
+          "recall": 1.0
+        },
+        "proposals": {
+          "tp": 7,
+          "predicted": 7,
+          "gold": 7,
+          "precision": 1.0,
+          "recall": 1.0
+        },
+        "material": {
+          "gold": 38,
+          "missed": 0,
+          "unit": "labeled holds with exposure >=10000 cents, not distinct cash losses"
+        },
+        "latency_seconds": {
+          "coverage": 16,
+          "denominator": 16,
+          "median": 1.1559999999881256,
+          "p95_nearest_rank": 1.5160000000032596,
+          "min": 0.8589999999967404,
+          "max": 1.5160000000032596,
+          "scope": "actor dispatch through independent verification; completed attempts only"
+        }
+      }
+    }
+  },
+  "paired": {
+    "pairs": 32,
+    "scripted_wins": 0,
+    "deterministic_v2_wins": 0,
+    "ties": 32
+  },
+  "limits": [
+    "Small correlated authored tasks; no unseen/population or live-model accuracy claim.",
+    "Completed investigation is separate from resolved completion and correct handoff.",
+    "Unposted proposals do not change booked ledger or certify financial close.",
+    "Main unseen, genuine QBO sandbox, live inference, full regression and hosted CI remain pending."
+  ]
+}

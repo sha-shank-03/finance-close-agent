@@ -1,0 +1,7 @@
+entry_id,line_id,date,account,side,amount,currency,vendor_id,invoice_id,reference
+E-C21-RECOG,E-C21-RECOG-1,2026-08-15,expense,debit,1220.00,USD,V-C21,I-C21,BOOK-C21
+E-C21-RECOG,E-C21-RECOG-2,2026-08-15,accounts_payable,credit,1220.00,USD,V-C21,I-C21,BOOK-C21
+E-C21-CASH,E-C21-CASH-1,2026-09-12,accounts_payable,debit,428.45,USD,V-C21,I-C21,BANK-C21
+E-C21-CASH,E-C21-CASH-2,2026-09-12,cash,credit,428.45,USD,V-C21,I-C21,BANK-C21
+E-C21-PRIOR,E-C21-PRIOR-1,2026-08-28,accounts_payable,debit,76.25,USD,V-C21,I-C21,OLD-C21
+E-C21-PRIOR,E-C21-PRIOR-2,2026-08-28,cash,credit,76.25,USD,V-C21,I-C21,OLD-C21

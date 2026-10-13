@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "case_id": "D32",
+  "stratum": "duplicates",
+  "split": "dev",
+  "author_exposed": true,
+  "matches": {},
+  "exceptions": [
+    {
+      "bank_id": "B-D32-1",
+      "ledger_line_id": null,
+      "reason": "AMBIGUOUS_MATCH",
+      "exposure_cents": 27400
+    },
+    {
+      "bank_id": "B-D32-1",
+      "ledger_line_id": null,
+      "reason": "UNMATCHED_CASH",
+      "exposure_cents": 27400
+    },
+    {
+      "bank_id": "B-D32-2",
+      "ledger_line_id": null,
+      "reason": "AMBIGUOUS_MATCH",
+      "exposure_cents": 27400
+    },
+    {
+      "bank_id": "B-D32-2",
+      "ledger_line_id": null,
+      "reason": "UNMATCHED_CASH",
+      "exposure_cents": 27400
+    },
+    {
+      "bank_id": null,
+      "ledger_line_id": "E-D32-ONE-2",
+      "reason": "UNMATCHED_LEDGER",
+      "exposure_cents": 27400
+    }
+  ],
+  "proposals": [],
+  "bank_closing_cents": 945200,
+  "ledger_closing_cents": 972600,
+  "reservation_priority": "Host case IDs sorted; CSV row order grants no cash matching priority",
+  "lineage": "Independently authored U2-B dev duplicates variant2"
+}

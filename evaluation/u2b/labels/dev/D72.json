@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "case_id": "D72",
+  "stratum": "fees",
+  "split": "dev",
+  "author_exposed": true,
+  "matches": {
+    "B-D72-2": "E-D72-FEE-2"
+  },
+  "exceptions": [],
+  "proposals": [
+    {
+      "bank_id": "B-D72-1",
+      "rule_id": "BANK_FEE_V1",
+      "date": "2026-09-12",
+      "currency": "USD",
+      "lines": [
+        {
+          "account": "bank_fee_expense",
+          "side": "debit",
+          "amount_cents": 8550
+        },
+        {
+          "account": "cash",
+          "side": "credit",
+          "amount_cents": 8550
+        }
+      ]
+    }
+  ],
+  "bank_closing_cents": 990150,
+  "ledger_closing_cents": 998700,
+  "reservation_priority": "Host case IDs sorted; CSV row order grants no cash matching priority",
+  "lineage": "Independently authored U2-B dev fees variant2"
+}

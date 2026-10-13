@@ -1,0 +1,7 @@
+entry_id,line_id,date,account,side,amount,currency,vendor_id,invoice_id,reference
+E-C12-RECOG,E-C12-RECOG-1,2026-08-15,expense,debit,1244.00,USD,V-C12,I-C12,BOOK-C12
+E-C12-RECOG,E-C12-RECOG-2,2026-08-15,accounts_payable,credit,1244.00,USD,V-C12,I-C12,BOOK-C12
+E-C12-PAID,E-C12-PAID-1,2026-09-12,accounts_payable,debit,311.00,USD,V-C12,I-C12,BOOK-C12
+E-C12-PAID,E-C12-PAID-2,2026-09-12,cash,credit,311.00,USD,V-C12,I-C12,BOOK-C12
+E-C12-PRIOR,E-C12-PRIOR-1,2026-08-22,accounts_payable,debit,103.66,USD,V-C12,I-C12,OLD-C12
+E-C12-PRIOR,E-C12-PRIOR-2,2026-08-22,cash,credit,103.66,USD,V-C12,I-C12,OLD-C12

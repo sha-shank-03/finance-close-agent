@@ -1,0 +1,7 @@
+entry_id,line_id,date,account,side,amount,currency,vendor_id,invoice_id,reference
+E-D31-RECOG,E-D31-RECOG-1,2026-08-15,expense,debit,1004.00,USD,V-D31,I-D31,BOOK-D31
+E-D31-RECOG,E-D31-RECOG-2,2026-08-15,accounts_payable,credit,1004.00,USD,V-D31,I-D31,BOOK-D31
+E-D31-TIE0,E-D31-TIE0-1,2026-09-12,accounts_payable,debit,251.00,USD,V-D31,I-D31,BANK-D31
+E-D31-TIE0,E-D31-TIE0-2,2026-09-12,cash,credit,251.00,USD,V-D31,I-D31,BANK-D31
+E-D31-TIE1,E-D31-TIE1-1,2026-09-12,accounts_payable,debit,251.00,USD,V-D31,I-D31,BANK-D31
+E-D31-TIE1,E-D31-TIE1-2,2026-09-12,cash,credit,251.00,USD,V-D31,I-D31,BANK-D31
